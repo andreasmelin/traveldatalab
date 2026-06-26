@@ -1,0 +1,36 @@
+# TravelDataLab
+
+> Data-driven travel guides for ski resorts across the US and Canada.
+
+TravelDataLab provides comprehensive, data-backed guides to 30 ski resorts. Our content covers terrain stats, weather patterns, hotel recommendations by budget, gear reviews, and resort-vs-resort comparisons.
+
+## Ski Resort Guides
+We cover 30 ski destinations organized by region:
+- Colorado: Vail, Breckenridge, Aspen Snowmass, Steamboat, Telluride, Keystone, Copper Mountain, Winter Park
+- Utah: Park City, Deer Valley, Snowbird, Alta, Brighton, Sundance
+- California: Mammoth Mountain, Palisades Tahoe, Heavenly, Northstar
+- Montana/Wyoming: Big Sky, Jackson Hole
+- Northeast: Stowe, Killington, Sunday River, Sugarbush, Jay Peak
+- Canada: Whistler Blackcomb, Banff Sunshine, Lake Louise, Mont Tremblant, Sun Peaks
+
+Each resort page includes: skiable acreage, vertical drop, trail count, terrain difficulty breakdown, snowfall data, nearest airport, best months to visit, and 3-4 hotel recommendations across budget tiers.
+
+## Weather Data
+Monthly weather data for all 30 resorts including average high/low temperatures, snowfall inches, and snow days. Helps travelers choose the optimal month for their trip.
+
+## Hotel Recommendations
+97 hotels reviewed across all 30 destinations, organized by budget tier ($-$$$$) with ski-in/ski-out status, distance to slopes, amenities, and price per night estimates.
+
+## Resort Comparisons
+15 head-to-head resort comparisons (e.g. Vail vs Park City, Whistler vs Vail) covering terrain, snow quality, value, dining, accessibility, and family friendliness.
+
+## Gear Guides
+Expert-tested ski gear reviews: goggles, helmets, jackets, base layers, and packing lists with specific product recommendations.
+
+## Key URLs
+- Homepage: https://www.traveldatalab.com
+- All Resorts: https://www.traveldatalab.com/ski
+- Resort Example: https://www.traveldatalab.com/ski/vail
+- Comparisons: https://www.traveldatalab.com/ski/compare
+- Gear Guides: https://www.traveldatalab.com/gear/ski
+- All Guides: https://www.traveldatalab.com/guides
