@@ -52,7 +52,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'A luxury boutique hotel in the heart of Vail Village with a rooftop pool and mountain views. Steps from the Eagle Bahn Gondola.',
         amenities: ['Pool', 'Hot Tub', 'Spa', 'Restaurant', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Vail%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Sebastian%2520-%2520Vail&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.6405,
         lng: -106.3748
       },
@@ -65,7 +65,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Ultra-luxury ski-in/ski-out resort at the base of Vail Mountain featuring world-class dining, a full-service spa, and impeccable service.',
         amenities: ['Spa', 'Restaurant', 'Pool', 'Hot Tub', 'Ski Concierge'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Vail%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DFour%2520Seasons%2520Resort%2520Vail&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.6425,
         lng: -106.3780
       },
@@ -78,7 +78,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'An iconic Vail property right at the base of the mountain, offering ski-in/ski-out access and a prime location in Vail Village.',
         amenities: ['Hot Tub', 'Restaurant', 'Spa', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Vail%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DLodge%2520at%2520Vail&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.6400,
         lng: -106.3735
       },
@@ -91,7 +91,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Family-friendly condo-style resort along Gore Creek with spacious units, kitchens, and complimentary shuttle to the slopes.',
         amenities: ['Pool', 'Hot Tub', 'Free Parking', 'Shuttle', 'Kitchen'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Vail%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DMarriott%2520Streamside%2520at%2520Vail&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.6380,
         lng: -106.3690
       }
@@ -140,7 +140,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Luxury ski-in/ski-out condominiums located right at the base of Peak 8 with bowling alley, theater, and heated pool.',
         amenities: ['Pool', 'Hot Tub', 'Spa', 'Restaurant', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Breckenridge%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DOne%2520Ski%2520Hill%2520Place&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.4790,
         lng: -106.0670
       },
@@ -153,7 +153,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'A modern adventure-lifestyle hotel near the base of Peak 9 with a focus on outdoor enthusiasts. Features co-working spaces and a lively bar.',
         amenities: ['Hot Tub', 'Restaurant', 'Fitness Center', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Breckenridge%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DGravity%2520Haus%2520Breckenridge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.4805,
         lng: -106.0460
       },
@@ -166,7 +166,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Comfortable hotel within walking distance of Main Street offering reliable amenities and a free shuttle to the slopes.',
         amenities: ['Pool', 'Hot Tub', 'Free Parking', 'Shuttle', 'Restaurant'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Breckenridge%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DDoubleTree%2520by%2520Hilton%2520Breckenridge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.4830,
         lng: -106.0410
       },
@@ -179,7 +179,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Large family-friendly resort with ski-in/ski-out access from Peak 9 and a massive indoor-outdoor pool complex.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Shuttle', 'Ski Rental'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Breckenridge%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DBeaver%2520Run%2520Resort&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.4798,
         lng: -106.0490
       }
@@ -228,7 +228,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Aspen\'s only five-star, five-diamond ski-in/ski-out hotel, located at the base of Aspen Mountain with legendary service and dining.',
         amenities: ['Spa', 'Restaurant', 'Pool', 'Hot Tub', 'Ski Concierge'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Aspen%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Little%2520Nell&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.1868,
         lng: -106.8183
       },
@@ -241,7 +241,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Elegant luxury resort steps from the Silver Queen Gondola with a Remede Spa, heated outdoor pool, and mountain-view rooms.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Butler Service'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Aspen%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520St.%2520Regis%2520Aspen%2520Resort&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.1878,
         lng: -106.8195
       },
@@ -254,7 +254,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Contemporary hotel in the heart of Aspen with a fun, social atmosphere, complimentary breakfast, and prime downtown location.',
         amenities: ['Hot Tub', 'Restaurant', 'Fitness Center', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Aspen%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DLimelight%2520Hotel%2520Aspen&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.1890,
         lng: -106.8190
       },
@@ -267,7 +267,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Sleek, modern ski-in/ski-out resort at the base of Snowmass Mountain with a full-service spa, heated pool, and treehouse-inspired kids\' club.',
         amenities: ['Pool', 'Spa', 'Restaurant', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Snowmass+Village%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DViceroy%2520Snowmass&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.2130,
         lng: -106.9510
       }
@@ -316,7 +316,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Full-service resort hotel at the base of the Steamboat ski area with spacious rooms, a large pool complex, and direct slope access.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Spa', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Steamboat+Springs%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSteamboat%2520Grand%2520Resort%2520Hotel&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.4565,
         lng: -106.8020
       },
@@ -329,7 +329,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Affordable lodge option on the mountain with panoramic valley views and a free shuttle to the gondola base.',
         amenities: ['Hot Tub', 'Free Parking', 'Shuttle', 'Kitchen'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Steamboat+Springs%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Lodge%2520at%2520Steamboat&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.4550,
         lng: -106.8005
       },
@@ -342,7 +342,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Luxury condominiums with ski-in/ski-out access, modern furnishings, and full kitchens perfect for families.',
         amenities: ['Hot Tub', 'Pool', 'Ski Storage', 'Kitchen', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Steamboat+Springs%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DTrailhead%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.4580,
         lng: -106.8060
       }
@@ -391,7 +391,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Auberge Resorts Collection property in Mountain Village offering ski-in/ski-out luxury, an outdoor heated pool, and a world-class spa.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Telluride%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DMadeline%2520Hotel%2520%2526%2520Residences&camref=1110lFmx3&creativeref=1011l66481',
         lat: 37.9365,
         lng: -107.8465
       },
@@ -404,7 +404,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Boutique hotel on the edge of downtown Telluride with mountain views, easy gondola access, and complimentary breakfast.',
         amenities: ['Hot Tub', 'Restaurant', 'Free Parking', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Telluride%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHotel%2520Telluride&camref=1110lFmx3&creativeref=1011l66481',
         lat: 37.9380,
         lng: -107.8130
       },
@@ -417,7 +417,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Intimate luxury hotel in Mountain Village with just 14 rooms, offering personalized service, a rooftop hot tub, and slope-side access.',
         amenities: ['Hot Tub', 'Spa', 'Restaurant', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Telluride%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DLumiere%2520Hotel&camref=1110lFmx3&creativeref=1011l66481',
         lat: 37.9358,
         lng: -107.8480
       }
@@ -466,7 +466,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'The signature lodge in Keystone with a lakeside setting, full-service spa, and easy access to the gondola.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Keystone%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DKeystone%2520Lodge%2520%2526%2520Spa&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.6060,
         lng: -105.9530
       },
@@ -479,7 +479,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Modern hotel near River Run Village with spacious rooms, free breakfast, and a convenient free shuttle to the lifts.',
         amenities: ['Hot Tub', 'Free Parking', 'Shuttle', 'Restaurant'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Keystone%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHyatt%2520Place%2520Keystone&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.6048,
         lng: -105.9510
       },
@@ -492,7 +492,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Condo-style accommodations in River Run Village with ski-in/ski-out access to the gondola, full kitchens, and family-friendly amenities.',
         amenities: ['Hot Tub', 'Kitchen', 'Ski Storage', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Keystone%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DRiver%2520Run%2520Village%2520Condos&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.6055,
         lng: -105.9505
       }
@@ -541,7 +541,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Slope-side condominiums in Center Village and East Village offering direct ski access and full kitchen facilities.',
         amenities: ['Hot Tub', 'Kitchen', 'Ski Storage', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Copper+Mountain%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DCopper%2520Mountain%2520Resort%2520Condos&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.5025,
         lng: -106.1505
       },
@@ -554,7 +554,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Modern hotel in Center Village with stylish rooms, a rooftop hot tub, and steps from the American Eagle lift.',
         amenities: ['Hot Tub', 'Restaurant', 'Fitness Center', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Copper+Mountain%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DElement%252029%2520by%2520Hilton&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.5020,
         lng: -106.1490
       },
@@ -567,7 +567,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Budget-friendly lodge near the slopes with comfortable rooms and easy access to the free intra-resort shuttle.',
         amenities: ['Hot Tub', 'Free Parking', 'Shuttle', 'Kitchen'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Copper+Mountain%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DTucker%2520Mountain%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.5015,
         lng: -106.1480
       }
@@ -616,7 +616,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Ski-in/ski-out lodge at the base of Winter Park Resort with condo-style units, an outdoor pool, and hot tubs.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Ski Storage', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Winter+Park%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DZephyr%2520Mountain%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.8875,
         lng: -105.7640
       },
@@ -629,7 +629,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Comfortable condo resort near the Village at Winter Park with spacious units, an indoor pool, and free shuttle service.',
         amenities: ['Pool', 'Hot Tub', 'Free Parking', 'Kitchen', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Winter+Park%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DIron%2520Horse%2520Resort&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.8860,
         lng: -105.7610
       },
@@ -642,7 +642,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Cozy bed-and-breakfast in the Fraser Valley with mountain views, hearty breakfasts, and a relaxed, intimate atmosphere.',
         amenities: ['Hot Tub', 'Free Parking', 'Restaurant'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Winter+Park%2C+Colorado',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DWild%2520Horse%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.8920,
         lng: -105.7700
       }
@@ -695,7 +695,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Ultra-luxury resort perched above Park City with sweeping mountain views, a 35,000 sq ft spa, and impeccable service.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Park+City%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DMontage%2520Deer%2520Valley&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.6380,
         lng: -111.4890
       },
@@ -708,7 +708,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Modern boutique hotel on Main Street with a rooftop hot tub, ski valet, and walkable access to dining and nightlife.',
         amenities: ['Hot Tub', 'Restaurant', 'Ski Valet', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Park+City%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHyatt%2520Centric%2520Park%2520City&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.6455,
         lng: -111.4980
       },
@@ -721,7 +721,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Full-service ski-in/ski-out resort at the Canyons Village base area with spacious suites, a luxury spa, and multiple dining options.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Park+City%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DWestgate%2520Park%2520City%2520Resort%2520%2526%2520Spa&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.6840,
         lng: -111.5560
       },
@@ -734,7 +734,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Affordable hotel with a convenient free shuttle to both Park City Mountain and Deer Valley, plus an outdoor pool and hot tub.',
         amenities: ['Pool', 'Hot Tub', 'Free Parking', 'Shuttle', 'Restaurant'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Park+City%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DPark%2520City%2520Peaks%2520Hotel&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.6490,
         lng: -111.5010
       }
@@ -783,7 +783,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'The pinnacle of luxury in Deer Valley with ski-in/ski-out access, a world-class spa, heated outdoor pool, and butler service.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Butler Service'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Deer+Valley%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSt.%2520Regis%2520Deer%2520Valley&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.6360,
         lng: -111.4780
       },
@@ -796,7 +796,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Iconic Norwegian-inspired luxury lodge mid-mountain at Silver Lake Village with legendary service, fine dining, and ski-in/ski-out access.',
         amenities: ['Spa', 'Restaurant', 'Pool', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Deer+Valley%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DStein%2520Eriksen%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.6250,
         lng: -111.4820
       },
@@ -809,7 +809,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Austrian-inspired boutique inn at Silver Lake Village with charming rooms, an acclaimed restaurant, and direct slope access.',
         amenities: ['Restaurant', 'Hot Tub', 'Ski Valet', 'Spa'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Deer+Valley%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DGoldener%2520Hirsch%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.6255,
         lng: -111.4815
       }
@@ -858,7 +858,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Snowbird\'s signature 11-story lodge at the base of the mountain with a rooftop pool, full-service spa, and direct tram access.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Snowbird%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Cliff%2520Lodge%2520%2526%2520Spa&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.5810,
         lng: -111.6560
       },
@@ -871,7 +871,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Condo-style lodge with full kitchens and ski-in/ski-out access, perfect for families and longer stays at Snowbird.',
         amenities: ['Hot Tub', 'Kitchen', 'Ski Storage', 'Pool'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Snowbird%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Lodge%2520at%2520Snowbird&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.5825,
         lng: -111.6545
       },
@@ -884,7 +884,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'All-suite lodge connected to the Cliff Lodge via skybridge with spacious accommodations and direct mountain access.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Snowbird%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DIron%2520Blosam%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.5815,
         lng: -111.6555
       }
@@ -933,7 +933,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Classic ski lodge operating since 1940 with a warm, communal atmosphere, included meals, and direct slope access.',
         amenities: ['Restaurant', 'Hot Tub', 'Spa', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Alta%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DAlta%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.5890,
         lng: -111.6380
       },
@@ -946,7 +946,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Boutique luxury lodge rebuilt in 2019 with modern amenities, a rooftop hot tub, spa, and ski-in/ski-out access.',
         amenities: ['Spa', 'Hot Tub', 'Restaurant', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Alta%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSnowpine%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.5880,
         lng: -111.6370
       },
@@ -959,7 +959,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Full-service lodge steps from the Wildcat chairlift with an outdoor heated pool, fine dining, and the quintessential Alta experience.',
         amenities: ['Pool', 'Restaurant', 'Hot Tub', 'Spa', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Alta%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DRustler%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.5888,
         lng: -111.6395
       }
@@ -1008,7 +1008,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Simple, affordable lodge at the base of Brighton with basic but comfortable rooms and direct slope access.',
         amenities: ['Restaurant', 'Ski Storage', 'Hot Tub'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Brighton%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DBrighton%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.5975,
         lng: -111.5830
       },
@@ -1021,7 +1021,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Rustic bed-and-breakfast in Big Cottonwood Canyon known for its excellent restaurant and cozy mountain atmosphere.',
         amenities: ['Restaurant', 'Free Parking', 'Hot Tub'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Brighton%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSilver%2520Fork%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.5900,
         lng: -111.5950
       },
@@ -1034,7 +1034,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Extended-stay hotel at the mouth of Big Cottonwood Canyon with free breakfast, kitchen suites, and easy canyon access.',
         amenities: ['Pool', 'Free Parking', 'Kitchen', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Midvale%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHomewood%2520Suites%2520Midvale&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.6110,
         lng: -111.8750
       }
@@ -1083,7 +1083,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'The resort\'s own rustic-luxury cabins and suites nestled among towering pines with fireplaces, artisan decor, and mountain views.',
         amenities: ['Spa', 'Restaurant', 'Hot Tub', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Sundance%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSundance%2520Mountain%2520Resort&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.3935,
         lng: -111.5885
       },
@@ -1096,7 +1096,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Comfortable and affordable hotel in nearby Provo with free breakfast and a short drive up the canyon to Sundance.',
         amenities: ['Pool', 'Free Parking', 'Restaurant', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Provo%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHampton%2520Inn%2520Provo&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.2338,
         lng: -111.6585
       },
@@ -1109,7 +1109,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Modern all-suite hotel in Provo with spacious rooms, an indoor pool, and convenient access to Sundance via Provo Canyon.',
         amenities: ['Pool', 'Hot Tub', 'Free Parking', 'Kitchen'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Provo%2C+Utah',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DMarriott%2520Springhill%2520Suites%2520Provo&camref=1110lFmx3&creativeref=1011l66481',
         lat: 40.2350,
         lng: -111.6600
       }
@@ -1162,7 +1162,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Modern lodge in the Village at Mammoth with gondola access right outside the door, heated pool, and shopping and dining steps away.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Ski Storage', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Mammoth+Lakes%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Village%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 37.6490,
         lng: -118.9870
       },
@@ -1175,7 +1175,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'The only lodging at the Main Lodge base area with direct slope access, mountain views, and a convenient location for first tracks.',
         amenities: ['Restaurant', 'Hot Tub', 'Ski Storage', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Mammoth+Lakes%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DMammoth%2520Mountain%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 37.6505,
         lng: -119.0375
       },
@@ -1188,7 +1188,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Upscale resort in the Village at Mammoth with spacious suites, a full-service spa, heated pool, and steps from the Village Gondola.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Mammoth+Lakes%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DWestin%2520Monache%2520Resort&camref=1110lFmx3&creativeref=1011l66481',
         lat: 37.6488,
         lng: -118.9865
       }
@@ -1237,7 +1237,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Luxury resort at the base of Palisades Tahoe with a full-service spa, multiple pools, and a championship golf course for summer visits.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Olympic+Valley%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DEverline%2520Resort%2520%2526%2520Spa&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.1960,
         lng: -120.2340
       },
@@ -1250,7 +1250,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Boutique inn at the base of the mountain with stylish rooms, a celebrated restaurant, and a hip, contemporary atmosphere.',
         amenities: ['Restaurant', 'Hot Tub', 'Ski Storage', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Olympic+Valley%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DPlumpJack%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.1975,
         lng: -120.2360
       },
@@ -1263,7 +1263,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Condo-style lodging in the pedestrian village at the base with restaurants, shops, and easy gondola access to the slopes.',
         amenities: ['Hot Tub', 'Pool', 'Kitchen', 'Restaurant', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Olympic+Valley%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DVillage%2520at%2520Palisades%2520Tahoe&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.1972,
         lng: -120.2350
       }
@@ -1312,7 +1312,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Luxury condo resort steps from the Heavenly Gondola with modern mountain decor, full kitchens, and a heated pool.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Fitness Center', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=South+Lake+Tahoe%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DZalanta%2520Resort%2520at%2520the%2520Village&camref=1110lFmx3&creativeref=1011l66481',
         lat: 38.9340,
         lng: -119.9420
       },
@@ -1325,7 +1325,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Casino resort near the base of Heavenly with live entertainment, multiple restaurants, and a free shuttle to the gondola.',
         amenities: ['Restaurant', 'Pool', 'Spa', 'Shuttle', 'Casino'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Stateline%2C+Nevada',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHard%2520Rock%2520Hotel%2520%2526%2520Casino&camref=1110lFmx3&creativeref=1011l66481',
         lat: 38.9565,
         lng: -119.9405
       },
@@ -1338,7 +1338,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Spacious condo-style resort at the Heavenly Village with full kitchens, a large pool, and direct gondola access nearby.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Restaurant', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=South+Lake+Tahoe%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DMarriott%2520Grand%2520Residence%2520Lake%2520Tahoe&camref=1110lFmx3&creativeref=1011l66481',
         lat: 38.9345,
         lng: -119.9415
       },
@@ -1351,7 +1351,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Iconic casino hotel in Stateline with mountain-view rooms, a large pool, and a free shuttle to Heavenly\'s gondola.',
         amenities: ['Pool', 'Restaurant', 'Spa', 'Shuttle', 'Casino'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Stateline%2C+Nevada',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHotel%2520%2526%2520Casino%2520at%2520Harveys&camref=1110lFmx3&creativeref=1011l66481',
         lat: 38.9560,
         lng: -119.9410
       }
@@ -1400,7 +1400,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Ultra-luxury mid-mountain resort with ski-in/ski-out access, a world-class spa, heated outdoor pool, and impeccable service.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Concierge'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Truckee%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DRitz-Carlton%2520Lake%2520Tahoe&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.2740,
         lng: -120.1200
       },
@@ -1413,7 +1413,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Spacious condo-style resort in the Northstar Village with full kitchens, an outdoor pool, and easy access to the gondola.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Fitness Center', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Truckee%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DNorthstar%2520Lodge%2520by%2520Welk%2520Resorts&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.2755,
         lng: -120.1215
       },
@@ -1426,7 +1426,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Comfortable lodge in the Village at Northstar with heated underground parking and walking distance to dining and the gondola.',
         amenities: ['Hot Tub', 'Free Parking', 'Kitchen', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Truckee%2C+California',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DCatamount%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 39.2750,
         lng: -120.1220
       }
@@ -1479,7 +1479,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Slope-side hotel at Mountain Village with ski-in/ski-out access, a heated outdoor pool, and panoramic views of Lone Mountain.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Spa', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Big+Sky%2C+Montana',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Summit%2520Hotel&camref=1110lFmx3&creativeref=1011l66481',
         lat: 45.2850,
         lng: -111.4020
       },
@@ -1492,7 +1492,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Big Sky\'s original lodge with ski-in/ski-out access, a classic mountain atmosphere, and a convenient location in Mountain Village.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Big+Sky%2C+Montana',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHuntley%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 45.2855,
         lng: -111.4010
       },
@@ -1505,7 +1505,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Historic guest ranch with luxury log cabins, a renowned dining room, and cross-country skiing. A shuttle runs to Big Sky Resort.',
         amenities: ['Restaurant', 'Hot Tub', 'Shuttle', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Big+Sky%2C+Montana',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DLone%2520Mountain%2520Ranch&camref=1110lFmx3&creativeref=1011l66481',
         lat: 45.2700,
         lng: -111.3870
       }
@@ -1554,7 +1554,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Ultra-luxury ski-in/ski-out resort at the base of the mountain with a world-class spa, heated outdoor pool, and Teton views from every room.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Concierge'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Teton+Village%2C+Wyoming',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DFour%2520Seasons%2520Resort%2520Jackson%2520Hole&camref=1110lFmx3&creativeref=1011l66481',
         lat: 43.5880,
         lng: -110.8285
       },
@@ -1567,7 +1567,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'LEED-certified luxury hotel at the base of the tram in Teton Village with a rooftop hot tub and sustainably minded design.',
         amenities: ['Hot Tub', 'Spa', 'Restaurant', 'Ski Valet', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Teton+Village%2C+Wyoming',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHotel%2520Terra%2520Jackson%2520Hole&camref=1110lFmx3&creativeref=1011l66481',
         lat: 43.5875,
         lng: -110.8270
       },
@@ -1580,7 +1580,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Located at the base of Snow King Mountain in downtown Jackson with easy access to shops, restaurants, and a free shuttle to Jackson Hole.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Shuttle', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Jackson%2C+Wyoming',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSnow%2520King%2520Resort&camref=1110lFmx3&creativeref=1011l66481',
         lat: 43.4790,
         lng: -110.7630
       },
@@ -1593,7 +1593,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Budget-friendly accommodation right at the base of Jackson Hole Mountain Resort, popular with ski bums and budget-conscious travelers.',
         amenities: ['Ski Storage', 'Kitchen', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Teton+Village%2C+Wyoming',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Hostel&camref=1110lFmx3&creativeref=1011l66481',
         lat: 43.5870,
         lng: -110.8260
       }
@@ -1646,7 +1646,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Luxury ski-in/ski-out resort at the base of Spruce Peak with a full-service spa, performing arts center, and multiple dining venues.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Stowe%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DLodge%2520at%2520Spruce%2520Peak&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.5280,
         lng: -72.7760
       },
@@ -1659,7 +1659,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'The famous Austrian-style lodge built by the von Trapp family of Sound of Music fame, featuring cross-country trails and a bierhall.',
         amenities: ['Restaurant', 'Pool', 'Fitness Center', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Stowe%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DTrapp%2520Family%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.5160,
         lng: -72.7440
       },
@@ -1672,7 +1672,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Full-service resort in Stowe village with an award-winning spa, indoor-outdoor pool, and complimentary shuttle to the slopes.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Stowe%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DStoweflake%2520Mountain%2520Resort%2520%2526%2520Spa&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.4655,
         lng: -72.6890
       }
@@ -1721,7 +1721,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'The signature slope-side hotel at Killington with ski-in/ski-out access to the Snowdon area, a full-service spa, and heated outdoor pool.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Killington%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DKillington%2520Grand%2520Resort%2520Hotel&camref=1110lFmx3&creativeref=1011l66481',
         lat: 43.6055,
         lng: -72.8190
       },
@@ -1734,7 +1734,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Condo-style resort on the Killington Access Road with full kitchens, an indoor pool, and a free shuttle to the slopes.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Shuttle', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Killington%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DMountain%2520Green%2520Resort&camref=1110lFmx3&creativeref=1011l66481',
         lat: 43.6130,
         lng: -72.8050
       },
@@ -1747,7 +1747,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Historic inn at the junction of the Appalachian and Long Trails with an Irish pub, stone fireplace, and cozy mountain atmosphere.',
         amenities: ['Restaurant', 'Free Parking', 'Hot Tub'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Killington%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Inn%2520at%2520Long%2520Trail&camref=1110lFmx3&creativeref=1011l66481',
         lat: 43.6370,
         lng: -72.8320
       }
@@ -1796,7 +1796,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'The premier slope-side hotel at Sunday River with ski-in/ski-out access at South Ridge, a heated outdoor pool, and full-service dining.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Spa', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Newry%2C+Maine',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DGrand%2520Summit%2520Hotel&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.4725,
         lng: -70.8570
       },
@@ -1809,7 +1809,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Full-service slope-side hotel at Jordan Bowl with spacious rooms, an outdoor hot tub, and direct access to Sunday River\'s expert terrain.',
         amenities: ['Hot Tub', 'Restaurant', 'Ski Storage', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Newry%2C+Maine',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DJordan%2520Hotel&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.4710,
         lng: -70.8520
       },
@@ -1822,7 +1822,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Affordable lodge near the South Ridge base area with comfortable rooms, a cozy lounge, and complimentary continental breakfast.',
         amenities: ['Hot Tub', 'Free Parking', 'Restaurant', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Newry%2C+Maine',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSnow%2520Cap%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.4740,
         lng: -70.8590
       }
@@ -1871,7 +1871,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Slope-side luxury condos at Lincoln Peak with ski-in/ski-out access, an outdoor pool, fitness center, and full kitchens.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Fitness Center', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Warren%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DClay%2520Brook%2520Hotel%2520%2526%2520Residences&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.1365,
         lng: -72.9010
       },
@@ -1884,7 +1884,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Classic Vermont inn near the Sugarbush access road with a cozy pub, outdoor pool, and complimentary shuttle to the slopes.',
         amenities: ['Pool', 'Restaurant', 'Hot Tub', 'Shuttle', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Warren%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSugarbush%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.1320,
         lng: -72.8950
       },
@@ -1897,7 +1897,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Relais & Chateaux boutique inn in Warren village with individually designed rooms, a celebrated restaurant, and a charming Vermont atmosphere.',
         amenities: ['Restaurant', 'Spa', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Warren%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DThe%2520Pitcher%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.1170,
         lng: -72.8550
       }
@@ -1946,7 +1946,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Modern slope-side hotel at the base of Jay Peak with direct lift access, an indoor waterpark, and ice rink included in your stay.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Spa', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Jay%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DHotel%2520Jay&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.9270,
         lng: -72.5285
       },
@@ -1959,7 +1959,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Spacious condo-style units at the resort base with full kitchens, washer/dryer, and waterpark access included.',
         amenities: ['Kitchen', 'Pool', 'Hot Tub', 'Ski Storage', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Jay%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DJay%2520Peak%2520Resort%2520Condos&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.9265,
         lng: -72.5280
       },
@@ -1972,7 +1972,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Charming Victorian bed and breakfast in Montgomery Center with gourmet breakfast, cozy rooms, and a welcoming dog-friendly policy.',
         amenities: ['Restaurant', 'Free Parking', 'Hot Tub'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Montgomery+Center%2C+Vermont',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DPhineas%2520Swann%2520Bed%2520%2526%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 44.8865,
         lng: -72.6110
       }
@@ -2025,7 +2025,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Iconic luxury resort at the base of Blackcomb Mountain with ski-in/ski-out access, a world-class spa, and multiple acclaimed restaurants.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Whistler%2C+British+Columbia',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DFairmont%2520Chateau%2520Whistler&camref=1110lFmx3&creativeref=1011l66481',
         lat: 50.1140,
         lng: -122.9500
       },
@@ -2038,7 +2038,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Ultra-luxury resort in the Upper Village with heated outdoor pools, a full-service spa, and a complimentary Rolls-Royce house car.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Concierge'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Whistler%2C+British+Columbia',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DFour%2520Seasons%2520Resort%2520Whistler&camref=1110lFmx3&creativeref=1011l66481',
         lat: 50.1155,
         lng: -122.9520
       },
@@ -2051,7 +2051,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'All-suite hotel in the heart of Whistler Village with kitchenettes, a heated pool, and steps from the Whistler and Blackcomb gondolas.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Fitness Center', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Whistler%2C+British+Columbia',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DPan%2520Pacific%2520Whistler%2520Mountainside&camref=1110lFmx3&creativeref=1011l66481',
         lat: 50.1160,
         lng: -122.9565
       },
@@ -2064,7 +2064,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Well-located hotel in the center of Whistler Village with a range of room types, a rooftop hot tub, and great value for the area.',
         amenities: ['Hot Tub', 'Restaurant', 'Pool', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Whistler%2C+British+Columbia',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DCrystal%2520Lodge%2520%2526%2520Suites&camref=1110lFmx3&creativeref=1011l66481',
         lat: 50.1165,
         lng: -122.9575
       }
@@ -2113,7 +2113,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'The only slope-side accommodation at Sunshine Village, perched at 7,200 feet with direct ski access and hot tubs under the stars.',
         amenities: ['Hot Tub', 'Restaurant', 'Spa', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Banff%2C+Alberta',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSunshine%2520Mountain%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 51.0750,
         lng: -115.7640
       },
@@ -2126,7 +2126,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'The iconic "Castle in the Rockies" — a grand luxury hotel in Banff with a world-class spa, multiple restaurants, and stunning mountain setting.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Banff%2C+Alberta',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DFairmont%2520Banff%2520Springs&camref=1110lFmx3&creativeref=1011l66481',
         lat: 51.1672,
         lng: -115.5560
       },
@@ -2139,7 +2139,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Modern hotel in downtown Banff with rooftop hot tubs, an indoor pool, and a free shuttle to all three SkiBig3 resorts.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Shuttle', 'Spa'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Banff%2C+Alberta',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DMoose%2520Hotel%2520%2526%2520Suites&camref=1110lFmx3&creativeref=1011l66481',
         lat: 51.1770,
         lng: -115.5700
       }
@@ -2188,7 +2188,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'One of the world\'s most photographed hotels, sitting on the shores of Lake Louise with glacier views, a luxury spa, and multiple restaurants.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Lake+Louise%2C+Alberta',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DFairmont%2520Chateau%2520Lake%2520Louise&camref=1110lFmx3&creativeref=1011l66481',
         lat: 51.4167,
         lng: -116.1767
       },
@@ -2201,7 +2201,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Historic log lodge near Lake Louise with a rustic-chic atmosphere, rooftop hot tub, and a celebrated fine-dining restaurant.',
         amenities: ['Restaurant', 'Hot Tub', 'Shuttle', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Lake+Louise%2C+Alberta',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DDeer%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 51.4180,
         lng: -116.1755
       },
@@ -2214,7 +2214,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Comfortable hotel in Lake Louise Village with an indoor pool, hot tub, and a free shuttle to the ski resort.',
         amenities: ['Pool', 'Hot Tub', 'Restaurant', 'Free Parking', 'Shuttle'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Lake+Louise%2C+Alberta',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DLake%2520Louise%2520Inn&camref=1110lFmx3&creativeref=1011l66481',
         lat: 51.4260,
         lng: -116.1780
       }
@@ -2263,7 +2263,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Luxury chateau-style hotel at the base of the mountain with ski-in/ski-out access, an outdoor heated pool, and full-service spa.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Mont+Tremblant%2C+Quebec',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DFairmont%2520Tremblant&camref=1110lFmx3&creativeref=1011l66481',
         lat: 46.2095,
         lng: -74.5855
       },
@@ -2276,7 +2276,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'All-suite hotel in the heart of the pedestrian village with full kitchens, an outdoor pool, and steps from the gondola.',
         amenities: ['Pool', 'Hot Tub', 'Kitchen', 'Ski Storage', 'Restaurant'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Mont+Tremblant%2C+Quebec',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSommet%2520des%2520Neiges&camref=1110lFmx3&creativeref=1011l66481',
         lat: 46.2088,
         lng: -74.5840
       },
@@ -2289,7 +2289,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Upscale resort at the base of the mountain with spacious rooms, a full-service spa, heated outdoor pool, and village access.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Fitness Center'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Mont+Tremblant%2C+Quebec',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DLe%2520Westin%2520Tremblant&camref=1110lFmx3&creativeref=1011l66481',
         lat: 46.2100,
         lng: -74.5860
       }
@@ -2338,7 +2338,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'The premier hotel in Sun Peaks village with ski-in/ski-out access, a heated outdoor pool, hot tubs, and a full-service spa.',
         amenities: ['Spa', 'Pool', 'Restaurant', 'Hot Tub', 'Ski Valet'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Sun+Peaks%2C+British+Columbia',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DSun%2520Peaks%2520Grand%2520Hotel%2520%2526%2520Conference%2520Centre&camref=1110lFmx3&creativeref=1011l66481',
         lat: 50.8840,
         lng: -119.8860
       },
@@ -2351,7 +2351,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: true,
         description: 'Named for the Olympic champion, this comfortable hotel offers ski-in/ski-out access, an outdoor hot tub, and great value in the village.',
         amenities: ['Hot Tub', 'Restaurant', 'Ski Storage', 'Free Parking'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Sun+Peaks%2C+British+Columbia',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DNancy%2520Greene%2527s%2520Cahilty%2520Hotel%2520%2526%2520Suites&camref=1110lFmx3&creativeref=1011l66481',
         lat: 50.8835,
         lng: -119.8850
       },
@@ -2364,7 +2364,7 @@ export const skiDestinations: SkiDestination[] = [
         skiInSkiOut: false,
         description: 'Cozy boutique lodge in the village with a large stone fireplace, complimentary breakfast, and easy access to all three mountains.',
         amenities: ['Hot Tub', 'Restaurant', 'Free Parking', 'Ski Storage'],
-        bookingUrl: 'https://www.expedia.com/Hotel-Search?destination=Sun+Peaks%2C+British+Columbia',
+        bookingUrl: 'https://www.hotels.com/affiliate?landingPage=https%3A%2F%2Fwww.hotels.com%2FHotel-Search%3Fquery%3DFireside%2520Lodge&camref=1110lFmx3&creativeref=1011l66481',
         lat: 50.8830,
         lng: -119.8845
       }

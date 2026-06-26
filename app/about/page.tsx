@@ -143,7 +143,7 @@ export default function AboutPage() {
             <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 not-prose">
               <p className="text-sm text-amber-900 leading-relaxed mb-3">
                 TravelDataLab participates in affiliate programs, including the
-                Expedia affiliate program and other travel and retail affiliate
+                Hotels.com affiliate program and other travel and retail affiliate
                 networks. This means we may earn a commission when you book a
                 hotel, purchase gear, or complete another qualifying action
                 through links on our site.

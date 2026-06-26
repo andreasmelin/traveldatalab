@@ -126,7 +126,7 @@ export default function PrivacyPolicyPage() {
               </li>
               <li>
                 <strong>Affiliate Cookies:</strong> Our affiliate partners
-                (including Expedia) may set cookies when you click on affiliate
+                (including Hotels.com) may set cookies when you click on affiliate
                 links to track referrals and attribute commissions. These
                 cookies are governed by the respective affiliate
                 partner&apos;s privacy policy.
@@ -144,7 +144,7 @@ export default function PrivacyPolicyPage() {
             </h2>
             <p className="leading-relaxed mb-3">
               TravelDataLab participates in affiliate programs, including the
-              Expedia affiliate program. When you click on an affiliate link
+              Hotels.com affiliate program. When you click on an affiliate link
               on our Site and make a purchase or booking, we may earn a
               commission.
             </p>

@@ -74,7 +74,7 @@ export default function TermsOfServicePage() {
             <p className="leading-relaxed mb-3">
               The Site contains affiliate links to third-party websites and
               services, including but not limited to hotel booking platforms
-              (such as Expedia) and retail partners. When you click on an
+              (such as Hotels.com) and retail partners. When you click on an
               affiliate link and make a purchase or booking, TravelDataLab may
               earn a commission at no additional cost to you.
             </p>
