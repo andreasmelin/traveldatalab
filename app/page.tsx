@@ -1,65 +1,189 @@
-import Image from "next/image";
+import Link from 'next/link'
+import { Mountain, MapPin, Snowflake, ArrowRight, BarChart3, Hotel } from 'lucide-react'
+import { skiDestinations } from '@/lib/destinations'
+import { getAllGuides } from '@/lib/guides'
+import DestinationCard from '@/components/DestinationCard'
+import GuideCard from '@/components/GuideCard'
 
 export default function Home() {
+  const featuredDestinations = skiDestinations.filter((d) =>
+    ['vail', 'park-city', 'whistler-blackcomb', 'jackson-hole', 'aspen-snowmass', 'mammoth-mountain'].includes(d.slug)
+  )
+  const guides = getAllGuides().slice(0, 6)
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'TravelDataLab',
+            url: 'https://traveldatalab.com',
+            description: 'Data-driven travel guides for ski resorts, hotels, and gear.',
+            publisher: { '@type': 'Organization', name: 'TravelDataLab' },
+          }),
+        }}
+      />
+
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-slate-800 via-slate-900 to-sky-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-2 mb-4">
+              <Mountain className="w-8 h-8 text-sky-400" />
+              <span className="text-sky-400 font-semibold text-sm uppercase tracking-wider">TravelDataLab</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Find Your Perfect
+              <span className="text-sky-400"> Ski Resort</span>
+            </h1>
+            <p className="text-lg text-slate-300 mb-8 max-w-2xl">
+              Data-driven guides to {skiDestinations.length} ski resorts across the US and Canada.
+              Compare terrain, check weather, find the best hotels, and plan your trip with confidence.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/ski"
+                className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors no-underline"
+              >
+                Explore Ski Resorts
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <Link
+                href="/ski/compare"
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg transition-colors no-underline border border-white/20"
+              >
+                Compare Resorts
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats bar */}
+      <section className="bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <Mountain className="w-5 h-5 text-sky-500" />
+                <span className="text-2xl font-bold text-gray-900">{skiDestinations.length}</span>
+              </div>
+              <span className="text-sm text-gray-500">Ski Resorts</span>
+            </div>
+            <div>
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <MapPin className="w-5 h-5 text-sky-500" />
+                <span className="text-2xl font-bold text-gray-900">5</span>
+              </div>
+              <span className="text-sm text-gray-500">Regions</span>
+            </div>
+            <div>
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <Hotel className="w-5 h-5 text-sky-500" />
+                <span className="text-2xl font-bold text-gray-900">{skiDestinations.reduce((sum, d) => sum + d.hotels.length, 0)}+</span>
+              </div>
+              <span className="text-sm text-gray-500">Hotels Reviewed</span>
+            </div>
+            <div>
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <BarChart3 className="w-5 h-5 text-sky-500" />
+                <span className="text-2xl font-bold text-gray-900">360</span>
+              </div>
+              <span className="text-sm text-gray-500">Weather Reports</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured destinations */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Top Ski Resorts</h2>
+            <p className="text-gray-600">The most popular ski destinations in North America</p>
+          </div>
+          <Link href="/ski" className="hidden sm:flex items-center gap-1 text-sm font-medium text-sky-600 hover:text-sky-700 no-underline">
+            View all <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featuredDestinations.map((d) => (
+            <DestinationCard key={d.slug} destination={d} />
+          ))}
+        </div>
+        <div className="mt-6 text-center sm:hidden">
+          <Link href="/ski" className="text-sm font-medium text-sky-600 no-underline">
+            View all {skiDestinations.length} resorts →
+          </Link>
+        </div>
+      </section>
+
+      {/* Regions */}
+      <section className="bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Explore by Region</h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {[
+              { name: 'Colorado', count: skiDestinations.filter((d) => d.region === 'Colorado').length, emoji: '🏔️' },
+              { name: 'Utah', count: skiDestinations.filter((d) => d.region === 'Utah').length, emoji: '⛷️' },
+              { name: 'California', count: skiDestinations.filter((d) => d.region === 'California').length, emoji: '🌲' },
+              { name: 'Northeast', count: skiDestinations.filter((d) => d.region === 'Northeast').length, emoji: '🌨️' },
+              { name: 'Canada', count: skiDestinations.filter((d) => d.region === 'Canada').length, emoji: '🍁' },
+            ].map((region) => (
+              <Link
+                key={region.name}
+                href={`/ski?region=${region.name}`}
+                className="flex flex-col items-center gap-2 p-6 bg-gray-50 hover:bg-sky-50 border border-gray-100 hover:border-sky-200 rounded-xl transition-all no-underline"
+              >
+                <span className="text-3xl">{region.emoji}</span>
+                <span className="font-semibold text-gray-900">{region.name}</span>
+                <span className="text-sm text-gray-500">{region.count} resorts</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Guides */}
+      {guides.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Latest Guides</h2>
+              <p className="text-gray-600">Tips, gear reviews, and travel advice</p>
+            </div>
+            <Link href="/guides" className="hidden sm:flex items-center gap-1 text-sm font-medium text-sky-600 hover:text-sky-700 no-underline">
+              All guides <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {guides.map((g) => (
+              <GuideCard key={g.metadata.slug} guide={g} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* CTA */}
+      <section className="bg-gradient-to-r from-sky-600 to-sky-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <Snowflake className="w-10 h-10 text-sky-200 mx-auto mb-4" />
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Plan Your Ski Trip?</h2>
+          <p className="text-sky-100 mb-8 max-w-xl mx-auto">
+            Browse all {skiDestinations.length} resorts, compare side by side, and find the perfect hotel for your next mountain adventure.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/ski"
+            className="inline-flex items-center gap-2 bg-white text-sky-700 font-semibold px-8 py-3 rounded-lg hover:bg-sky-50 transition-colors no-underline"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Browse All Resorts
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
-      </main>
-    </div>
-  );
+      </section>
+    </>
+  )
 }
