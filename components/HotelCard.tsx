@@ -40,7 +40,7 @@ export default function HotelCard({ hotel, destinationName }: { hotel: Hotel; de
           rel="noopener noreferrer nofollow"
           className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-medium bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-lg transition-colors no-underline whitespace-nowrap"
         >
-          Book
+          Check on Hotels.com
           <ExternalLink className="w-3.5 h-3.5" />
         </a>
       </div>
