@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Mountain, ChevronRight, Snowflake } from 'lucide-react'
 import { skiDestinations, getDestinationsByRegion } from '@/lib/destinations'
+import { getResortImagePath } from '@/lib/images'
 import DestinationCard from '@/components/DestinationCard'
 
 export const metadata: Metadata = {
@@ -138,7 +139,7 @@ export default async function SkiPage({
         {destinations.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {destinations.map((d) => (
-              <DestinationCard key={d.slug} destination={d} />
+              <DestinationCard key={d.slug} destination={d} resortImage={getResortImagePath(d.slug)} />
             ))}
           </div>
         ) : (

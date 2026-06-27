@@ -48,7 +48,7 @@ export default function Footer() {
 
         <div className="border-t border-slate-700 mt-8 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-gray-500">&copy; {new Date().getFullYear()} TravelDataLab. All rights reserved.</p>
+            <p className="text-sm text-gray-500">&copy; {new Date().getFullYear()} DataLabGroup. All rights reserved.</p>
             <p className="text-xs text-gray-600">
               Affiliate disclosure: We may earn commissions from qualifying purchases through our links.
             </p>

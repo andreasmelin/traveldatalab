@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ChevronRight, BookOpen } from 'lucide-react'
 import { getAllGuides, getGuidesByCategory } from '@/lib/guides'
+import { getCategoryImagePath } from '@/lib/images'
 import GuideCard from '@/components/GuideCard'
 
 export const metadata: Metadata = {
@@ -107,7 +108,7 @@ export default async function GuidesPage({
         {guides.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {guides.map((g) => (
-              <GuideCard key={g.metadata.slug} guide={g} />
+              <GuideCard key={g.metadata.slug} guide={g} categoryImage={getCategoryImagePath(g.metadata.category)} />
             ))}
           </div>
         ) : (

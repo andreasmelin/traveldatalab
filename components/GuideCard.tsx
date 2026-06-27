@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Clock, ArrowRight } from 'lucide-react'
 import { Guide } from '@/lib/types'
 
@@ -10,7 +11,7 @@ const categoryColors: Record<string, string> = {
   Tips: 'bg-rose-100 text-rose-700',
 }
 
-export default function GuideCard({ guide }: { guide: Guide }) {
+export default function GuideCard({ guide, categoryImage }: { guide: Guide; categoryImage?: string | null }) {
   const colorClass = categoryColors[guide.metadata.category] || 'bg-gray-100 text-gray-700'
 
   return (
@@ -18,6 +19,17 @@ export default function GuideCard({ guide }: { guide: Guide }) {
       href={`/guides/${guide.metadata.slug}`}
       className="group block bg-white rounded-xl border border-gray-100 hover:border-sky-200 hover:shadow-md transition-all no-underline overflow-hidden"
     >
+      {categoryImage && (
+        <div className="relative h-32 bg-slate-200">
+          <Image
+            src={categoryImage}
+            alt=""
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
+        </div>
+      )}
       <div className="p-5">
         <div className="flex items-center gap-2 mb-3">
           <span className={`text-xs font-bold uppercase tracking-wide px-2 py-0.5 rounded-full ${colorClass}`}>

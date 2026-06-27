@@ -2388,3 +2388,4 @@ export function getDestinationsByRegion(region: string): SkiDestination[] {
 export function getAllDestinationSlugs(): string[] {
   return skiDestinations.map((d) => d.slug)
 }
+

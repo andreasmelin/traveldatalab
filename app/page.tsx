@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Mountain, MapPin, Snowflake, ArrowRight, BarChart3, Hotel } from 'lucide-react'
 import { skiDestinations } from '@/lib/destinations'
 import { getAllGuides } from '@/lib/guides'
+import { getResortImagePath, getCategoryImagePath } from '@/lib/images'
 import DestinationCard from '@/components/DestinationCard'
 import GuideCard from '@/components/GuideCard'
 
@@ -22,7 +23,11 @@ export default function Home() {
             name: 'TravelDataLab',
             url: 'https://traveldatalab.com',
             description: 'Data-driven travel guides for ski resorts, hotels, and gear.',
-            publisher: { '@type': 'Organization', name: 'TravelDataLab' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'DataLabGroup',
+              url: 'https://traveldatalab.com',
+            },
           }),
         }}
       />
@@ -111,7 +116,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredDestinations.map((d) => (
-            <DestinationCard key={d.slug} destination={d} />
+            <DestinationCard key={d.slug} destination={d} resortImage={getResortImagePath(d.slug)} />
           ))}
         </div>
         <div className="mt-6 text-center sm:hidden">
@@ -161,7 +166,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {guides.map((g) => (
-              <GuideCard key={g.metadata.slug} guide={g} />
+              <GuideCard key={g.metadata.slug} guide={g} categoryImage={getCategoryImagePath(g.metadata.category)} />
             ))}
           </div>
         </section>

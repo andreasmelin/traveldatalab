@@ -14,9 +14,11 @@ import {
   CheckCircle,
 } from 'lucide-react'
 import { getDestinationBySlug, getAllDestinationSlugs } from '@/lib/destinations'
+import { getResortImagePath, getCategoryImagePath } from '@/lib/images'
 import { getWeatherBySlug } from '@/lib/weather'
 import { getComparisonsForDestination } from '@/lib/comparisons'
 import { getGuidesByDestination } from '@/lib/guides'
+import Image from 'next/image'
 import HotelCard from '@/components/HotelCard'
 import GuideCard from '@/components/GuideCard'
 
@@ -78,12 +80,23 @@ export default async function DestinationPage({
     },
   ]
 
+  const resortImage = getResortImagePath(slug)
+
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: `${dest.name}: Where to Stay, Weather & Ski Guide`,
     description: dest.description,
-    publisher: { '@type': 'Organization', name: 'TravelDataLab' },
+    author: {
+      '@type': 'Organization',
+      name: 'DataLabGroup',
+      url: 'https://traveldatalab.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'DataLabGroup',
+      url: 'https://traveldatalab.com',
+    },
     mainEntityOfPage: `https://traveldatalab.com/ski/${dest.slug}`,
   }
 
@@ -167,7 +180,17 @@ export default async function DestinationPage({
       </nav>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-800 via-slate-900 to-sky-900 text-white mt-2">
+      <section className="relative text-white mt-2 overflow-hidden">
+        {resortImage && (
+          <Image
+            src={resortImage}
+            alt={dest.name}
+            fill
+            className="object-cover"
+            priority
+          />
+        )}
+        <div className={`relative ${resortImage ? 'bg-gradient-to-r from-slate-900/90 via-slate-900/75 to-slate-900/60' : 'bg-gradient-to-br from-slate-800 via-slate-900 to-sky-900'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="flex items-center gap-2 mb-3">
             <Mountain className="w-6 h-6 text-sky-400" />
@@ -213,6 +236,7 @@ export default async function DestinationPage({
               <div className="text-sm text-slate-300">Vertical Drop</div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -442,7 +466,7 @@ export default async function DestinationPage({
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {guides.map((g) => (
-                <GuideCard key={g.metadata.slug} guide={g} />
+                <GuideCard key={g.metadata.slug} guide={g} categoryImage={getCategoryImagePath(g.metadata.category)} />
               ))}
             </div>
           </section>

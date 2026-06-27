@@ -1,15 +1,26 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Mountain, Snowflake, ArrowRight } from 'lucide-react'
 import { SkiDestination } from '@/lib/types'
 
-export default function DestinationCard({ destination }: { destination: SkiDestination }) {
+export default function DestinationCard({ destination, resortImage }: { destination: SkiDestination; resortImage?: string | null }) {
+
   return (
     <Link
       href={`/ski/${destination.slug}`}
       className="group block bg-white rounded-xl border border-gray-100 hover:border-sky-200 hover:shadow-md transition-all no-underline overflow-hidden"
     >
-      <div className="bg-gradient-to-br from-slate-700 to-slate-900 px-5 py-4">
-        <div className="flex items-center justify-between">
+      <div className="relative bg-gradient-to-br from-slate-700 to-slate-900 px-5 py-4">
+        {resortImage && (
+          <Image
+            src={resortImage}
+            alt=""
+            fill
+            className="object-cover opacity-40"
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
+        )}
+        <div className="relative flex items-center justify-between">
           <div>
             <h3 className="text-lg font-bold text-white group-hover:text-sky-300 transition-colors">
               {destination.name}

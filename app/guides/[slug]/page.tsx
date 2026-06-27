@@ -9,6 +9,7 @@ import {
   getAllGuideSlugs,
   getRelatedGuides,
 } from '@/lib/guides'
+import { getCategoryImagePath } from '@/lib/images'
 import { Callout } from '@/components/mdx/Callout'
 import { ProductLink } from '@/components/mdx/ProductLink'
 import { KeyTakeaway } from '@/components/mdx/KeyTakeaway'
@@ -170,7 +171,16 @@ export default async function GuidePage({
     description: guide.metadata.description,
     datePublished: guide.metadata.date,
     dateModified: guide.metadata.lastModified || guide.metadata.date,
-    publisher: { '@type': 'Organization', name: 'TravelDataLab' },
+    author: {
+      '@type': 'Organization',
+      name: 'DataLabGroup',
+      url: 'https://traveldatalab.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'DataLabGroup',
+      url: 'https://traveldatalab.com',
+    },
     mainEntityOfPage: `https://traveldatalab.com/guides/${guide.metadata.slug}`,
   }
 
@@ -336,7 +346,7 @@ export default async function GuidePage({
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relatedGuides.map((g) => (
-                <GuideCard key={g.metadata.slug} guide={g} />
+                <GuideCard key={g.metadata.slug} guide={g} categoryImage={getCategoryImagePath(g.metadata.category)} />
               ))}
             </div>
           </section>

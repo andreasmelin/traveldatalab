@@ -3,14 +3,14 @@ import Link from 'next/link'
 import { ChevronRight, Mountain, BarChart3, Hotel, Wrench } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About TravelDataLab',
+  title: 'About DataLabGroup',
   description:
-    'Learn about TravelDataLab, our mission to bring data-driven insights to travel planning, and how we review ski resorts, hotels, and gear.',
+    'Learn about DataLabGroup, the team behind TravelDataLab. Our mission is to bring data-driven insights to travel planning through rigorous research on ski resorts, hotels, and gear.',
   alternates: { canonical: '/about' },
   openGraph: {
-    title: 'About TravelDataLab',
+    title: 'About DataLabGroup',
     description:
-      'Learn about our mission and methodology for data-driven travel guides.',
+      'Meet the DataLabGroup team and learn about our methodology for data-driven travel guides.',
     url: '/about',
   },
 }
@@ -38,7 +38,7 @@ export default function AboutPage() {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          About TravelDataLab
+          About DataLabGroup
         </h1>
 
         <div className="prose prose-gray prose-headings:text-gray-900 prose-a:text-sky-600 max-w-none">
@@ -62,6 +62,33 @@ export default function AboutPage() {
               Canada, providing detailed terrain statistics, monthly weather
               data, hotel reviews, and side-by-side resort comparisons.
             </p>
+          </section>
+
+          {/* Team Identity */}
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">
+              The DataLabGroup Team
+            </h2>
+            <div className="bg-sky-50 border border-sky-100 rounded-lg p-5 not-prose">
+              <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                DataLabGroup is the dedicated team behind TravelDataLab. We are
+                a group of travel researchers, outdoor enthusiasts, and data
+                analysts who share a passion for the mountains and a commitment
+                to honest, evidence-based recommendations.
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                Founded in 2024, our team combines first-hand experience on the
+                slopes with rigorous data collection and analysis. Every resort
+                profile, hotel review, and gear recommendation on TravelDataLab
+                is the product of our collective research -- not paid
+                placements or press releases.
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                We ski the resorts we write about, test the gear we recommend,
+                and stay in the hotels we review. Our goal is to be the most
+                trustworthy source of ski travel information available.
+              </p>
+            </div>
           </section>
 
           {/* Methodology */}
