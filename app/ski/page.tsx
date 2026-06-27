@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Mountain, ChevronRight, Snowflake } from 'lucide-react'
-import { skiDestinations, getDestinationsByRegion } from '@/lib/destinations'
+import { Mountain, ChevronRight, Snowflake, LayoutGrid, Map } from 'lucide-react'
+import { skiDestinations, getDestinationsByRegion, sortDestinations, filterDestinations } from '@/lib/destinations'
 import { getResortImagePath } from '@/lib/images'
 import DestinationCard from '@/components/DestinationCard'
+import ResortMapWrapper from '@/components/ResortMapWrapper'
 
 export const metadata: Metadata = {
   title: 'Ski Resorts in the US & Canada',
@@ -30,16 +31,53 @@ const regions = [
   { label: 'Canada', value: 'Canada' },
 ]
 
+const sortOptions = [
+  { label: 'Default', value: '' },
+  { label: 'A-Z', value: 'name-asc' },
+  { label: 'Z-A', value: 'name-desc' },
+  { label: 'Most Terrain', value: 'acres-desc' },
+  { label: 'Most Snow', value: 'snowfall-desc' },
+  { label: 'Most Vertical', value: 'vertical-desc' },
+]
+
+function buildUrl(
+  current: Record<string, string | undefined>,
+  updates: Record<string, string | undefined>
+) {
+  const params = new URLSearchParams()
+  const merged = { ...current, ...updates }
+  for (const [key, value] of Object.entries(merged)) {
+    if (value) params.set(key, value)
+  }
+  const qs = params.toString()
+  return qs ? `/ski?${qs}` : '/ski'
+}
+
 export default async function SkiPage({
   searchParams,
 }: {
-  searchParams: Promise<{ region?: string }>
+  searchParams: Promise<{
+    region?: string
+    sort?: string
+    terrain?: string
+    skiInOut?: string
+    view?: string
+  }>
 }) {
-  const { region } = await searchParams
+  const { region, sort, terrain, skiInOut, view } = await searchParams
+  const currentParams = { region, sort, terrain, skiInOut, view }
 
-  const destinations = region
+  let destinations = region
     ? getDestinationsByRegion(region)
-    : skiDestinations
+    : [...skiDestinations]
+
+  destinations = filterDestinations(destinations, { terrain, skiInOut })
+
+  if (sort) {
+    destinations = sortDestinations(destinations, sort)
+  }
+
+  const isMapView = view === 'map'
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -106,16 +144,18 @@ export default async function SkiPage({
         </div>
       </section>
 
-      {/* Region Filters + Grid */}
+      {/* Region Filters + Sort + View Toggle + Grid/Map */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        {/* Filter buttons */}
-        <div className="flex flex-wrap gap-2 mb-8">
+        {/* Region filters + view toggle row */}
+        <div className="flex flex-wrap items-center gap-2 mb-4">
           {regions.map((r) => {
             const isActive = (region || '') === r.value
             return (
               <Link
                 key={r.value}
-                href={r.value ? `/ski?region=${r.value}` : '/ski'}
+                href={buildUrl(currentParams, {
+                  region: r.value || undefined,
+                })}
                 className={`px-4 py-2 rounded-full text-sm font-medium no-underline transition-colors ${
                   isActive
                     ? 'bg-sky-600 text-white'
@@ -126,6 +166,107 @@ export default async function SkiPage({
               </Link>
             )
           })}
+
+          {/* View toggle */}
+          <div className="flex items-center gap-1 ml-auto">
+            <Link
+              href={buildUrl(currentParams, { view: undefined })}
+              className={`p-2 rounded-lg no-underline transition-colors ${
+                !isMapView
+                  ? 'bg-sky-600 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+              aria-label="Grid view"
+            >
+              <LayoutGrid className="w-4 h-4" />
+            </Link>
+            <Link
+              href={buildUrl(currentParams, { view: 'map' })}
+              className={`p-2 rounded-lg no-underline transition-colors ${
+                isMapView
+                  ? 'bg-sky-600 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+              aria-label="Map view"
+            >
+              <Map className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+
+        {/* Sort + Filter row */}
+        <div className="flex flex-wrap items-center gap-2 mb-6">
+          {/* Sort dropdown as links */}
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-500">Sort:</span>
+            <div className="flex flex-wrap gap-1">
+              {sortOptions.map((s) => {
+                const isActive = (sort || '') === s.value
+                return (
+                  <Link
+                    key={s.value}
+                    href={buildUrl(currentParams, {
+                      sort: s.value || undefined,
+                    })}
+                    className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
+                      isActive
+                        ? 'bg-slate-800 text-white'
+                        : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+                    }`}
+                  >
+                    {s.label}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+
+          <div className="w-px h-5 bg-gray-200 mx-1 hidden sm:block" />
+
+          {/* Terrain filter */}
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-500">Terrain:</span>
+            <Link
+              href={buildUrl(currentParams, {
+                terrain: terrain === 'beginner' ? undefined : 'beginner',
+              })}
+              className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
+                terrain === 'beginner'
+                  ? 'bg-green-600 text-white'
+                  : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              Beginner-Friendly
+            </Link>
+            <Link
+              href={buildUrl(currentParams, {
+                terrain: terrain === 'advanced' ? undefined : 'advanced',
+              })}
+              className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
+                terrain === 'advanced'
+                  ? 'bg-gray-900 text-white'
+                  : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              Advanced
+            </Link>
+          </div>
+
+          <div className="w-px h-5 bg-gray-200 mx-1 hidden sm:block" />
+
+          {/* Ski-in/out filter */}
+          <Link
+            href={buildUrl(currentParams, {
+              skiInOut: skiInOut === 'true' ? undefined : 'true',
+            })}
+            className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
+              skiInOut === 'true'
+                ? 'bg-sky-600 text-white'
+                : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+            }`}
+          >
+            Ski-In/Ski-Out
+          </Link>
         </div>
 
         {/* Results info */}
@@ -135,8 +276,10 @@ export default async function SkiPage({
           {region ? ` in ${region}` : ''}
         </p>
 
-        {/* Grid */}
-        {destinations.length > 0 ? (
+        {/* Grid or Map */}
+        {isMapView ? (
+          <ResortMapWrapper destinations={destinations} />
+        ) : destinations.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {destinations.map((d) => (
               <DestinationCard key={d.slug} destination={d} resortImage={getResortImagePath(d.slug)} />
@@ -145,7 +288,7 @@ export default async function SkiPage({
         ) : (
           <div className="text-center py-16 text-gray-500">
             <Mountain className="w-12 h-12 mx-auto mb-4 opacity-30" />
-            <p>No resorts found for this region.</p>
+            <p>No resorts found matching your filters.</p>
             <Link
               href="/ski"
               className="text-sky-600 hover:text-sky-700 no-underline mt-2 inline-block"

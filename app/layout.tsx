@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from '@vercel/analytics/next'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import AnalyticsEvents from "@/components/AnalyticsEvents"
 import { organization } from "@/lib/organization"
 import "./globals.css"
 
@@ -76,6 +78,10 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        )}
+        <AnalyticsEvents />
       </body>
     </html>
   )

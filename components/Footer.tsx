@@ -32,6 +32,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/guides" className="text-gray-400 hover:text-white no-underline transition-colors">Travel Guides</Link></li>
               <li><Link href="/gear/ski" className="text-gray-400 hover:text-white no-underline transition-colors">Ski Gear</Link></li>
+              <li><Link href="/guides/best-ski-goggles-2026" className="text-gray-400 hover:text-white no-underline transition-colors">Gear Guides</Link></li>
               <li><Link href="/ski/compare" className="text-gray-400 hover:text-white no-underline transition-colors">Compare Resorts</Link></li>
             </ul>
           </div>

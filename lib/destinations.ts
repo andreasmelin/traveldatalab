@@ -2389,3 +2389,50 @@ export function getAllDestinationSlugs(): string[] {
   return skiDestinations.map((d) => d.slug)
 }
 
+export function parseSnowfall(snowfall: string): number {
+  const match = snowfall.match(/(\d+)/)
+  return match ? parseInt(match[1], 10) : 0
+}
+
+export function sortDestinations(
+  destinations: SkiDestination[],
+  sort: string
+): SkiDestination[] {
+  const sorted = [...destinations]
+  switch (sort) {
+    case 'name-asc':
+      return sorted.sort((a, b) => a.name.localeCompare(b.name))
+    case 'name-desc':
+      return sorted.sort((a, b) => b.name.localeCompare(a.name))
+    case 'acres-desc':
+      return sorted.sort((a, b) => b.skiableAcres - a.skiableAcres)
+    case 'snowfall-desc':
+      return sorted.sort(
+        (a, b) => parseSnowfall(b.snowfall) - parseSnowfall(a.snowfall)
+      )
+    case 'vertical-desc':
+      return sorted.sort((a, b) => b.verticalDrop - a.verticalDrop)
+    default:
+      return sorted
+  }
+}
+
+export function filterDestinations(
+  destinations: SkiDestination[],
+  filters: { terrain?: string; skiInOut?: string }
+): SkiDestination[] {
+  let result = destinations
+
+  if (filters.terrain === 'beginner') {
+    result = result.filter((d) => d.terrain.beginner >= 25)
+  } else if (filters.terrain === 'advanced') {
+    result = result.filter((d) => d.terrain.advanced >= 40)
+  }
+
+  if (filters.skiInOut === 'true') {
+    result = result.filter((d) => d.hotels.some((h) => h.skiInSkiOut))
+  }
+
+  return result
+}
+

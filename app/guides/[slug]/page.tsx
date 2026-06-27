@@ -9,11 +9,15 @@ import {
   getAllGuideSlugs,
   getRelatedGuides,
 } from '@/lib/guides'
-import { getCategoryImagePath } from '@/lib/images'
+import { getDestinationBySlug, getDestinationsByRegion } from '@/lib/destinations'
+import { getCategoryImagePath, getResortImagePath } from '@/lib/images'
+import { extractTableOfContents, slugify } from '@/lib/toc'
 import { Callout } from '@/components/mdx/Callout'
 import { ProductLink } from '@/components/mdx/ProductLink'
 import { KeyTakeaway } from '@/components/mdx/KeyTakeaway'
+import TableOfContents from '@/components/TableOfContents'
 import GuideCard from '@/components/GuideCard'
+import DestinationCard from '@/components/DestinationCard'
 
 export async function generateStaticParams() {
   return getAllGuideSlugs().map((slug) => ({ slug }))
@@ -43,10 +47,23 @@ export async function generateMetadata({
   }
 }
 
+function createHeading(level: 2 | 3) {
+  const HeadingComponent = ({ children }: { children?: React.ReactNode }) => {
+    const text = typeof children === 'string' ? children : String(children ?? '')
+    const id = slugify(text)
+    const Tag = level === 2 ? 'h2' : 'h3'
+    return <Tag id={id}>{children}</Tag>
+  }
+  HeadingComponent.displayName = `Heading${level}`
+  return HeadingComponent
+}
+
 const mdxComponents = {
   Callout,
   ProductLink,
   KeyTakeaway,
+  h2: createHeading(2),
+  h3: createHeading(3),
 }
 
 interface ExtractedProduct {
@@ -143,9 +160,20 @@ export default async function GuidePage({
   if (!guide) notFound()
 
   const relatedGuides = getRelatedGuides(guide)
+  const tocItems = extractTableOfContents(guide.content)
   const faqs = extractFAQs(guide.content)
   const isGearGuide = GEAR_CATEGORIES.includes(guide.metadata.category)
   const products = isGearGuide ? extractProducts(guide.content) : []
+
+  // Related resorts for destination guides
+  const relatedResorts = (() => {
+    if (!guide.metadata.destination) return []
+    const dest = getDestinationBySlug(guide.metadata.destination)
+    if (!dest) return []
+    return getDestinationsByRegion(dest.region)
+      .filter((d) => d.slug !== dest.slug)
+      .slice(0, 3)
+  })()
 
   const formattedDate = new Date(guide.metadata.date).toLocaleDateString(
     'en-US',
@@ -293,9 +321,9 @@ export default async function GuidePage({
         </ol>
       </nav>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Article header */}
-        <header className="mb-8">
+        <header className="mb-8 max-w-4xl">
           <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className="text-xs font-bold uppercase tracking-wide px-2.5 py-0.5 rounded-full bg-sky-100 text-sky-700">
               {guide.metadata.category}
@@ -329,24 +357,55 @@ export default async function GuidePage({
           </div>
         </header>
 
-        {/* MDX Content */}
-        <div className="prose prose-gray prose-headings:text-gray-900 prose-a:text-sky-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg max-w-none">
-          <MDXRemote
-            source={guide.content}
-            components={mdxComponents}
-            options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
-          />
+        {/* Mobile TOC */}
+        {tocItems.length > 0 && (
+          <div className="lg:hidden max-w-4xl">
+            <TableOfContents items={tocItems} />
+          </div>
+        )}
+
+        {/* Content + Desktop TOC sidebar */}
+        <div className="flex gap-10">
+          {/* MDX Content */}
+          <div className="prose prose-gray prose-headings:text-gray-900 prose-a:text-sky-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg max-w-4xl min-w-0 flex-1">
+            <MDXRemote
+              source={guide.content}
+              components={mdxComponents}
+              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+            />
+          </div>
+
+          {/* Desktop TOC */}
+          {tocItems.length > 0 && (
+            <div className="hidden lg:block">
+              <TableOfContents items={tocItems} />
+            </div>
+          )}
         </div>
 
         {/* Related Guides */}
         {relatedGuides.length > 0 && (
-          <section className="mt-12 pt-8 border-t border-gray-100">
+          <section className="mt-12 pt-8 border-t border-gray-100 max-w-4xl">
             <h2 className="text-xl font-bold text-gray-900 mb-6">
               Related Guides
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {relatedGuides.map((g) => (
                 <GuideCard key={g.metadata.slug} guide={g} categoryImage={getCategoryImagePath(g.metadata.category)} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Related Resorts (for destination guides) */}
+        {relatedResorts.length > 0 && (
+          <section className="mt-12 pt-8 border-t border-gray-100 max-w-4xl">
+            <h2 className="text-xl font-bold text-gray-900 mb-6">
+              Explore More Resorts
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedResorts.map((d) => (
+                <DestinationCard key={d.slug} destination={d} resortImage={getResortImagePath(d.slug)} />
               ))}
             </div>
           </section>

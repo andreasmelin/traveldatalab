@@ -17,7 +17,7 @@ import { getDestinationBySlug, getAllDestinationSlugs } from '@/lib/destinations
 import { getResortImagePath, getCategoryImagePath } from '@/lib/images'
 import { getWeatherBySlug } from '@/lib/weather'
 import { getComparisonsForDestination } from '@/lib/comparisons'
-import { getGuidesByDestination } from '@/lib/guides'
+import { getGuidesByDestination, getGuidesByCategory } from '@/lib/guides'
 import Image from 'next/image'
 import HotelCard from '@/components/HotelCard'
 import GuideCard from '@/components/GuideCard'
@@ -59,6 +59,7 @@ export default async function DestinationPage({
   const weather = getWeatherBySlug(slug)
   const comparisons = getComparisonsForDestination(slug)
   const guides = getGuidesByDestination(slug)
+  const gearGuides = getGuidesByCategory('Gear').slice(0, 3)
   const topHotels = dest.hotels.slice(0, 3)
 
   const bestMonthsWeather = weather
@@ -466,6 +467,20 @@ export default async function DestinationPage({
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {guides.map((g) => (
+                <GuideCard key={g.metadata.slug} guide={g} categoryImage={getCategoryImagePath(g.metadata.category)} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Gear Guides */}
+        {gearGuides.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">
+              Gear Guides
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {gearGuides.map((g) => (
                 <GuideCard key={g.metadata.slug} guide={g} categoryImage={getCategoryImagePath(g.metadata.category)} />
               ))}
             </div>

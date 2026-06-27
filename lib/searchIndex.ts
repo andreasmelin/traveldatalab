@@ -47,6 +47,14 @@ const guideEntries: { slug: string; title: string; description: string; category
   { slug: 'best-ski-helmets-2026', title: 'Best Ski Helmets 2026: Top Picks for Every Budget', description: 'Expert-reviewed ski helmets for 2026. Compare MIPS protection, ventilation, fit systems, and goggle compatibility.', category: 'Gear' },
   { slug: 'best-ski-jackets-2026', title: 'Best Ski Jackets 2026: Top Picks for Every Budget', description: 'Expert-tested ski jacket reviews for 2026. Compare Gore-Tex waterproofing, insulation types, breathability, and features.', category: 'Gear' },
   { slug: 'ski-trip-packing-list-2026', title: 'Complete Ski Trip Packing List 2026: Everything You Need', description: 'The definitive ski trip packing list for 2026. Expert-organized guide covering essential gear, clothing layers, accessories, and travel tips.', category: 'Gear' },
+  // Budget guides
+  { slug: 'cheapest-ski-trips-colorado-2026', title: 'Cheapest Ski Trips in Colorado 2026: Budget-Friendly Mountain Getaways', description: 'Score affordable ski trips in Colorado without sacrificing quality. Lift ticket deals, budget lodging, cheap eats, and multi-resort pass strategies.', category: 'Budget' },
+  { slug: 'ski-trip-budget-planner-2026', title: 'Ski Trip Budget Planner 2026: How to Budget for Your Next Ski Vacation', description: 'A complete cost breakdown for planning a ski trip in 2026. Learn how to budget for lift tickets, lodging, gear rental, food, and travel.', category: 'Budget' },
+  { slug: 'best-value-ski-resorts-2026', title: 'Best Value Ski Resorts in North America 2026: More Mountain for Your Money', description: 'Find the best value ski resorts in the US and Canada for 2026. Compare cost-per-acre, affordable lodging, and budget-friendly amenities.', category: 'Budget' },
+  // Travel guides
+  { slug: 'flying-with-ski-gear-2026', title: 'Flying with Ski Gear 2026: Airline Policies, Packing Tips & Shipping Alternatives', description: 'Everything you need to know about flying with ski equipment in 2026. Airline bag fees, TSA rules, packing tips, and shipping alternatives.', category: 'Travel' },
+  { slug: 'best-ski-road-trips-2026', title: 'Best Ski Road Trips in the US 2026: 5 Epic Routes for Every Skier', description: 'Discover the 5 best ski road trip routes across the US in 2026. Multi-resort itineraries through Colorado, Utah, Tahoe, Vermont, and Montana/Wyoming.', category: 'Travel' },
+  { slug: 'first-ski-trip-guide-2026', title: 'Planning Your First Ski Trip 2026: A Complete Beginner\'s Guide', description: 'Everything first-time skiers need to know for planning a ski trip in 2026. When to go, what to rent vs buy, choosing a resort, and booking lessons.', category: 'Travel' },
 ]
 
 export function getSearchIndex(): SearchItem[] {
