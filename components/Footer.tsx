@@ -30,9 +30,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-3">Resources</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/guides" className="text-gray-400 hover:text-white no-underline transition-colors">Travel Guides</Link></li>
+              <li><Link href="/guides" className="text-gray-400 hover:text-white no-underline transition-colors">All Guides</Link></li>
+              <li><Link href="/guides?category=Budget" className="text-gray-400 hover:text-white no-underline transition-colors">Budget Guides</Link></li>
+              <li><Link href="/guides?category=Travel" className="text-gray-400 hover:text-white no-underline transition-colors">Travel Guides</Link></li>
               <li><Link href="/gear/ski" className="text-gray-400 hover:text-white no-underline transition-colors">Ski Gear</Link></li>
-              <li><Link href="/guides/best-ski-goggles-2026" className="text-gray-400 hover:text-white no-underline transition-colors">Gear Guides</Link></li>
               <li><Link href="/ski/compare" className="text-gray-400 hover:text-white no-underline transition-colors">Compare Resorts</Link></li>
             </ul>
           </div>

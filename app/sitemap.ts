@@ -2,8 +2,9 @@ import type { MetadataRoute } from 'next'
 import { getAllDestinationSlugs } from '@/lib/destinations'
 import { getAllGuideSlugs } from '@/lib/guides'
 import { getAllComparisonSlugs } from '@/lib/comparisons'
+import { organization } from '@/lib/organization'
 
-const BASE_URL = 'https://traveldatalab.com'
+const BASE_URL = organization.url
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const destinationSlugs = getAllDestinationSlugs()

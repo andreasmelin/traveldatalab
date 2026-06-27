@@ -14,7 +14,7 @@ export default function DestinationCard({ destination, resortImage }: { destinat
         {resortImage && (
           <Image
             src={resortImage}
-            alt=""
+            alt={`${destination.name} ski resort`}
             fill
             className="object-cover opacity-40"
             sizes="(max-width: 768px) 100vw, 33vw"

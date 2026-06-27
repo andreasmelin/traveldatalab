@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { organization } from '@/lib/organization'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://traveldatalab.com/sitemap.xml',
+    sitemap: `${organization.url}/sitemap.xml`,
   }
 }

@@ -23,7 +23,7 @@ export default function GuideCard({ guide, categoryImage }: { guide: Guide; cate
         <div className="relative h-32 bg-slate-200">
           <Image
             src={categoryImage}
-            alt=""
+            alt={`${guide.metadata.category} guide`}
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 33vw"

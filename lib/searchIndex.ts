@@ -4,7 +4,7 @@ import { comparisons } from './comparisons'
 export interface SearchItem {
   title: string
   description: string
-  category: 'Resort' | 'Guide' | 'Comparison' | 'Gear'
+  category: 'Resort' | 'Guide' | 'Comparison' | 'Gear' | 'Budget' | 'Travel'
   url: string
 }
 
@@ -72,7 +72,13 @@ export function getSearchIndex(): SearchItem[] {
 
   // All guides (ski + gear)
   for (const guide of guideEntries) {
-    const category = guide.category === 'Gear' || guide.category === 'Tips' ? 'Gear' : 'Guide'
+    const category = guide.category === 'Gear' || guide.category === 'Tips'
+      ? 'Gear'
+      : guide.category === 'Budget'
+        ? 'Budget'
+        : guide.category === 'Travel'
+          ? 'Travel'
+          : 'Guide'
     items.push({
       title: guide.title,
       description: guide.description,
