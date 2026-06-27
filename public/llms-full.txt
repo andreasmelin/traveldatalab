@@ -1,0 +1,975 @@
+# TravelDataLab - Full Site Documentation
+
+> Comprehensive data on 30 ski resorts across the US and Canada, with hotel recommendations, gear guides, and resort comparisons.
+
+## How to Use This File
+This file contains structured data about all content on TravelDataLab.com. AI assistants can use this to provide accurate, detailed answers about ski resorts, hotels, gear, and travel planning. All statistics, hotel details, and comparisons are sourced directly from the site's data files.
+
+---
+
+## Ski Resorts
+
+### Vail Ski Resort
+- Location: Colorado, US
+- Skiable Acres: 5,317
+- Vertical Drop: 3,450ft
+- Trails: 195
+- Lifts: 31
+- Longest Run: 4 miles
+- Annual Snowfall: 354 inches
+- Terrain: 18% beginner, 29% intermediate, 53% advanced
+- Season: November - April
+- Nearest Airport: Eagle County Regional Airport (EGE) (35 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - The Sebastian - Vail ($$$$, $450-800/night) - Luxury boutique hotel in the heart of Vail Village with a rooftop pool and mountain views. 0.1 miles to slopes.
+  - Four Seasons Resort Vail ($$$$, $600-1200/night) - Ultra-luxury ski-in/ski-out resort with world-class dining, full-service spa. Ski-in/Ski-out.
+  - Lodge at Vail ($$$, $300-600/night) - Iconic property right at the base of the mountain. Ski-in/Ski-out.
+  - Marriott Streamside at Vail ($$, $200-400/night) - Family-friendly condo-style resort along Gore Creek. 0.5 miles to slopes.
+- Guide: /guides/vail
+- Data Page: /ski/vail
+
+### Breckenridge
+- Location: Colorado, US
+- Skiable Acres: 2,908
+- Vertical Drop: 3,398ft
+- Trails: 187
+- Lifts: 35
+- Longest Run: 3.5 miles
+- Annual Snowfall: 353 inches
+- Terrain: 14% beginner, 31% intermediate, 55% advanced
+- Season: November - April
+- Nearest Airport: Denver International Airport (DEN) (1 hour 45 minutes)
+- Best Months: December, January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - One Ski Hill Place ($$$$, $400-800/night) - Luxury ski-in/ski-out condos at the base of Peak 8. Ski-in/Ski-out.
+  - Gravity Haus Breckenridge ($$$, $250-500/night) - Modern adventure-lifestyle hotel near the base of Peak 9. 0.2 miles to slopes.
+  - DoubleTree by Hilton Breckenridge ($$, $180-350/night) - Comfortable hotel within walking distance of Main Street. 0.5 miles to slopes.
+  - Beaver Run Resort ($$, $150-300/night) - Large family-friendly resort with ski-in/ski-out access from Peak 9. Ski-in/Ski-out.
+- Guide: /guides/breckenridge
+- Data Page: /ski/breckenridge
+
+### Aspen Snowmass
+- Location: Colorado, US
+- Skiable Acres: 5,527
+- Vertical Drop: 4,406ft
+- Trails: 362
+- Lifts: 43
+- Longest Run: 5.3 miles
+- Annual Snowfall: 300 inches
+- Terrain: 21% beginner, 30% intermediate, 49% advanced
+- Season: November - April
+- Nearest Airport: Aspen/Pitkin County Airport (ASE) (10 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - The Little Nell ($$$$, $700-1500/night) - Aspen's only five-star, five-diamond ski-in/ski-out hotel. Ski-in/Ski-out.
+  - The St. Regis Aspen Resort ($$$$, $500-1100/night) - Elegant luxury resort steps from the Silver Queen Gondola. 0.2 miles to slopes.
+  - Limelight Hotel Aspen ($$$, $350-600/night) - Contemporary hotel in the heart of Aspen with complimentary breakfast. 0.1 miles to slopes.
+  - Viceroy Snowmass ($$$$, $400-900/night) - Sleek, modern ski-in/ski-out resort at the base of Snowmass Mountain. Ski-in/Ski-out.
+- Guide: /guides/aspen-snowmass
+- Data Page: /ski/aspen-snowmass
+
+### Steamboat Springs
+- Location: Colorado, US
+- Skiable Acres: 2,965
+- Vertical Drop: 3,668ft
+- Trails: 169
+- Lifts: 18
+- Longest Run: 3 miles
+- Annual Snowfall: 349 inches
+- Terrain: 14% beginner, 42% intermediate, 44% advanced
+- Season: November - April
+- Nearest Airport: Yampa Valley Regional Airport (HDN) (30 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: Yes
+- Hotels:
+  - Steamboat Grand Resort Hotel ($$$, $250-500/night) - Full-service resort hotel at the base with direct slope access. Ski-in/Ski-out.
+  - The Lodge at Steamboat ($$, $150-300/night) - Affordable lodge on the mountain with panoramic valley views. 0.3 miles to slopes.
+  - Trailhead Lodge ($$$, $300-550/night) - Luxury condominiums with ski-in/ski-out access and full kitchens. Ski-in/Ski-out.
+- Guide: /guides/steamboat
+- Data Page: /ski/steamboat
+
+### Telluride
+- Location: Colorado, US
+- Skiable Acres: 2,000
+- Vertical Drop: 4,425ft
+- Trails: 148
+- Lifts: 18
+- Longest Run: 4.6 miles
+- Annual Snowfall: 309 inches
+- Terrain: 23% beginner, 36% intermediate, 41% advanced
+- Season: November - April
+- Nearest Airport: Montrose Regional Airport (MTJ) (1 hour 15 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: No
+- Night Skiing: No
+- Hotels:
+  - Madeline Hotel & Residences ($$$$, $450-900/night) - Auberge Resorts Collection property in Mountain Village. Ski-in/Ski-out.
+  - Hotel Telluride ($$$, $250-500/night) - Boutique hotel on the edge of downtown with mountain views. 0.3 miles to slopes.
+  - Lumiere Hotel ($$$$, $500-1000/night) - Intimate luxury hotel in Mountain Village with just 14 rooms. Ski-in/Ski-out.
+- Guide: /guides/telluride
+- Data Page: /ski/telluride
+
+### Keystone
+- Location: Colorado, US
+- Skiable Acres: 3,148
+- Vertical Drop: 3,128ft
+- Trails: 128
+- Lifts: 20
+- Longest Run: 3.5 miles
+- Annual Snowfall: 235 inches
+- Terrain: 12% beginner, 34% intermediate, 54% advanced
+- Season: November - April
+- Nearest Airport: Denver International Airport (DEN) (1 hour 30 minutes)
+- Best Months: December, January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: Yes
+- Hotels:
+  - Keystone Lodge & Spa ($$$, $250-450/night) - Signature lodge with lakeside setting and full-service spa. 0.2 miles to slopes.
+  - Hyatt Place Keystone ($$, $180-350/night) - Modern hotel near River Run Village with free breakfast. 0.3 miles to slopes.
+  - River Run Village Condos ($$, $150-350/night) - Condo-style accommodations with ski-in/ski-out access to the gondola. Ski-in/Ski-out.
+- Guide: /guides/keystone
+- Data Page: /ski/keystone
+
+### Copper Mountain
+- Location: Colorado, US
+- Skiable Acres: 2,490
+- Vertical Drop: 2,738ft
+- Trails: 150
+- Lifts: 24
+- Longest Run: 2.8 miles
+- Annual Snowfall: 305 inches
+- Terrain: 21% beginner, 25% intermediate, 54% advanced
+- Season: November - April
+- Nearest Airport: Denver International Airport (DEN) (1 hour 40 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Copper Mountain Resort Condos ($$, $150-350/night) - Slope-side condominiums with direct ski access and full kitchens. Ski-in/Ski-out.
+  - Element 29 by Hilton ($$$, $250-450/night) - Modern hotel in Center Village with rooftop hot tub. 0.1 miles to slopes.
+  - Tucker Mountain Lodge ($$, $130-280/night) - Budget-friendly lodge near the slopes. 0.2 miles to slopes.
+- Guide: /guides/copper-mountain
+- Data Page: /ski/copper-mountain
+
+### Winter Park
+- Location: Colorado, US
+- Skiable Acres: 3,081
+- Vertical Drop: 3,060ft
+- Trails: 166
+- Lifts: 25
+- Longest Run: 4.9 miles
+- Annual Snowfall: 325 inches
+- Terrain: 8% beginner, 18% intermediate, 74% advanced
+- Season: November - April
+- Nearest Airport: Denver International Airport (DEN) (1 hour 30 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Zephyr Mountain Lodge ($$$, $250-500/night) - Ski-in/ski-out lodge at the base with condo-style units. Ski-in/Ski-out.
+  - Iron Horse Resort ($$, $150-350/night) - Comfortable condo resort near the Village with indoor pool. 0.3 miles to slopes.
+  - Wild Horse Inn ($$, $120-250/night) - Cozy bed-and-breakfast in the Fraser Valley. 2 miles to slopes.
+- Guide: /guides/winter-park
+- Data Page: /ski/winter-park
+
+### Park City Mountain
+- Location: Utah, US
+- Skiable Acres: 7,300
+- Vertical Drop: 3,226ft
+- Trails: 341
+- Lifts: 41
+- Longest Run: 3.5 miles
+- Annual Snowfall: 360 inches
+- Terrain: 8% beginner, 42% intermediate, 50% advanced
+- Season: November - April
+- Nearest Airport: Salt Lake City International Airport (SLC) (35 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Montage Deer Valley ($$$$, $600-1200/night) - Ultra-luxury resort perched above Park City with 35,000 sq ft spa. 2 miles to slopes.
+  - Hyatt Centric Park City ($$$, $300-550/night) - Modern boutique hotel on Main Street with rooftop hot tub. 0.5 miles to slopes.
+  - Westgate Park City Resort & Spa ($$$, $250-500/night) - Full-service ski-in/ski-out resort at Canyons Village. Ski-in/Ski-out.
+  - Park City Peaks Hotel ($$, $150-300/night) - Affordable hotel with free shuttle to both Park City Mountain and Deer Valley. 1 mile to slopes.
+- Guide: /guides/park-city
+- Data Page: /ski/park-city
+
+### Deer Valley
+- Location: Utah, US
+- Skiable Acres: 2,026
+- Vertical Drop: 3,000ft
+- Trails: 103
+- Lifts: 21
+- Longest Run: 2.8 miles
+- Annual Snowfall: 300 inches
+- Terrain: 27% beginner, 41% intermediate, 32% advanced
+- Season: December - April
+- Nearest Airport: Salt Lake City International Airport (SLC) (40 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - St. Regis Deer Valley ($$$$, $700-1500/night) - Pinnacle of luxury with ski-in/ski-out access and butler service. Ski-in/Ski-out.
+  - Stein Eriksen Lodge ($$$$, $500-1200/night) - Iconic Norwegian-inspired luxury lodge mid-mountain at Silver Lake Village. Ski-in/Ski-out.
+  - Goldener Hirsch Inn ($$$, $350-700/night) - Austrian-inspired boutique inn at Silver Lake Village. Ski-in/Ski-out.
+- Guide: /guides/deer-valley
+- Data Page: /ski/deer-valley
+
+### Snowbird
+- Location: Utah, US
+- Skiable Acres: 2,500
+- Vertical Drop: 3,240ft
+- Trails: 140
+- Lifts: 14
+- Longest Run: 3.5 miles
+- Annual Snowfall: 500 inches
+- Terrain: 27% beginner, 38% intermediate, 35% advanced
+- Season: November - May
+- Nearest Airport: Salt Lake City International Airport (SLC) (30 minutes)
+- Best Months: January, February, March, April
+- Beginner Friendly: No
+- Night Skiing: No
+- Hotels:
+  - The Cliff Lodge & Spa ($$$, $250-500/night) - Snowbird's signature 11-story lodge at the base with rooftop pool. Ski-in/Ski-out.
+  - The Lodge at Snowbird ($$, $180-350/night) - Condo-style lodge with full kitchens and ski-in/ski-out access. Ski-in/Ski-out.
+  - Iron Blosam Lodge ($$, $150-300/night) - All-suite lodge connected to Cliff Lodge via skybridge. Ski-in/Ski-out.
+- Guide: /guides/snowbird
+- Data Page: /ski/snowbird
+
+### Alta
+- Location: Utah, US
+- Skiable Acres: 2,614
+- Vertical Drop: 2,538ft
+- Trails: 119
+- Lifts: 10
+- Longest Run: 3.5 miles
+- Annual Snowfall: 547 inches
+- Terrain: 25% beginner, 40% intermediate, 35% advanced
+- Season: November - April
+- Nearest Airport: Salt Lake City International Airport (SLC) (35 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: No
+- Night Skiing: No
+- Hotels:
+  - Alta Lodge ($$$, $300-600/night) - Classic ski lodge operating since 1940 with included meals. Ski-in/Ski-out.
+  - Snowpine Lodge ($$$$, $400-800/night) - Boutique luxury lodge rebuilt in 2019 with modern amenities. Ski-in/Ski-out.
+  - Rustler Lodge ($$$, $350-650/night) - Full-service lodge steps from Wildcat chairlift with outdoor heated pool. Ski-in/Ski-out.
+- Guide: /guides/alta
+- Data Page: /ski/alta
+
+### Brighton
+- Location: Utah, US
+- Skiable Acres: 1,050
+- Vertical Drop: 1,745ft
+- Trails: 66
+- Lifts: 7
+- Longest Run: 2 miles
+- Annual Snowfall: 500 inches
+- Terrain: 21% beginner, 40% intermediate, 39% advanced
+- Season: November - April
+- Nearest Airport: Salt Lake City International Airport (SLC) (35 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: Yes
+- Hotels:
+  - Brighton Lodge ($$, $120-250/night) - Simple, affordable lodge at the base with direct slope access. Ski-in/Ski-out.
+  - Silver Fork Lodge ($$, $100-200/night) - Rustic bed-and-breakfast in Big Cottonwood Canyon known for its restaurant. 2 miles to slopes.
+  - Homewood Suites Midvale ($$, $130-250/night) - Extended-stay hotel at the mouth of Big Cottonwood Canyon with free breakfast. 14 miles to slopes.
+- Guide: /guides/brighton
+- Data Page: /ski/brighton
+
+### Sundance Mountain Resort
+- Location: Utah, US
+- Skiable Acres: 450
+- Vertical Drop: 2,150ft
+- Trails: 45
+- Lifts: 5
+- Longest Run: 2.5 miles
+- Annual Snowfall: 320 inches
+- Terrain: 20% beginner, 40% intermediate, 40% advanced
+- Season: December - April
+- Nearest Airport: Salt Lake City International Airport (SLC) (1 hour 15 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: Yes
+- Hotels:
+  - Sundance Mountain Resort ($$$, $300-600/night) - The resort's own rustic-luxury cabins and suites nestled among towering pines. Ski-in/Ski-out.
+  - Hampton Inn Provo ($$, $120-220/night) - Comfortable and affordable hotel in nearby Provo. 14 miles to slopes.
+  - Marriott Springhill Suites Provo ($$, $130-240/night) - Modern all-suite hotel in Provo with indoor pool. 15 miles to slopes.
+- Guide: /guides/sundance
+- Data Page: /ski/sundance
+
+### Mammoth Mountain
+- Location: California, US
+- Skiable Acres: 3,500
+- Vertical Drop: 3,100ft
+- Trails: 150
+- Lifts: 28
+- Longest Run: 3 miles
+- Annual Snowfall: 400 inches
+- Terrain: 25% beginner, 40% intermediate, 35% advanced
+- Season: November - June
+- Nearest Airport: Mammoth Yosemite Airport (MMH) (10 minutes)
+- Best Months: January, February, March, April
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - The Village Lodge ($$$, $250-500/night) - Modern lodge in the Village at Mammoth with gondola access right outside. 0.1 miles to slopes.
+  - Mammoth Mountain Inn ($$, $180-350/night) - The only lodging at the Main Lodge base area with direct slope access. Ski-in/Ski-out.
+  - Westin Monache Resort ($$$, $300-550/night) - Upscale resort in the Village at Mammoth with full-service spa. 0.1 miles to slopes.
+- Guide: /guides/mammoth-mountain
+- Data Page: /ski/mammoth-mountain
+
+### Palisades Tahoe
+- Location: California, US
+- Skiable Acres: 6,000
+- Vertical Drop: 2,840ft
+- Trails: 270
+- Lifts: 37
+- Longest Run: 3.2 miles
+- Annual Snowfall: 400 inches
+- Terrain: 25% beginner, 43% intermediate, 32% advanced
+- Season: November - May
+- Nearest Airport: Reno-Tahoe International Airport (RNO) (45 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Everline Resort & Spa ($$$$, $400-800/night) - Luxury resort at the base with full-service spa and multiple pools. 0.3 miles to slopes.
+  - PlumpJack Inn ($$$, $250-500/night) - Boutique inn at the base with a celebrated restaurant. 0.1 miles to slopes.
+  - Village at Palisades Tahoe ($$$, $200-450/night) - Condo-style lodging in the pedestrian village at the base. 0.1 miles to slopes.
+- Guide: /guides/palisades-tahoe
+- Data Page: /ski/palisades-tahoe
+
+### Heavenly
+- Location: California, US
+- Skiable Acres: 4,800
+- Vertical Drop: 3,500ft
+- Trails: 97
+- Lifts: 28
+- Longest Run: 5.5 miles
+- Annual Snowfall: 360 inches
+- Terrain: 20% beginner, 45% intermediate, 35% advanced
+- Season: November - April
+- Nearest Airport: Reno-Tahoe International Airport (RNO) (1 hour)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Zalanta Resort at the Village ($$$$, $400-800/night) - Luxury condo resort steps from the Heavenly Gondola. 0.1 miles to slopes.
+  - Hard Rock Hotel & Casino ($$$, $200-450/night) - Casino resort near the base with live entertainment. 0.5 miles to slopes.
+  - Marriott Grand Residence Lake Tahoe ($$$, $250-500/night) - Spacious condo-style resort at the Heavenly Village. 0.2 miles to slopes.
+  - Hotel & Casino at Harveys ($$, $150-350/night) - Iconic casino hotel in Stateline with mountain-view rooms. 0.5 miles to slopes.
+- Guide: /guides/heavenly
+- Data Page: /ski/heavenly
+
+### Northstar California
+- Location: California, US
+- Skiable Acres: 3,170
+- Vertical Drop: 2,280ft
+- Trails: 100
+- Lifts: 20
+- Longest Run: 2.9 miles
+- Annual Snowfall: 350 inches
+- Terrain: 13% beginner, 60% intermediate, 27% advanced
+- Season: November - April
+- Nearest Airport: Reno-Tahoe International Airport (RNO) (40 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Ritz-Carlton Lake Tahoe ($$$$, $500-1100/night) - Ultra-luxury mid-mountain resort with ski-in/ski-out access. Ski-in/Ski-out.
+  - Northstar Lodge by Welk Resorts ($$$, $250-450/night) - Spacious condo-style resort in Northstar Village. 0.1 miles to slopes.
+  - Catamount Lodge ($$, $180-350/night) - Comfortable lodge in the Village at Northstar. 0.2 miles to slopes.
+- Guide: /guides/northstar
+- Data Page: /ski/northstar
+
+### Big Sky Resort
+- Location: Montana, US
+- Skiable Acres: 5,800
+- Vertical Drop: 4,350ft
+- Trails: 317
+- Lifts: 39
+- Longest Run: 6 miles
+- Annual Snowfall: 400 inches
+- Terrain: 15% beginner, 25% intermediate, 60% advanced
+- Season: November - April
+- Nearest Airport: Bozeman Yellowstone International Airport (BZN) (1 hour)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - The Summit Hotel ($$$, $300-600/night) - Slope-side hotel at Mountain Village with heated outdoor pool. Ski-in/Ski-out.
+  - Huntley Lodge ($$, $200-400/night) - Big Sky's original lodge with ski-in/ski-out access. Ski-in/Ski-out.
+  - Lone Mountain Ranch ($$$, $350-700/night) - Historic guest ranch with luxury log cabins and renowned dining. 3 miles to slopes.
+- Guide: /guides/big-sky
+- Data Page: /ski/big-sky
+
+### Jackson Hole
+- Location: Wyoming, US
+- Skiable Acres: 2,500
+- Vertical Drop: 4,139ft
+- Trails: 133
+- Lifts: 13
+- Longest Run: 4.7 miles
+- Annual Snowfall: 459 inches
+- Terrain: 10% beginner, 40% intermediate, 50% advanced
+- Season: December - April
+- Nearest Airport: Jackson Hole Airport (JAC) (20 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: No
+- Night Skiing: No
+- Hotels:
+  - Four Seasons Resort Jackson Hole ($$$$, $600-1200/night) - Ultra-luxury ski-in/ski-out resort at the base with Teton views. Ski-in/Ski-out.
+  - Hotel Terra Jackson Hole ($$$, $300-600/night) - LEED-certified luxury hotel at the base of the tram. Ski-in/Ski-out.
+  - Snow King Resort ($$, $180-350/night) - Located at the base of Snow King Mountain in downtown Jackson. 0.1 miles to slopes.
+  - The Hostel ($, $80-180/night) - Budget-friendly accommodation right at the base of Jackson Hole Mountain Resort. 0.1 miles to slopes.
+- Guide: /guides/jackson-hole
+- Data Page: /ski/jackson-hole
+
+### Stowe Mountain
+- Location: Vermont, US
+- Skiable Acres: 485
+- Vertical Drop: 2,360ft
+- Trails: 116
+- Lifts: 13
+- Longest Run: 3.7 miles
+- Annual Snowfall: 314 inches
+- Terrain: 16% beginner, 59% intermediate, 25% advanced
+- Season: November - April
+- Nearest Airport: Burlington International Airport (BTV) (45 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Lodge at Spruce Peak ($$$$, $400-800/night) - Luxury ski-in/ski-out resort at the base of Spruce Peak with performing arts center. Ski-in/Ski-out.
+  - Trapp Family Lodge ($$$, $250-500/night) - Famous Austrian-style lodge built by the von Trapp family of Sound of Music fame. 3 miles to slopes.
+  - Stoweflake Mountain Resort & Spa ($$$, $200-450/night) - Full-service resort in Stowe village with award-winning spa. 2 miles to slopes.
+- Guide: /guides/stowe
+- Data Page: /ski/stowe
+
+### Killington
+- Location: Vermont, US
+- Skiable Acres: 1,509
+- Vertical Drop: 3,050ft
+- Trails: 155
+- Lifts: 22
+- Longest Run: 6.2 miles
+- Annual Snowfall: 250 inches
+- Terrain: 28% beginner, 33% intermediate, 39% advanced
+- Season: October - May
+- Nearest Airport: Rutland Southern Vermont Regional Airport (RUT) (30 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Killington Grand Resort Hotel ($$$, $250-500/night) - Signature slope-side hotel with ski-in/ski-out access and full-service spa. Ski-in/Ski-out.
+  - Mountain Green Resort ($$, $150-300/night) - Condo-style resort on the Killington Access Road with indoor pool. 0.5 miles to slopes.
+  - The Inn at Long Trail ($$, $120-250/night) - Historic inn with an Irish pub and cozy mountain atmosphere. 3 miles to slopes.
+- Guide: /guides/killington
+- Data Page: /ski/killington
+
+### Sunday River
+- Location: Maine, US
+- Skiable Acres: 870
+- Vertical Drop: 2,340ft
+- Trails: 135
+- Lifts: 15
+- Longest Run: 3 miles
+- Annual Snowfall: 167 inches
+- Terrain: 29% beginner, 36% intermediate, 35% advanced
+- Season: November - April
+- Nearest Airport: Portland International Jetport (PWM) (1 hour 45 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Grand Summit Hotel ($$$, $250-450/night) - Premier slope-side hotel with ski-in/ski-out access at South Ridge. Ski-in/Ski-out.
+  - Jordan Hotel ($$, $180-350/night) - Full-service slope-side hotel at Jordan Bowl with direct access to expert terrain. Ski-in/Ski-out.
+  - Snow Cap Inn ($$, $120-250/night) - Affordable lodge near the South Ridge base area. 0.5 miles to slopes.
+- Guide: /guides/sunday-river
+- Data Page: /ski/sunday-river
+
+### Sugarbush
+- Location: Vermont, US
+- Skiable Acres: 578
+- Vertical Drop: 2,600ft
+- Trails: 111
+- Lifts: 16
+- Longest Run: 2.5 miles
+- Annual Snowfall: 283 inches
+- Terrain: 20% beginner, 45% intermediate, 35% advanced
+- Season: November - April
+- Nearest Airport: Burlington International Airport (BTV) (1 hour)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Clay Brook Hotel & Residences ($$$, $250-500/night) - Slope-side luxury condos at Lincoln Peak. Ski-in/Ski-out.
+  - Sugarbush Inn ($$, $150-300/night) - Classic Vermont inn near the Sugarbush access road with cozy pub. 0.5 miles to slopes.
+  - The Pitcher Inn ($$$$, $350-700/night) - Relais & Chateaux boutique inn in Warren village with celebrated restaurant. 5 miles to slopes.
+- Guide: /guides/sugarbush
+- Data Page: /ski/sugarbush
+
+### Jay Peak
+- Location: Vermont, US
+- Skiable Acres: 385
+- Vertical Drop: 2,153ft
+- Trails: 81
+- Lifts: 9
+- Longest Run: 3 miles
+- Annual Snowfall: 359 inches
+- Terrain: 22% beginner, 39% intermediate, 39% advanced
+- Season: November - April
+- Nearest Airport: Burlington International Airport (BTV) (1 hour 30 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Hotel Jay ($$, $180-350/night) - Modern slope-side hotel at the base with indoor waterpark and ice rink included. Ski-in/Ski-out.
+  - Jay Peak Resort Condos ($$, $150-300/night) - Spacious condo-style units at the resort base with full kitchens and waterpark access. Ski-in/Ski-out.
+  - Phineas Swann Bed & Inn ($$, $120-250/night) - Charming Victorian bed and breakfast in Montgomery Center. 6 miles to slopes.
+- Guide: /guides/jay-peak
+- Data Page: /ski/jay-peak
+
+### Whistler Blackcomb
+- Location: British Columbia, Canada
+- Skiable Acres: 8,171
+- Vertical Drop: 5,280ft
+- Trails: 200
+- Lifts: 37
+- Longest Run: 7 miles
+- Annual Snowfall: 461 inches
+- Terrain: 18% beginner, 55% intermediate, 27% advanced
+- Season: November - May
+- Nearest Airport: Vancouver International Airport (YVR) (2 hours)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Fairmont Chateau Whistler ($$$$, $400-900/night) - Iconic luxury resort at the base of Blackcomb Mountain. Ski-in/Ski-out.
+  - Four Seasons Resort Whistler ($$$$, $500-1100/night) - Ultra-luxury resort in the Upper Village with complimentary Rolls-Royce house car. 0.2 miles to slopes.
+  - Pan Pacific Whistler Mountainside ($$$, $250-500/night) - All-suite hotel in the heart of Whistler Village. 0.1 miles to slopes.
+  - Crystal Lodge & Suites ($$, $180-350/night) - Well-located hotel in the center of Whistler Village with great value. 0.2 miles to slopes.
+- Guide: /guides/whistler-blackcomb
+- Data Page: /ski/whistler-blackcomb
+
+### Banff Sunshine Village
+- Location: Alberta, Canada
+- Skiable Acres: 3,358
+- Vertical Drop: 3,514ft
+- Trails: 137
+- Lifts: 12
+- Longest Run: 5 miles
+- Annual Snowfall: 360 inches
+- Terrain: 20% beginner, 55% intermediate, 25% advanced
+- Season: November - May
+- Nearest Airport: Calgary International Airport (YYC) (1 hour 30 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Sunshine Mountain Lodge ($$$, $300-550/night) - The only slope-side accommodation at Sunshine Village, perched at 7,200 feet. Ski-in/Ski-out.
+  - Fairmont Banff Springs ($$$$, $400-900/night) - The iconic "Castle in the Rockies" in Banff. 12 miles to slopes.
+  - Moose Hotel & Suites ($$$, $250-450/night) - Modern hotel in downtown Banff with free shuttle to SkiBig3 resorts. 12 miles to slopes.
+- Guide: /guides/banff-sunshine
+- Data Page: /ski/banff-sunshine
+
+### Lake Louise
+- Location: Alberta, Canada
+- Skiable Acres: 4,200
+- Vertical Drop: 3,250ft
+- Trails: 164
+- Lifts: 11
+- Longest Run: 5 miles
+- Annual Snowfall: 215 inches
+- Terrain: 25% beginner, 45% intermediate, 30% advanced
+- Season: November - May
+- Nearest Airport: Calgary International Airport (YYC) (2 hours)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Fairmont Chateau Lake Louise ($$$$, $400-900/night) - One of the world's most photographed hotels on the shores of Lake Louise. 4 miles to slopes.
+  - Deer Lodge ($$$, $200-400/night) - Historic log lodge near Lake Louise with rustic-chic atmosphere. 4 miles to slopes.
+  - Lake Louise Inn ($$, $150-300/night) - Comfortable hotel in Lake Louise Village with free shuttle to ski resort. 3 miles to slopes.
+- Guide: /guides/lake-louise
+- Data Page: /ski/lake-louise
+
+### Mont Tremblant
+- Location: Quebec, Canada
+- Skiable Acres: 665
+- Vertical Drop: 2,116ft
+- Trails: 102
+- Lifts: 14
+- Longest Run: 3.7 miles
+- Annual Snowfall: 160 inches
+- Terrain: 17% beginner, 33% intermediate, 50% advanced
+- Season: November - April
+- Nearest Airport: Montreal-Trudeau International Airport (YUL) (1 hour 30 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: Yes
+- Hotels:
+  - Fairmont Tremblant ($$$$, $300-600/night) - Luxury chateau-style hotel at the base with ski-in/ski-out access. Ski-in/Ski-out.
+  - Sommet des Neiges ($$$, $200-400/night) - All-suite hotel in the heart of the pedestrian village. 0.1 miles to slopes.
+  - Le Westin Tremblant ($$$, $250-450/night) - Upscale resort at the base of the mountain with full-service spa. 0.2 miles to slopes.
+- Guide: /guides/mont-tremblant
+- Data Page: /ski/mont-tremblant
+
+### Sun Peaks
+- Location: British Columbia, Canada
+- Skiable Acres: 4,270
+- Vertical Drop: 2,894ft
+- Trails: 138
+- Lifts: 13
+- Longest Run: 5 miles
+- Annual Snowfall: 236 inches
+- Terrain: 10% beginner, 58% intermediate, 32% advanced
+- Season: November - April
+- Nearest Airport: Kamloops Airport (YKA) (45 minutes)
+- Best Months: January, February, March
+- Beginner Friendly: Yes
+- Night Skiing: No
+- Hotels:
+  - Sun Peaks Grand Hotel & Conference Centre ($$$, $250-450/night) - Premier hotel in Sun Peaks village with heated outdoor pool. Ski-in/Ski-out.
+  - Nancy Greene's Cahilty Hotel & Suites ($$, $150-300/night) - Named for the Olympic champion, offering ski-in/ski-out access. Ski-in/Ski-out.
+  - Fireside Lodge ($$, $120-250/night) - Cozy boutique lodge in the village with complimentary breakfast. 0.1 miles to slopes.
+- Guide: /guides/sun-peaks
+- Data Page: /ski/sun-peaks
+
+---
+
+## Resort Comparisons
+
+15 head-to-head comparisons covering terrain, snow quality, value, dining, accessibility, and family friendliness.
+
+### 1. Park City vs Vail
+- URL: /ski/compare/park-city-vs-vail
+- Verdict: Park City wins on size and value, Vail wins on terrain variety and apres-ski scene.
+- Categories: Terrain Size (Park City), Snow Quality (Vail), Beginner Friendly (Park City), Expert Terrain (Vail), Value (Park City), Apres-Ski (Vail)
+
+### 2. Whistler vs Vail
+- URL: /ski/compare/whistler-vs-vail
+- Verdict: Whistler wins on raw size and vertical, Vail wins on sunshine and village charm.
+- Categories: Terrain Size (Whistler), Vertical Drop (Whistler), Snow Quality (Tie), Weather (Vail), Village (Tie), Value (Whistler)
+
+### 3. Breckenridge vs Keystone
+- URL: /ski/compare/breckenridge-vs-keystone
+- Verdict: Breckenridge wins for town atmosphere and expert terrain, Keystone for families and night skiing.
+- Categories: Town Atmosphere (Breckenridge), Family Friendly (Keystone), Night Skiing (Keystone), Expert Terrain (Breckenridge), Crowds (Keystone), Value (Keystone)
+
+### 4. Jackson Hole vs Big Sky
+- URL: /ski/compare/jackson-hole-vs-big-sky
+- Verdict: Jackson Hole wins for expert terrain and town character, Big Sky for space and no crowds.
+- Categories: Expert Terrain (Jackson Hole), Terrain Size (Big Sky), Crowds (Big Sky), Town (Jackson Hole), Snow (Tie), Beginner Friendly (Big Sky)
+
+### 5. Aspen vs Telluride
+- URL: /ski/compare/aspen-vs-telluride
+- Verdict: Aspen wins on terrain variety and nightlife, Telluride wins on charm and value.
+- Categories: Terrain Variety (Aspen), Town Charm (Telluride), Vertical Drop (Telluride), Nightlife (Aspen), Value (Telluride), Accessibility (Aspen)
+
+### 6. Mammoth vs Palisades Tahoe
+- URL: /ski/compare/mammoth-vs-palisades-tahoe
+- Verdict: Mammoth wins for season length and consistent snow, Palisades for terrain and Lake Tahoe views.
+- Categories: Season Length (Mammoth), Snow Quality (Mammoth), Expert Terrain (Palisades), Scenery (Palisades), Terrain Size (Palisades), Nightlife (Palisades)
+
+### 7. Stowe vs Killington
+- URL: /ski/compare/stowe-vs-killington
+- Verdict: Stowe wins on charm and terrain quality, Killington for size and value.
+- Categories: Terrain Size (Killington), Town Charm (Stowe), Snow Quality (Tie), Season Length (Killington), Expert Terrain (Stowe), Value (Killington)
+
+### 8. Banff Sunshine vs Lake Louise
+- URL: /ski/compare/banff-vs-lake-louise
+- Verdict: Sunshine wins for natural snow and season length, Lake Louise for size and scenery.
+- Categories: Natural Snow (Sunshine), Terrain Size (Lake Louise), Scenery (Lake Louise), Season Length (Sunshine), Expert Terrain (Lake Louise), Accessibility (Tie)
+
+### 9. Park City vs Deer Valley
+- URL: /ski/compare/park-city-vs-deer-valley
+- Verdict: Park City wins for terrain and value, Deer Valley for luxury and grooming.
+- Categories: Terrain Size (Park City), Grooming (Deer Valley), Luxury (Deer Valley), Value (Park City), Expert Terrain (Park City), Snowboarding (Park City)
+
+### 10. Snowbird vs Alta
+- URL: /ski/compare/snowbird-vs-alta
+- Verdict: Snowbird wins for vertical and terrain, Alta for snow quality and old-school vibe.
+- Categories: Vertical Drop (Snowbird), Snow Quality (Tie), Atmosphere (Alta), Modern Amenities (Snowbird), Snowboarding (Snowbird), Terrain Variety (Snowbird)
+
+### 11. Vail vs Breckenridge
+- URL: /ski/compare/vail-vs-breckenridge
+- Verdict: Vail wins for terrain and apres-ski, Breckenridge for town character and accessibility.
+- Categories: Terrain Size (Vail), Town Character (Breckenridge), Accessibility (Breckenridge), Expert Terrain (Vail), High Altitude Terrain (Breckenridge), Value (Breckenridge)
+
+### 12. Whistler vs Banff
+- URL: /ski/compare/whistler-vs-banff
+- Verdict: Whistler wins for terrain size and village, Banff for natural snow and multi-resort access.
+- Categories: Terrain Size (Whistler), Natural Snow (Banff), Village (Whistler), Multi-Resort Access (Banff), Scenery (Banff), Accessibility (Whistler)
+
+### 13. Heavenly vs Palisades Tahoe
+- URL: /ski/compare/heavenly-vs-palisades-tahoe
+- Verdict: Heavenly wins for views and nightlife (South Lake Tahoe), Palisades for expert terrain.
+- Categories: Views (Heavenly), Expert Terrain (Palisades), Terrain Size (Palisades), Nightlife (Heavenly), Snow Quality (Tie), Family Friendly (Heavenly)
+
+### 14. Steamboat vs Winter Park
+- URL: /ski/compare/steamboat-vs-winter-park
+- Verdict: Steamboat wins for town charm and champagne powder, Winter Park for proximity to Denver.
+- Categories: Snow Quality (Steamboat), Town (Steamboat), Proximity to Denver (Winter Park), Terrain Variety (Tie), Tree Skiing (Steamboat), Value (Winter Park)
+
+### 15. Park City vs Jackson Hole
+- URL: /ski/compare/park-city-vs-jackson-hole
+- Verdict: Park City for families and intermediates, Jackson Hole for experts and adventure seekers.
+- Categories: Terrain Size (Park City), Expert Terrain (Jackson Hole), Family Friendly (Park City), Town Character (Jackson Hole), Snow Quality (Jackson Hole), Accessibility (Park City)
+
+---
+
+## Gear Guides
+
+### Best Ski Goggles 2026
+- URL: /guides/best-ski-goggles-2026
+- Category: Gear
+- Read Time: 10 min
+- Description: Expert-tested ski goggle reviews for 2026. Compare lens tech, fit types, and fog resistance across 8 top picks from Smith, Oakley, Anon, and more -- from $30 to $350.
+- Products Reviewed:
+  1. Smith I/O Mag -- Best Overall
+  2. Oakley Flight Deck L -- Best Frameless Design
+  3. Smith 4D Mag -- Best Premium Optics
+  4. Giro Contour -- Best Helmet Integration
+  5. Anon M4 Toric -- Best for Foul Weather
+  6. OutdoorMaster OTG Ski Goggles -- Best Budget Pick
+  7. Dragon X2s -- Best Mid-Range Value
+  8. POC Orb Clarity -- Best for Style and Substance
+
+### Best Ski Helmets 2026
+- URL: /guides/best-ski-helmets-2026
+- Category: Gear
+- Read Time: 10 min
+- Description: Expert-reviewed ski helmets for 2026. Compare MIPS protection, ventilation, fit systems, and goggle compatibility across 7 top picks from Smith, Giro, POC, and more.
+- Products Reviewed:
+  1. Smith Vantage MIPS -- Best Overall
+  2. Giro Range MIPS -- Best for Audio Integration
+  3. POC Obex MIPS -- Best Under $200
+  4. Sweet Protection Switcher MIPS -- Best for Versatility
+  5. Smith Rodeo MIPS -- Best Budget Pick
+  6. Oakley MOD5 MIPS -- Best Field of Vision
+  7. Anon Merak WaveCel -- Best Alternative Protection System
+
+### Best Ski Jackets 2026
+- URL: /guides/best-ski-jackets-2026
+- Category: Gear
+- Read Time: 10 min
+- Description: Expert-tested ski jacket reviews for 2026. Compare Gore-Tex waterproofing, insulation types, breathability, and features across 7 top picks from Arc'teryx to REI -- $200 to $700.
+- Products Reviewed:
+  1. Arc'teryx Sabre AR -- Best Overall Shell
+  2. Patagonia Powder Town -- Best Insulated Jacket
+  3. The North Face Ceptor -- Best for Versatility
+  4. Helly Hansen Alpha 4.0 -- Best for Storm Days
+  5. Mountain Hardwear Cloud Bank GTX -- Best Budget Shell
+  6. Outdoor Research Hemispheres II -- Best for Backcountry
+  7. REI Co-op Powderbound -- Best Value All-Rounder
+
+### Best Ski Base Layers 2026
+- URL: /guides/best-ski-base-layers-2026
+- Category: Gear
+- Read Time: 10 min
+- Description: Expert guide to the best ski base layers for 2026. Compare merino wool vs synthetic, weight ratings, and moisture-wicking performance across 6 top picks from $50 to $110.
+- Products Reviewed:
+  1. Smartwool Merino 250 Baselayer Crew -- Best Overall
+  2. Patagonia Capilene Midweight Crew -- Best Synthetic
+  3. Icebreaker 260 Tech Long Sleeve Crew -- Best Cold Weather
+  4. Under Armour ColdGear Base 4.0 Crew -- Best Budget Pick
+  5. Helly Hansen Lifa Merino Midweight Crew -- Best Blend
+  6. Arc'teryx Rho Long Sleeve -- Best Premium Option
+
+### Complete Ski Trip Packing List 2026
+- URL: /guides/ski-trip-packing-list-2026
+- Category: Tips
+- Read Time: 10 min
+- Description: The definitive ski trip packing list for 2026. Expert-organized guide covering essential gear, clothing layers, accessories, electronics, and travel tips -- including what to rent vs. buy.
+
+---
+
+## Ski Resort Guides (Articles)
+
+30 in-depth resort guides with terrain breakdowns, dining recommendations, lodging picks, and insider tips.
+
+| Resort | Guide URL | Read Time |
+|--------|-----------|-----------|
+| Vail | /guides/vail | 14 min |
+| Breckenridge | /guides/breckenridge | 13 min |
+| Aspen Snowmass | /guides/aspen-snowmass | 14 min |
+| Steamboat | /guides/steamboat | 13 min |
+| Telluride | /guides/telluride | 13 min |
+| Keystone | /guides/keystone | 12 min |
+| Copper Mountain | /guides/copper-mountain | 12 min |
+| Winter Park | /guides/winter-park | 13 min |
+| Park City | /guides/park-city | 12 min |
+| Deer Valley | /guides/deer-valley | 12 min |
+| Snowbird | /guides/snowbird | 12 min |
+| Alta | /guides/alta | 12 min |
+| Brighton | /guides/brighton | 12 min |
+| Sundance | /guides/sundance | 12 min |
+| Mammoth Mountain | /guides/mammoth-mountain | 12 min |
+| Palisades Tahoe | /guides/palisades-tahoe | 12 min |
+| Heavenly | /guides/heavenly | 12 min |
+| Northstar | /guides/northstar | 12 min |
+| Big Sky | /guides/big-sky | 12 min |
+| Jackson Hole | /guides/jackson-hole | 12 min |
+| Stowe | /guides/stowe | 12 min |
+| Killington | /guides/killington | 14 min |
+| Sunday River | /guides/sunday-river | 13 min |
+| Sugarbush | /guides/sugarbush | 12 min |
+| Jay Peak | /guides/jay-peak | 13 min |
+| Whistler Blackcomb | /guides/whistler-blackcomb | 12 min |
+| Banff Sunshine | /guides/banff-sunshine | 12 min |
+| Lake Louise | /guides/lake-louise | 12 min |
+| Mont Tremblant | /guides/mont-tremblant | 12 min |
+| Sun Peaks | /guides/sun-peaks | 12 min |
+
+---
+
+## Quick Reference: Resorts by Region
+
+### Colorado (8 resorts)
+Vail, Breckenridge, Aspen Snowmass, Steamboat Springs, Telluride, Keystone, Copper Mountain, Winter Park
+
+### Utah (6 resorts)
+Park City Mountain, Deer Valley, Snowbird, Alta, Brighton, Sundance Mountain Resort
+
+### California (4 resorts)
+Mammoth Mountain, Palisades Tahoe, Heavenly, Northstar California
+
+### Montana/Wyoming (2 resorts)
+Big Sky Resort, Jackson Hole
+
+### Northeast (5 resorts)
+Stowe Mountain, Killington, Sunday River, Sugarbush, Jay Peak
+
+### Canada (5 resorts)
+Whistler Blackcomb, Banff Sunshine Village, Lake Louise, Mont Tremblant, Sun Peaks
+
+---
+
+## Quick Reference: Resorts by Snowfall (Highest First)
+
+1. Alta -- 547 inches
+2. Snowbird -- 500 inches
+3. Brighton -- 500 inches
+4. Whistler Blackcomb -- 461 inches
+5. Jackson Hole -- 459 inches
+6. Mammoth Mountain -- 400 inches
+7. Palisades Tahoe -- 400 inches
+8. Big Sky Resort -- 400 inches
+9. Park City Mountain -- 360 inches
+10. Banff Sunshine Village -- 360 inches
+11. Heavenly -- 360 inches
+12. Jay Peak -- 359 inches
+13. Vail -- 354 inches
+14. Breckenridge -- 353 inches
+15. Northstar California -- 350 inches
+16. Steamboat Springs -- 349 inches
+17. Winter Park -- 325 inches
+18. Sundance -- 320 inches
+19. Stowe -- 314 inches
+20. Telluride -- 309 inches
+21. Copper Mountain -- 305 inches
+22. Aspen Snowmass -- 300 inches
+23. Deer Valley -- 300 inches
+24. Sugarbush -- 283 inches
+25. Killington -- 250 inches
+26. Keystone -- 235 inches
+27. Sun Peaks -- 236 inches
+28. Lake Louise -- 215 inches
+29. Sunday River -- 167 inches
+30. Mont Tremblant -- 160 inches
+
+---
+
+## Quick Reference: Resorts by Skiable Acreage (Largest First)
+
+1. Whistler Blackcomb -- 8,171 acres
+2. Park City Mountain -- 7,300 acres
+3. Palisades Tahoe -- 6,000 acres
+4. Big Sky Resort -- 5,800 acres
+5. Aspen Snowmass -- 5,527 acres
+6. Vail -- 5,317 acres
+7. Heavenly -- 4,800 acres
+8. Sun Peaks -- 4,270 acres
+9. Lake Louise -- 4,200 acres
+10. Mammoth Mountain -- 3,500 acres
+11. Banff Sunshine Village -- 3,358 acres
+12. Keystone -- 3,148 acres
+13. Northstar California -- 3,170 acres
+14. Winter Park -- 3,081 acres
+15. Steamboat Springs -- 2,965 acres
+16. Breckenridge -- 2,908 acres
+17. Alta -- 2,614 acres
+18. Snowbird -- 2,500 acres
+19. Jackson Hole -- 2,500 acres
+20. Copper Mountain -- 2,490 acres
+21. Deer Valley -- 2,026 acres
+22. Telluride -- 2,000 acres
+23. Killington -- 1,509 acres
+24. Brighton -- 1,050 acres
+25. Sunday River -- 870 acres
+26. Mont Tremblant -- 665 acres
+27. Sugarbush -- 578 acres
+28. Stowe -- 485 acres
+29. Sundance -- 450 acres
+30. Jay Peak -- 385 acres
+
+---
+
+## Quick Reference: Resorts by Vertical Drop (Highest First)
+
+1. Whistler Blackcomb -- 5,280ft
+2. Aspen Snowmass -- 4,406ft
+3. Telluride -- 4,425ft
+4. Big Sky Resort -- 4,350ft
+5. Jackson Hole -- 4,139ft
+6. Steamboat Springs -- 3,668ft
+7. Banff Sunshine Village -- 3,514ft
+8. Heavenly -- 3,500ft
+9. Vail -- 3,450ft
+10. Breckenridge -- 3,398ft
+11. Lake Louise -- 3,250ft
+12. Snowbird -- 3,240ft
+13. Park City Mountain -- 3,226ft
+14. Keystone -- 3,128ft
+15. Mammoth Mountain -- 3,100ft
+16. Killington -- 3,050ft
+17. Winter Park -- 3,060ft
+18. Deer Valley -- 3,000ft
+19. Sun Peaks -- 2,894ft
+20. Palisades Tahoe -- 2,840ft
+21. Copper Mountain -- 2,738ft
+22. Sugarbush -- 2,600ft
+23. Alta -- 2,538ft
+24. Stowe -- 2,360ft
+25. Sunday River -- 2,340ft
+26. Northstar California -- 2,280ft
+27. Jay Peak -- 2,153ft
+28. Sundance -- 2,150ft
+29. Mont Tremblant -- 2,116ft
+30. Brighton -- 1,745ft
+
+---
+
+## Key URLs
+
+- Homepage: https://www.traveldatalab.com
+- All Resorts: https://www.traveldatalab.com/ski
+- Comparisons Hub: https://www.traveldatalab.com/ski/compare
+- Gear Guides: https://www.traveldatalab.com/gear/ski
+- All Guides: https://www.traveldatalab.com/guides
+- Individual Resort: https://www.traveldatalab.com/ski/{slug}
+- Individual Comparison: https://www.traveldatalab.com/ski/compare/{slug}
+- Individual Guide: https://www.traveldatalab.com/guides/{slug}
+- LLMs Summary: https://www.traveldatalab.com/llms.txt
+- LLMs Full: https://www.traveldatalab.com/llms-full.txt

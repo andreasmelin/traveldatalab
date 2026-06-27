@@ -67,6 +67,79 @@ export default async function ComparisonPage({
   const dest2Wins = comp.categories.filter((c) => c.winner === 2).length
   const ties = comp.categories.filter((c) => c.winner === 0).length
 
+  // Generate FAQ data from comparison stats
+  const overallWinner =
+    dest1Wins > dest2Wins
+      ? dest1.name
+      : dest2Wins > dest1Wins
+        ? dest2.name
+        : null
+  const overallSummary = overallWinner
+    ? `${overallWinner} wins more categories overall (${Math.max(dest1Wins, dest2Wins)} to ${Math.min(dest1Wins, dest2Wins)}${ties > 0 ? ` with ${ties} tied` : ''}), but the best choice depends on your priorities. ${comp.verdict}`
+    : `The comparison is evenly matched at ${dest1Wins} categories each${ties > 0 ? ` with ${ties} tied` : ''}. ${comp.verdict}`
+
+  const terrainWinner =
+    dest1.skiableAcres > dest2.skiableAcres ? dest1 : dest2
+  const terrainLoser =
+    dest1.skiableAcres > dest2.skiableAcres ? dest2 : dest1
+  const trailWinner =
+    dest1.numberOfTrails > dest2.numberOfTrails ? dest1 : dest2
+  const trailLoser =
+    dest1.numberOfTrails > dest2.numberOfTrails ? dest2 : dest1
+
+  const snowWinner =
+    totalSnowfall1 > totalSnowfall2
+      ? dest1
+      : totalSnowfall2 > totalSnowfall1
+        ? dest2
+        : null
+
+  const beginnerFriendly =
+    dest1.terrain.beginner > dest2.terrain.beginner
+      ? dest1
+      : dest2.terrain.beginner > dest1.terrain.beginner
+        ? dest2
+        : null
+
+  const faqs = [
+    {
+      question: `Which is better, ${dest1.name} or ${dest2.name}?`,
+      answer: overallSummary,
+    },
+    {
+      question: `Which resort has more terrain, ${dest1.name} or ${dest2.name}?`,
+      answer:
+        dest1.skiableAcres === dest2.skiableAcres
+          ? `Both ${dest1.name} and ${dest2.name} offer ${dest1.skiableAcres.toLocaleString()} skiable acres. ${dest1.name} has ${dest1.numberOfTrails} trails and ${dest1.numberOfLifts} lifts, while ${dest2.name} has ${dest2.numberOfTrails} trails and ${dest2.numberOfLifts} lifts.`
+          : `${terrainWinner.name} has more skiable terrain with ${terrainWinner.skiableAcres.toLocaleString()} acres compared to ${terrainLoser.name}'s ${terrainLoser.skiableAcres.toLocaleString()} acres. ${trailWinner.name} also leads in trail count with ${trailWinner.numberOfTrails} trails versus ${trailLoser.numberOfTrails} at ${trailLoser.name}.`,
+    },
+    {
+      question: `Which resort gets more snow, ${dest1.name} or ${dest2.name}?`,
+      answer: snowWinner
+        ? `${snowWinner.name} receives more annual snowfall at ${snowWinner === dest1 ? dest1.snowfall : dest2.snowfall}, compared to ${snowWinner === dest1 ? dest2.snowfall : dest1.snowfall} at ${snowWinner === dest1 ? dest2.name : dest1.name}. ${dest1.name} has a vertical drop of ${dest1.verticalDrop.toLocaleString()} feet and ${dest2.name} has ${dest2.verticalDrop.toLocaleString()} feet.`
+        : `Both resorts receive similar snowfall. ${dest1.name} averages ${dest1.snowfall} and ${dest2.name} averages ${dest2.snowfall} annually.`,
+    },
+    {
+      question: `Is ${dest1.name} or ${dest2.name} better for beginners?`,
+      answer: beginnerFriendly
+        ? `${beginnerFriendly.name} is more beginner-friendly, with ${beginnerFriendly.terrain.beginner}% of its terrain rated for beginners compared to ${beginnerFriendly === dest1 ? dest2.terrain.beginner : dest1.terrain.beginner}% at ${beginnerFriendly === dest1 ? dest2.name : dest1.name}. For intermediate skiers, ${dest1.name} offers ${dest1.terrain.intermediate}% intermediate terrain versus ${dest2.terrain.intermediate}% at ${dest2.name}.`
+        : `Both resorts offer the same proportion of beginner terrain at ${dest1.terrain.beginner}%. ${dest1.name} has ${dest1.terrain.intermediate}% intermediate and ${dest1.terrain.advanced}% advanced terrain, while ${dest2.name} has ${dest2.terrain.intermediate}% intermediate and ${dest2.terrain.advanced}% advanced.`,
+    },
+  ]
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  }
+
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -194,6 +267,10 @@ export default async function ComparisonPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* Breadcrumb */}
@@ -370,6 +447,28 @@ export default async function ComparisonPage({
             <p className="text-gray-800 leading-relaxed font-medium">
               {comp.verdict}
             </p>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq) => (
+              <div
+                key={faq.question}
+                className="bg-white border border-gray-100 rounded-lg p-5"
+              >
+                <h3 className="font-bold text-gray-900 mb-2">
+                  {faq.question}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
 

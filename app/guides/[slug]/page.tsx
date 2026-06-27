@@ -48,6 +48,60 @@ const mdxComponents = {
   KeyTakeaway,
 }
 
+interface ExtractedProduct {
+  name: string
+  brand: string
+  price: number
+  description: string
+  url: string
+}
+
+function extractProducts(content: string): ExtractedProduct[] {
+  const products: ExtractedProduct[] = []
+
+  // Split content into product blocks by looking for ### N. ProductName — Category
+  const productBlockRegex = /###\s+\d+\.\s+(.+?)\s*[—–-]\s*(.+?)\n([\s\S]*?)(?=###\s+\d+\.|---|\n##\s|$)/g
+  let match
+
+  while ((match = productBlockRegex.exec(content)) !== null) {
+    const fullName = match[1].trim()
+    const description = match[2].trim()
+    const block = match[3]
+
+    // Extract price: **Price:** $XXX
+    const priceMatch = block.match(/\*\*Price:\*\*\s*\$(\d+[\d,]*)/)
+    const price = priceMatch ? parseInt(priceMatch[1].replace(',', ''), 10) : 0
+
+    // Extract the first Amazon affiliate link
+    const urlMatch = block.match(/\[(?:Shop on Amazon|Men's|Women's|Shop on REI\.com)\]\((https?:\/\/[^)]+)\)/)
+    const url = urlMatch ? urlMatch[1] : ''
+
+    // Extract brand from product name (first word or known brand patterns)
+    // Product names follow the pattern "Brand Model" e.g. "Smith I/O Mag", "Oakley Flight Deck L"
+    const brand = fullName.split(/\s+/)[0]
+
+    // Build a description from the "Best for:" line if available, otherwise use the category
+    const bestForMatch = block.match(/\*\*Best for:\*\*\s*(.+)/)
+    const productDescription = bestForMatch
+      ? bestForMatch[1].trim()
+      : description
+
+    if (price > 0 && url) {
+      products.push({
+        name: fullName,
+        brand,
+        price,
+        description: productDescription,
+        url,
+      })
+    }
+  }
+
+  return products
+}
+
+const GEAR_CATEGORIES = ['Gear', 'Tips']
+
 function extractFAQs(content: string): { question: string; answer: string }[] {
   const faqs: { question: string; answer: string }[] = []
 
@@ -89,6 +143,8 @@ export default async function GuidePage({
 
   const relatedGuides = getRelatedGuides(guide)
   const faqs = extractFAQs(guide.content)
+  const isGearGuide = GEAR_CATEGORIES.includes(guide.metadata.category)
+  const products = isGearGuide ? extractProducts(guide.content) : []
 
   const formattedDate = new Date(guide.metadata.date).toLocaleDateString(
     'en-US',
@@ -173,6 +229,29 @@ export default async function GuidePage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      {products.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              products.map((p) => ({
+                '@context': 'https://schema.org',
+                '@type': 'Product',
+                name: p.name,
+                brand: { '@type': 'Brand', name: p.brand },
+                description: p.description,
+                offers: {
+                  '@type': 'Offer',
+                  price: p.price,
+                  priceCurrency: 'USD',
+                  availability: 'https://schema.org/InStock',
+                  url: p.url,
+                },
+              }))
+            ),
+          }}
         />
       )}
 
