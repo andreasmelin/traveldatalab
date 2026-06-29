@@ -51,13 +51,13 @@ export default function Header() {
                 href="/ski"
                 className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 hover:text-sky-600 rounded-md no-underline transition-colors"
               >
-                Ski Resorts
+                Destinations
                 <ChevronDown className="w-4 h-4" />
               </Link>
               {skiDropdown && (
                 <div className="absolute top-full left-0 w-48 bg-white shadow-lg rounded-lg border border-gray-100 py-2 z-50">
                   <Link href="/ski" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 no-underline font-medium">
-                    All Ski Resorts
+                    Ski Resorts
                   </Link>
                   <div className="border-t border-gray-100 my-1" />
                   {skiRegions.map((r) => (
@@ -146,7 +146,7 @@ export default function Header() {
         {mobileOpen && (
           <div className="md:hidden pb-4 border-t border-gray-100">
             <Link href="/ski" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 no-underline">
-              Ski Resorts
+              Destinations
             </Link>
             {skiRegions.map((r) => (
               <Link

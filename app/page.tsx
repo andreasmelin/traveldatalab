@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Find Your Perfect
-              <span className="text-sky-400"> Ski Resort</span>
+              <span className="text-sky-400"> Destination</span>
             </h1>
             <p className="text-lg text-slate-300 mb-8 max-w-2xl">
               Data-driven guides to {skiDestinations.length} ski resorts across the US and Canada.
@@ -53,7 +53,7 @@ export default function Home() {
                 href="/ski"
                 className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors no-underline"
               >
-                Explore Ski Resorts
+                Explore Destinations
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
@@ -76,7 +76,7 @@ export default function Home() {
                 <Mountain className="w-5 h-5 text-sky-500" />
                 <span className="text-2xl font-bold text-gray-900">{skiDestinations.length}</span>
               </div>
-              <span className="text-sm text-gray-500">Ski Resorts</span>
+              <span className="text-sm text-gray-500">Destinations</span>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
@@ -176,15 +176,15 @@ export default function Home() {
       <section className="bg-gradient-to-r from-sky-600 to-sky-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <Snowflake className="w-10 h-10 text-sky-200 mx-auto mb-4" />
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Plan Your Ski Trip?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Plan Your Trip?</h2>
           <p className="text-sky-100 mb-8 max-w-xl mx-auto">
-            Browse all {skiDestinations.length} resorts, compare side by side, and find the perfect hotel for your next mountain adventure.
+            Browse all {skiDestinations.length} destinations, compare side by side, and find the perfect hotel for your next adventure.
           </p>
           <Link
             href="/ski"
             className="inline-flex items-center gap-2 bg-white text-sky-700 font-semibold px-8 py-3 rounded-lg hover:bg-sky-50 transition-colors no-underline"
           >
-            Browse All Resorts
+            Browse All Destinations
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>

@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-3">Ski Resorts</h3>
+            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-3">Destinations</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/ski?region=Colorado" className="text-gray-400 hover:text-white no-underline transition-colors">Colorado</Link></li>
               <li><Link href="/ski?region=Utah" className="text-gray-400 hover:text-white no-underline transition-colors">Utah</Link></li>

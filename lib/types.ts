@@ -12,7 +12,10 @@ export interface Hotel {
   lng: number
 }
 
-export interface SkiDestination {
+export type ActivityType = 'ski' | 'hiking' | 'beach' | 'summer' | 'autumn'
+
+export interface Destination {
+  activityType: ActivityType
   name: string
   slug: string
   state: string
@@ -22,6 +25,16 @@ export interface SkiDestination {
   description: string
   lat: number
   lng: number
+  nearestAirport: string
+  airportCode: string
+  driveFromAirport: string
+  hotels: Hotel[]
+  bestMonths: string[]
+  highlights: string[]
+}
+
+export interface SkiDestination extends Destination {
+  activityType: 'ski'
   elevation: number
   verticalDrop: number
   skiableAcres: number
@@ -33,12 +46,6 @@ export interface SkiDestination {
   beginnerFriendly: boolean
   nightSkiing: boolean
   terrain: { beginner: number; intermediate: number; advanced: number }
-  nearestAirport: string
-  airportCode: string
-  driveFromAirport: string
-  hotels: Hotel[]
-  bestMonths: string[]
-  highlights: string[]
 }
 
 export interface WeatherMonth {

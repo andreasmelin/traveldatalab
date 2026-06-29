@@ -11,6 +11,7 @@ export const skiDestinations: SkiDestination[] = [
   // ===========================================================================
 
   {
+    activityType: 'ski' as const,
     name: 'Vail Ski Resort',
     slug: 'vail',
     state: 'Colorado',
@@ -99,6 +100,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Breckenridge',
     slug: 'breckenridge',
     state: 'Colorado',
@@ -187,6 +189,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Aspen Snowmass',
     slug: 'aspen-snowmass',
     state: 'Colorado',
@@ -275,6 +278,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Steamboat Springs',
     slug: 'steamboat',
     state: 'Colorado',
@@ -350,6 +354,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Telluride',
     slug: 'telluride',
     state: 'Colorado',
@@ -425,6 +430,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Keystone',
     slug: 'keystone',
     state: 'Colorado',
@@ -500,6 +506,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Copper Mountain',
     slug: 'copper-mountain',
     state: 'Colorado',
@@ -575,6 +582,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Winter Park',
     slug: 'winter-park',
     state: 'Colorado',
@@ -654,6 +662,7 @@ export const skiDestinations: SkiDestination[] = [
   // ===========================================================================
 
   {
+    activityType: 'ski' as const,
     name: 'Park City Mountain',
     slug: 'park-city',
     state: 'Utah',
@@ -742,6 +751,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Deer Valley',
     slug: 'deer-valley',
     state: 'Utah',
@@ -817,6 +827,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Snowbird',
     slug: 'snowbird',
     state: 'Utah',
@@ -892,6 +903,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Alta',
     slug: 'alta',
     state: 'Utah',
@@ -967,6 +979,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Brighton',
     slug: 'brighton',
     state: 'Utah',
@@ -1042,6 +1055,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Sundance Mountain Resort',
     slug: 'sundance',
     state: 'Utah',
@@ -1121,6 +1135,7 @@ export const skiDestinations: SkiDestination[] = [
   // ===========================================================================
 
   {
+    activityType: 'ski' as const,
     name: 'Mammoth Mountain',
     slug: 'mammoth-mountain',
     state: 'California',
@@ -1196,6 +1211,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Palisades Tahoe',
     slug: 'palisades-tahoe',
     state: 'California',
@@ -1271,6 +1287,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Heavenly',
     slug: 'heavenly',
     state: 'California',
@@ -1359,6 +1376,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Northstar California',
     slug: 'northstar',
     state: 'California',
@@ -1438,6 +1456,7 @@ export const skiDestinations: SkiDestination[] = [
   // ===========================================================================
 
   {
+    activityType: 'ski' as const,
     name: 'Big Sky Resort',
     slug: 'big-sky',
     state: 'Montana',
@@ -1513,6 +1532,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Jackson Hole',
     slug: 'jackson-hole',
     state: 'Wyoming',
@@ -1605,6 +1625,7 @@ export const skiDestinations: SkiDestination[] = [
   // ===========================================================================
 
   {
+    activityType: 'ski' as const,
     name: 'Stowe Mountain',
     slug: 'stowe',
     state: 'Vermont',
@@ -1680,6 +1701,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Killington',
     slug: 'killington',
     state: 'Vermont',
@@ -1755,6 +1777,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Sunday River',
     slug: 'sunday-river',
     state: 'Maine',
@@ -1830,6 +1853,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Sugarbush',
     slug: 'sugarbush',
     state: 'Vermont',
@@ -1905,6 +1929,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Jay Peak',
     slug: 'jay-peak',
     state: 'Vermont',
@@ -1984,6 +2009,7 @@ export const skiDestinations: SkiDestination[] = [
   // ===========================================================================
 
   {
+    activityType: 'ski' as const,
     name: 'Whistler Blackcomb',
     slug: 'whistler-blackcomb',
     state: 'British Columbia',
@@ -2072,6 +2098,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Banff Sunshine Village',
     slug: 'banff-sunshine',
     state: 'Alberta',
@@ -2147,6 +2174,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Lake Louise',
     slug: 'lake-louise',
     state: 'Alberta',
@@ -2222,6 +2250,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Mont Tremblant',
     slug: 'mont-tremblant',
     state: 'Quebec',
@@ -2297,6 +2326,7 @@ export const skiDestinations: SkiDestination[] = [
   },
 
   {
+    activityType: 'ski' as const,
     name: 'Sun Peaks',
     slug: 'sun-peaks',
     state: 'British Columbia',

@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import type { SkiDestination } from '@/lib/types'
+import type { Destination, SkiDestination } from '@/lib/types'
 
 // Fix Leaflet default icon issue in Next.js/webpack
 delete (L.Icon.Default.prototype as unknown as Record<string, unknown>)._getIconUrl
@@ -14,10 +14,14 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 })
 
+function isSkiDestination(d: Destination): d is SkiDestination {
+  return d.activityType === 'ski'
+}
+
 export default function ResortMap({
   destinations,
 }: {
-  destinations: SkiDestination[]
+  destinations: Destination[]
 }) {
   useEffect(() => {
     // Force Leaflet to recalculate map size after render
@@ -36,30 +40,35 @@ export default function ResortMap({
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {destinations.map((dest) => (
-          <Marker key={dest.slug} position={[dest.lat, dest.lng]}>
-            <Popup>
-              <div className="text-sm">
-                <h3 className="font-bold text-gray-900 mb-1">{dest.name}</h3>
-                <p className="text-gray-500 text-xs mb-2">
-                  {dest.state}, {dest.country}
-                </p>
-                <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-gray-700 mb-2">
-                  <span>{dest.skiableAcres.toLocaleString()} acres</span>
-                  <span>{dest.numberOfTrails} trails</span>
-                  <span>{dest.snowfall}</span>
-                  <span>{dest.verticalDrop.toLocaleString()}&apos; vert</span>
+        {destinations.map((dest) => {
+          const ski = isSkiDestination(dest) ? dest : null
+          return (
+            <Marker key={dest.slug} position={[dest.lat, dest.lng]}>
+              <Popup>
+                <div className="text-sm">
+                  <h3 className="font-bold text-gray-900 mb-1">{dest.name}</h3>
+                  <p className="text-gray-500 text-xs mb-2">
+                    {dest.state}, {dest.country}
+                  </p>
+                  {ski && (
+                    <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-gray-700 mb-2">
+                      <span>{ski.skiableAcres.toLocaleString()} acres</span>
+                      <span>{ski.numberOfTrails} trails</span>
+                      <span>{ski.snowfall}</span>
+                      <span>{ski.verticalDrop.toLocaleString()}&apos; vert</span>
+                    </div>
+                  )}
+                  <a
+                    href={`/${dest.activityType}/${dest.slug}`}
+                    className="text-sky-600 hover:text-sky-700 font-medium text-xs"
+                  >
+                    View details &rarr;
+                  </a>
                 </div>
-                <a
-                  href={`/ski/${dest.slug}`}
-                  className="text-sky-600 hover:text-sky-700 font-medium text-xs"
-                >
-                  View resort details &rarr;
-                </a>
-              </div>
-            </Popup>
-          </Marker>
-        ))}
+              </Popup>
+            </Marker>
+          )
+        })}
       </MapContainer>
     </div>
   )
