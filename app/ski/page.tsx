@@ -63,17 +63,20 @@ export default async function SkiPage({
     sort?: string
     terrain?: string
     skiInOut?: string
+    nightSkiing?: string
+    budget?: string
+    elevation?: string
     view?: string
   }>
 }) {
-  const { region, sort, terrain, skiInOut, view } = await searchParams
-  const currentParams = { region, sort, terrain, skiInOut, view }
+  const { region, sort, terrain, skiInOut, nightSkiing, budget, elevation, view } = await searchParams
+  const currentParams = { region, sort, terrain, skiInOut, nightSkiing, budget, elevation, view }
 
   let destinations = region
     ? getDestinationsByRegion(region)
     : [...skiDestinations]
 
-  destinations = filterDestinations(destinations, { terrain, skiInOut })
+  destinations = filterDestinations(destinations, { terrain, skiInOut, nightSkiing, budget, elevation })
 
   if (sort) {
     destinations = sortDestinations(destinations, sort)
@@ -256,19 +259,58 @@ export default async function SkiPage({
 
           <div className="w-px h-5 bg-gray-200 mx-1 hidden sm:block" />
 
-          {/* Ski-in/out filter */}
-          <Link
-            href={buildUrl(currentParams, {
-              skiInOut: skiInOut === 'true' ? undefined : 'true',
-            })}
-            className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
-              skiInOut === 'true'
-                ? 'bg-sky-600 text-white'
-                : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
-            }`}
-          >
-            Ski-In/Ski-Out
-          </Link>
+          {/* Feature filters */}
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-500">Features:</span>
+            <Link
+              href={buildUrl(currentParams, {
+                skiInOut: skiInOut === 'true' ? undefined : 'true',
+              })}
+              className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
+                skiInOut === 'true'
+                  ? 'bg-sky-600 text-white'
+                  : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              Ski-In/Ski-Out
+            </Link>
+            <Link
+              href={buildUrl(currentParams, {
+                nightSkiing: nightSkiing === 'true' ? undefined : 'true',
+              })}
+              className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
+                nightSkiing === 'true'
+                  ? 'bg-purple-600 text-white'
+                  : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              Night Skiing
+            </Link>
+            <Link
+              href={buildUrl(currentParams, {
+                budget: budget === 'true' ? undefined : 'true',
+              })}
+              className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
+                budget === 'true'
+                  ? 'bg-emerald-600 text-white'
+                  : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              Budget-Friendly
+            </Link>
+            <Link
+              href={buildUrl(currentParams, {
+                elevation: elevation === 'high' ? undefined : 'high',
+              })}
+              className={`px-3 py-1 rounded-full text-xs font-medium no-underline transition-colors ${
+                elevation === 'high'
+                  ? 'bg-amber-600 text-white'
+                  : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
+              }`}
+            >
+              High Elevation
+            </Link>
+          </div>
         </div>
 
         {/* Results info */}

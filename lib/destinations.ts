@@ -3862,7 +3862,7 @@ export function sortDestinations(
 
 export function filterDestinations(
   destinations: SkiDestination[],
-  filters: { terrain?: string; skiInOut?: string }
+  filters: { terrain?: string; skiInOut?: string; nightSkiing?: string; budget?: string; elevation?: string }
 ): SkiDestination[] {
   let result = destinations
 
@@ -3874,6 +3874,18 @@ export function filterDestinations(
 
   if (filters.skiInOut === 'true') {
     result = result.filter((d) => d.hotels.some((h) => h.skiInSkiOut))
+  }
+
+  if (filters.nightSkiing === 'true') {
+    result = result.filter((d) => d.nightSkiing === true)
+  }
+
+  if (filters.budget === 'true') {
+    result = result.filter((d) => d.hotels.some((h) => h.priceRange === '$' || h.priceRange === '$$'))
+  }
+
+  if (filters.elevation === 'high') {
+    result = result.filter((d) => d.elevation >= 10000)
   }
 
   return result
