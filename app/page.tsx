@@ -85,7 +85,7 @@ export default function Home() {
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
                 <MapPin className="w-5 h-5 text-sky-500" />
-                <span className="text-2xl font-bold text-gray-900">5</span>
+                <span className="text-2xl font-bold text-gray-900">7</span>
               </div>
               <span className="text-sm text-gray-500">Regions</span>
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
                 <BarChart3 className="w-5 h-5 text-sky-500" />
-                <span className="text-2xl font-bold text-gray-900">360</span>
+                <span className="text-2xl font-bold text-gray-900">576</span>
               </div>
               <span className="text-sm text-gray-500">Weather Reports</span>
             </div>
@@ -134,13 +134,15 @@ export default function Home() {
       <section className="bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Explore by Region</h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
             {[
               { name: 'Colorado', count: skiDestinations.filter((d) => d.region === 'Colorado').length, emoji: '🏔️' },
               { name: 'Utah', count: skiDestinations.filter((d) => d.region === 'Utah').length, emoji: '⛷️' },
               { name: 'California', count: skiDestinations.filter((d) => d.region === 'California').length, emoji: '🌲' },
               { name: 'Northeast', count: skiDestinations.filter((d) => d.region === 'Northeast').length, emoji: '🌨️' },
               { name: 'Canada', count: skiDestinations.filter((d) => d.region === 'Canada').length, emoji: '🍁' },
+              { name: 'Pacific Northwest', count: skiDestinations.filter((d) => d.region === 'Pacific Northwest').length, emoji: '🌧️' },
+              { name: 'Southwest', count: skiDestinations.filter((d) => d.region === 'Southwest').length, emoji: '☀️' },
             ].map((region) => (
               <Link
                 key={region.name}

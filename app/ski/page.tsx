@@ -29,6 +29,8 @@ const regions = [
   { label: 'Montana/Wyoming', value: 'Montana/Wyoming' },
   { label: 'Northeast', value: 'Northeast' },
   { label: 'Canada', value: 'Canada' },
+  { label: 'Pacific Northwest', value: 'Pacific Northwest' },
+  { label: 'Southwest', value: 'Southwest' },
 ]
 
 const sortOptions = [

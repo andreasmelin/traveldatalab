@@ -41,6 +41,24 @@ const guideEntries: { slug: string; title: string; description: string; category
   { slug: 'lake-louise', title: 'Lake Louise Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Lake Louise ski trip with our insider guide to skiing with the most stunning views in the world.', category: 'Ski' },
   { slug: 'mont-tremblant', title: 'Mont Tremblant Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Mont Tremblant ski trip with our insider guide to European-style skiing in eastern Canada.', category: 'Ski' },
   { slug: 'sun-peaks', title: 'Sun Peaks Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Sun Peaks ski trip with our insider guide to Canada\'s second-largest resort with small-town charm.', category: 'Ski' },
+  { slug: 'arapahoe-basin', title: 'Arapahoe Basin Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Arapahoe Basin ski trip with our insider guide to the highest skiable terrain in North America and the longest Colorado season.', category: 'Ski' },
+  { slug: 'crested-butte', title: 'Crested Butte Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Crested Butte ski trip with our insider guide to extreme terrain and a charming historic mining town.', category: 'Ski' },
+  { slug: 'snowbasin', title: 'Snowbasin Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Snowbasin ski trip with our insider guide to the 2002 Olympic venue with uncrowded slopes in the Ogden area.', category: 'Ski' },
+  { slug: 'kirkwood', title: 'Kirkwood Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Kirkwood ski trip with our insider guide to Tahoe\'s deepest powder and expert terrain.', category: 'Ski' },
+  { slug: 'sugar-bowl', title: 'Sugar Bowl Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Sugar Bowl ski trip with our insider guide to the historic Donner Pass resort and big Sierra snowfall.', category: 'Ski' },
+  { slug: 'whitefish', title: 'Whitefish Mountain Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Whitefish Mountain ski trip with our insider guide to the Glacier National Park gateway with great value.', category: 'Ski' },
+  { slug: 'grand-targhee', title: 'Grand Targhee Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Grand Targhee ski trip with our insider guide to legendary powder on the quiet side of the Tetons.', category: 'Ski' },
+  { slug: 'sun-valley', title: 'Sun Valley Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Sun Valley ski trip with our insider guide to America\'s first ski resort and world-class grooming.', category: 'Ski' },
+  { slug: 'sugarloaf', title: 'Sugarloaf Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Sugarloaf ski trip with our insider guide to the only East Coast above-treeline skiing in Maine.', category: 'Ski' },
+  { slug: 'bretton-woods', title: 'Bretton Woods Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Bretton Woods ski trip with our insider guide to New Hampshire\'s largest resort with Mt. Washington views.', category: 'Ski' },
+  { slug: 'loon-mountain', title: 'Loon Mountain Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Loon Mountain ski trip with our insider guide to the White Mountains family favorite.', category: 'Ski' },
+  { slug: 'mt-bachelor', title: 'Mt. Bachelor Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Mt. Bachelor ski trip with our insider guide to volcanic 360-degree terrain and dry Pacific powder.', category: 'Ski' },
+  { slug: 'crystal-mountain', title: 'Crystal Mountain Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Crystal Mountain ski trip with our insider guide to Mt. Rainier views and Seattle\'s home mountain.', category: 'Ski' },
+  { slug: 'stevens-pass', title: 'Stevens Pass Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Stevens Pass ski trip with our insider guide to deep Cascade snow and convenient Seattle access.', category: 'Ski' },
+  { slug: 'taos', title: 'Taos Ski Valley Guide: Where to Stay, Eat & Ski', description: 'Plan your Taos Ski Valley trip with our insider guide to legendary steep terrain and Southwest culture.', category: 'Ski' },
+  { slug: 'big-white', title: 'Big White Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Big White ski trip with our insider guide to Champagne powder and a family-friendly BC village.', category: 'Ski' },
+  { slug: 'revelstoke', title: 'Revelstoke Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Revelstoke ski trip with our insider guide to the longest vertical drop in North America.', category: 'Ski' },
+  { slug: 'fernie', title: 'Fernie Alpine Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Fernie ski trip with our insider guide to the legendary powder town in the Canadian Rockies.', category: 'Ski' },
   // Gear guides
   { slug: 'best-ski-goggles-2026', title: 'Best Ski Goggles 2026: Top Picks for Every Budget', description: 'Expert-tested ski goggle reviews for 2026. Compare lens tech, fit types, and fog resistance across 8 top picks.', category: 'Gear' },
   { slug: 'best-ski-base-layers-2026', title: 'Best Base Layers for Skiing 2026: Top Picks for Every Budget', description: 'Expert guide to the best ski base layers for 2026. Compare merino wool vs synthetic, weight ratings, and moisture-wicking performance.', category: 'Gear' },
@@ -60,7 +78,7 @@ const guideEntries: { slug: string; title: string; description: string; category
 export function getSearchIndex(): SearchItem[] {
   const items: SearchItem[] = []
 
-  // All 30 ski destinations
+  // All 48 ski destinations
   for (const dest of skiDestinations) {
     items.push({
       title: dest.name,

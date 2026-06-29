@@ -11,6 +11,8 @@ const skiRegions = [
   { name: 'California', href: '/ski?region=California' },
   { name: 'Northeast', href: '/ski?region=Northeast' },
   { name: 'Canada', href: '/ski?region=Canada' },
+  { name: 'Pacific Northwest', href: '/ski?region=Pacific Northwest' },
+  { name: 'Southwest', href: '/ski?region=Southwest' },
 ]
 
 export default function Header() {

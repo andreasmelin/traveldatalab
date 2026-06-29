@@ -24,6 +24,8 @@ export default function Footer() {
               <li><Link href="/ski?region=California" className="text-gray-400 hover:text-white no-underline transition-colors">California</Link></li>
               <li><Link href="/ski?region=Northeast" className="text-gray-400 hover:text-white no-underline transition-colors">Northeast</Link></li>
               <li><Link href="/ski?region=Canada" className="text-gray-400 hover:text-white no-underline transition-colors">Canada</Link></li>
+              <li><Link href="/ski?region=Pacific Northwest" className="text-gray-400 hover:text-white no-underline transition-colors">Pacific Northwest</Link></li>
+              <li><Link href="/ski?region=Southwest" className="text-gray-400 hover:text-white no-underline transition-colors">Southwest</Link></li>
             </ul>
           </div>
 
