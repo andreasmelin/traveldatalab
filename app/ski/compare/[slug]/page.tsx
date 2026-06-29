@@ -116,8 +116,8 @@ export default async function ComparisonPage({
     {
       question: `Which resort gets more snow, ${dest1.name} or ${dest2.name}?`,
       answer: snowWinner
-        ? `${snowWinner.name} receives more annual snowfall at ${snowWinner === dest1 ? dest1.snowfall : dest2.snowfall}, compared to ${snowWinner === dest1 ? dest2.snowfall : dest1.snowfall} at ${snowWinner === dest1 ? dest2.name : dest1.name}. ${dest1.name} has a vertical drop of ${dest1.verticalDrop.toLocaleString()} feet and ${dest2.name} has ${dest2.verticalDrop.toLocaleString()} feet.`
-        : `Both resorts receive similar snowfall. ${dest1.name} averages ${dest1.snowfall} and ${dest2.name} averages ${dest2.snowfall} annually.`,
+        ? `${snowWinner.name} receives more snowfall at ${snowWinner === dest1 ? dest1.snowfall : dest2.snowfall}, compared to ${snowWinner === dest1 ? dest2.snowfall : dest1.snowfall} at ${snowWinner === dest1 ? dest2.name : dest1.name}. ${dest1.name} has a vertical drop of ${dest1.verticalDrop.toLocaleString()} feet and ${dest2.name} has ${dest2.verticalDrop.toLocaleString()} feet.`
+        : `Both resorts receive similar snowfall. ${dest1.name} averages ${dest1.snowfall} and ${dest2.name} averages ${dest2.snowfall}.`,
     },
     {
       question: `Is ${dest1.name} or ${dest2.name} better for beginners?`,
@@ -217,7 +217,7 @@ export default async function ComparisonPage({
             : 0,
     },
     {
-      label: 'Annual Snowfall',
+      label: 'Snowfall',
       val1: dest1.snowfall,
       val2: dest2.snowfall,
       winner:

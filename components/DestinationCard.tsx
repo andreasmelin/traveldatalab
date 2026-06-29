@@ -56,7 +56,8 @@ export default function DestinationCard({ destination, resortImage }: { destinat
                 <div className="text-xs text-gray-500">Vertical</div>
               </div>
             </div>
-            <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
+            <div className="flex items-center flex-wrap gap-x-3 gap-y-1 text-xs text-gray-500 mb-3">
+              <span className="font-medium text-gray-700">Terrain:</span>
               <span className="flex items-center gap-1">
                 <span className="w-2 h-2 rounded-full bg-green-400 inline-block" />
                 {ski.terrain.beginner}% Beginner
@@ -74,7 +75,7 @@ export default function DestinationCard({ destination, resortImage }: { destinat
         )}
         <div className="flex items-center justify-between text-xs">
           {ski ? (
-            <span className="text-gray-400">{ski.snowfall}</span>
+            <span className="text-gray-400">Snow: {ski.snowfall}</span>
           ) : (
             <span className="text-gray-400">{destination.bestMonths.slice(0, 3).join(', ')}</span>
           )}

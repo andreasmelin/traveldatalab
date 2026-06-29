@@ -54,7 +54,7 @@ export default function ResortMap({
                     <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-gray-700 mb-2">
                       <span>{ski.skiableAcres.toLocaleString()} acres</span>
                       <span>{ski.numberOfTrails} trails</span>
-                      <span>{ski.snowfall}</span>
+                      <span>Snow: {ski.snowfall}</span>
                       <span>{ski.verticalDrop.toLocaleString()}&apos; vert</span>
                     </div>
                   )}

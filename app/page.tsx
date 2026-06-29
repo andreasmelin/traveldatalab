@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Mountain, MapPin, Snowflake, ArrowRight, BarChart3, Hotel } from 'lucide-react'
+import { Mountain, MapPin, Snowflake, Sun, ArrowRight, BarChart3, Hotel } from 'lucide-react'
 import { skiDestinations } from '@/lib/destinations'
 import { getAllGuides } from '@/lib/guides'
 import { getResortImagePath, getCategoryImagePath } from '@/lib/images'
@@ -62,6 +62,34 @@ export default function Home() {
               >
                 Compare Resorts
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Season Chooser */}
+      <section className="bg-gray-50 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h2 className="text-lg font-semibold text-gray-900 text-center mb-4">What are you planning?</h2>
+          <div className="flex justify-center gap-4">
+            <Link
+              href="/ski"
+              className="flex items-center gap-3 bg-white border-2 border-sky-500 rounded-xl px-6 py-4 no-underline hover:bg-sky-50 transition-colors shadow-sm"
+            >
+              <Snowflake className="w-6 h-6 text-sky-500" />
+              <div>
+                <div className="font-bold text-gray-900">Winter</div>
+                <div className="text-xs text-gray-500">{skiDestinations.length} ski resorts</div>
+              </div>
+            </Link>
+            <div
+              className="flex items-center gap-3 bg-white border-2 border-gray-200 rounded-xl px-6 py-4 opacity-50 cursor-not-allowed"
+            >
+              <Sun className="w-6 h-6 text-amber-400" />
+              <div>
+                <div className="font-bold text-gray-900">Summer</div>
+                <div className="text-xs text-gray-500">Coming soon</div>
+              </div>
             </div>
           </div>
         </div>

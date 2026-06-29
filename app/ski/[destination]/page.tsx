@@ -37,7 +37,7 @@ export async function generateMetadata({
 
   return {
     title: `${dest.name}: Where to Stay, Weather & Ski Guide`,
-    description: `Plan your trip to ${dest.name} in ${dest.state}. ${dest.skiableAcres.toLocaleString()} skiable acres, ${dest.snowfall} annual snowfall. Find hotels, weather forecasts, and trail maps.`,
+    description: `Plan your trip to ${dest.name} in ${dest.state}. ${dest.skiableAcres.toLocaleString()} skiable acres, ${dest.snowfall}. Find hotels, weather forecasts, and trail maps.`,
     alternates: { canonical: `/ski/${dest.slug}` },
     openGraph: {
       title: `${dest.name}: Where to Stay, Weather & Ski Guide`,
@@ -298,7 +298,7 @@ export default async function DestinationPage({
               <Snowflake className="w-5 h-5 text-sky-500 flex-shrink-0 mt-0.5" />
               <div>
                 <div className="text-sm font-medium text-gray-900">
-                  Annual Snowfall
+                  Snowfall
                 </div>
                 <div className="text-sm text-gray-600">{dest.snowfall}</div>
               </div>
