@@ -34,61 +34,37 @@ export default function Home() {
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-800 via-slate-900 to-sky-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="flex items-center justify-center gap-2 mb-4">
               <Mountain className="w-8 h-8 text-sky-400" />
               <span className="text-sky-400 font-semibold text-sm uppercase tracking-wider">TravelDataLab</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Find Your Perfect
-              <span className="text-sky-400"> Destination</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+              Data-Driven Travel Guides
             </h1>
-            <p className="text-lg text-slate-300 mb-8 max-w-2xl">
-              Data-driven guides to {skiDestinations.length} ski resorts across the US and Canada.
-              Compare terrain, check weather, find the best hotels, and plan your trip with confidence.
+            <p className="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">
+              Compare destinations, check weather, find the best hotels, and plan your trip with confidence.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex justify-center gap-4">
               <Link
                 href="/ski"
-                className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors no-underline"
+                className="flex items-center gap-3 bg-white/10 hover:bg-white/20 border-2 border-sky-400 rounded-xl px-6 py-4 no-underline transition-colors"
               >
-                Explore Destinations
-                <ArrowRight className="w-5 h-5" />
+                <Snowflake className="w-7 h-7 text-sky-400" />
+                <div className="text-left">
+                  <div className="font-bold text-white">Winter</div>
+                  <div className="text-xs text-slate-300">{skiDestinations.length} ski resorts</div>
+                </div>
               </Link>
-              <Link
-                href="/ski/compare"
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg transition-colors no-underline border border-white/20"
+              <div
+                className="flex items-center gap-3 bg-white/5 border-2 border-white/10 rounded-xl px-6 py-4 opacity-40 cursor-not-allowed"
               >
-                Compare Resorts
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Season Chooser */}
-      <section className="bg-gray-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h2 className="text-lg font-semibold text-gray-900 text-center mb-4">What are you planning?</h2>
-          <div className="flex justify-center gap-4">
-            <Link
-              href="/ski"
-              className="flex items-center gap-3 bg-white border-2 border-sky-500 rounded-xl px-6 py-4 no-underline hover:bg-sky-50 transition-colors shadow-sm"
-            >
-              <Snowflake className="w-6 h-6 text-sky-500" />
-              <div>
-                <div className="font-bold text-gray-900">Winter</div>
-                <div className="text-xs text-gray-500">{skiDestinations.length} ski resorts</div>
-              </div>
-            </Link>
-            <div
-              className="flex items-center gap-3 bg-white border-2 border-gray-200 rounded-xl px-6 py-4 opacity-50 cursor-not-allowed"
-            >
-              <Sun className="w-6 h-6 text-amber-400" />
-              <div>
-                <div className="font-bold text-gray-900">Summer</div>
-                <div className="text-xs text-gray-500">Coming soon</div>
+                <Sun className="w-7 h-7 text-amber-400" />
+                <div className="text-left">
+                  <div className="font-bold text-white">Summer</div>
+                  <div className="text-xs text-slate-400">Coming soon</div>
+                </div>
               </div>
             </div>
           </div>
@@ -203,16 +179,16 @@ export default function Home() {
       {/* CTA */}
       <section className="bg-gradient-to-r from-sky-600 to-sky-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <Snowflake className="w-10 h-10 text-sky-200 mx-auto mb-4" />
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Plan Your Trip?</h2>
+          <Mountain className="w-10 h-10 text-sky-200 mx-auto mb-4" />
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Plan Your Ski Trip?</h2>
           <p className="text-sky-100 mb-8 max-w-xl mx-auto">
-            Browse all {skiDestinations.length} destinations, compare side by side, and find the perfect hotel for your next adventure.
+            Browse all {skiDestinations.length} ski resorts, compare side by side, and find the perfect hotel for your next mountain adventure.
           </p>
           <Link
             href="/ski"
             className="inline-flex items-center gap-2 bg-white text-sky-700 font-semibold px-8 py-3 rounded-lg hover:bg-sky-50 transition-colors no-underline"
           >
-            Browse All Destinations
+            Browse All Ski Resorts
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
