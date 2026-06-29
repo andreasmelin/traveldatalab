@@ -9,6 +9,7 @@ const skiRegions = [
   { name: 'Colorado', href: '/ski?region=Colorado' },
   { name: 'Utah', href: '/ski?region=Utah' },
   { name: 'California', href: '/ski?region=California' },
+  { name: 'Montana / Wyoming', href: '/ski?region=Montana%2FWyoming' },
   { name: 'Northeast', href: '/ski?region=Northeast' },
   { name: 'Canada', href: '/ski?region=Canada' },
   { name: 'Pacific Northwest', href: '/ski?region=Pacific Northwest' },

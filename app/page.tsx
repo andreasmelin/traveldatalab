@@ -85,7 +85,7 @@ export default function Home() {
             <div>
               <div className="flex items-center justify-center gap-2 mb-1">
                 <MapPin className="w-5 h-5 text-sky-500" />
-                <span className="text-2xl font-bold text-gray-900">7</span>
+                <span className="text-2xl font-bold text-gray-900">8</span>
               </div>
               <span className="text-sm text-gray-500">Regions</span>
             </div>
@@ -134,11 +134,12 @@ export default function Home() {
       <section className="bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Explore by Region</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
             {[
               { name: 'Colorado', count: skiDestinations.filter((d) => d.region === 'Colorado').length, emoji: '🏔️' },
               { name: 'Utah', count: skiDestinations.filter((d) => d.region === 'Utah').length, emoji: '⛷️' },
               { name: 'California', count: skiDestinations.filter((d) => d.region === 'California').length, emoji: '🌲' },
+              { name: 'Montana / Wyoming', count: skiDestinations.filter((d) => d.region === 'Montana/Wyoming').length, emoji: '🦌' },
               { name: 'Northeast', count: skiDestinations.filter((d) => d.region === 'Northeast').length, emoji: '🌨️' },
               { name: 'Canada', count: skiDestinations.filter((d) => d.region === 'Canada').length, emoji: '🍁' },
               { name: 'Pacific Northwest', count: skiDestinations.filter((d) => d.region === 'Pacific Northwest').length, emoji: '🌧️' },
@@ -146,7 +147,7 @@ export default function Home() {
             ].map((region) => (
               <Link
                 key={region.name}
-                href={`/ski?region=${region.name}`}
+                href={`/ski?region=${encodeURIComponent(region.name === 'Montana / Wyoming' ? 'Montana/Wyoming' : region.name)}`}
                 className="flex flex-col items-center gap-2 p-6 bg-gray-50 hover:bg-sky-50 border border-gray-100 hover:border-sky-200 rounded-xl transition-all no-underline"
               >
                 <span className="text-3xl">{region.emoji}</span>
