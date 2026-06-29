@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Mountain, ChevronRight, Snowflake, LayoutGrid, Map } from 'lucide-react'
+import { Mountain, ChevronRight, Snowflake, LayoutGrid, Map, X } from 'lucide-react'
 import { skiDestinations, getDestinationsByRegion, sortDestinations, filterDestinations } from '@/lib/destinations'
 import { getResortImagePath } from '@/lib/images'
 import DestinationCard from '@/components/DestinationCard'
 import ResortMapWrapper from '@/components/ResortMapWrapper'
+import CompareMode from '@/components/CompareMode'
 
 export const metadata: Metadata = {
   title: 'Ski Resorts in the US & Canada',
@@ -313,6 +314,17 @@ export default async function SkiPage({
           </div>
         </div>
 
+        {/* Clear all filters */}
+        {(region || sort || terrain || skiInOut || nightSkiing || budget || elevation) && (
+          <Link
+            href={view ? `/ski?view=${view}` : '/ski'}
+            className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-red-500 no-underline mb-4 transition-colors"
+          >
+            <X className="w-3.5 h-3.5" />
+            Clear all filters
+          </Link>
+        )}
+
         {/* Results info */}
         <p className="text-sm text-gray-500 mb-6">
           Showing {destinations.length} resort
@@ -324,11 +336,11 @@ export default async function SkiPage({
         {isMapView ? (
           <ResortMapWrapper destinations={destinations} />
         ) : destinations.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <CompareMode resorts={destinations.map((d) => ({ slug: d.slug, name: d.name }))}>
             {destinations.map((d) => (
               <DestinationCard key={d.slug} destination={d} resortImage={getResortImagePath(d.slug)} />
             ))}
-          </div>
+          </CompareMode>
         ) : (
           <div className="text-center py-16 text-gray-500">
             <Mountain className="w-12 h-12 mx-auto mb-4 opacity-30" />
