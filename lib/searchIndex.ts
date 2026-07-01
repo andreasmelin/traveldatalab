@@ -1,10 +1,12 @@
 import { skiDestinations } from './destinations'
+import { nationalParks } from './national-parks'
 import { comparisons } from './comparisons'
+import { parkComparisons } from './park-comparisons'
 
 export interface SearchItem {
   title: string
   description: string
-  category: 'Resort' | 'Guide' | 'Comparison' | 'Gear' | 'Budget' | 'Travel'
+  category: 'Resort' | 'Park' | 'Guide' | 'Comparison' | 'Gear' | 'Budget' | 'Travel'
   url: string
 }
 
@@ -59,20 +61,53 @@ const guideEntries: { slug: string; title: string; description: string; category
   { slug: 'big-white', title: 'Big White Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Big White ski trip with our insider guide to Champagne powder and a family-friendly BC village.', category: 'Ski' },
   { slug: 'revelstoke', title: 'Revelstoke Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Revelstoke ski trip with our insider guide to the longest vertical drop in North America.', category: 'Ski' },
   { slug: 'fernie', title: 'Fernie Alpine Ski Guide: Where to Stay, Eat & Ski', description: 'Plan your Fernie ski trip with our insider guide to the legendary powder town in the Canadian Rockies.', category: 'Ski' },
-  // Gear guides
+  // Park destination guides
+  { slug: 'yellowstone', title: 'Yellowstone Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Yellowstone. Top hikes, best months to visit, where to stay, and essential tips for Wyoming.', category: 'Parks' },
+  { slug: 'grand-teton', title: 'Grand Teton Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Grand Teton. Top hikes, best months to visit, where to stay, and essential tips for Wyoming.', category: 'Parks' },
+  { slug: 'glacier', title: 'Glacier National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Glacier National Park. Top hikes, best months to visit, where to stay, and essential tips for Montana.', category: 'Parks' },
+  { slug: 'rocky-mountain', title: 'Rocky Mountain National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Rocky Mountain National Park. Top hikes, best months to visit, where to stay, and essential tips for Colorado.', category: 'Parks' },
+  { slug: 'grand-canyon', title: 'Grand Canyon Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to the Grand Canyon. Top hikes, best months to visit, where to stay, and essential tips for Arizona.', category: 'Parks' },
+  { slug: 'arches', title: 'Arches National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Arches National Park. Top hikes, best months to visit, where to stay, and essential tips for Utah.', category: 'Parks' },
+  { slug: 'zion', title: 'Zion Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Zion National Park. Top hikes, best months to visit, where to stay, and essential tips for Utah.', category: 'Parks' },
+  { slug: 'bryce-canyon', title: 'Bryce Canyon Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Bryce Canyon. Top hikes, best months to visit, where to stay, and essential tips for Utah.', category: 'Parks' },
+  { slug: 'canyonlands', title: 'Canyonlands Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Canyonlands. Top hikes, best months to visit, where to stay, and essential tips for Utah.', category: 'Parks' },
+  { slug: 'joshua-tree', title: 'Joshua Tree Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Joshua Tree. Top hikes, best months to visit, where to stay, and essential tips for California.', category: 'Parks' },
+  { slug: 'saguaro', title: 'Saguaro National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Saguaro National Park. Top hikes, best months to visit, where to stay, and essential tips for Arizona.', category: 'Parks' },
+  { slug: 'yosemite', title: 'Yosemite Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Yosemite. Top hikes, best months to visit, where to stay, and essential tips for California.', category: 'Parks' },
+  { slug: 'sequoia-kings-canyon', title: 'Sequoia & Kings Canyon Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Sequoia & Kings Canyon. Top hikes, best months to visit, where to stay, and essential tips for California.', category: 'Parks' },
+  { slug: 'olympic', title: 'Olympic National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Olympic National Park. Top hikes, best months to visit, where to stay, and essential tips for Washington.', category: 'Parks' },
+  { slug: 'mount-rainier', title: 'Mount Rainier Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Mount Rainier. Top hikes, best months to visit, where to stay, and essential tips for Washington.', category: 'Parks' },
+  { slug: 'great-smoky-mountains', title: 'Great Smoky Mountains Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Great Smoky Mountains. Top hikes, best months to visit, where to stay, and essential tips for Tennessee and North Carolina.', category: 'Parks' },
+  { slug: 'everglades', title: 'Everglades Guide: Best Trails, When to Visit & Where to Stay', description: 'Plan your trip to the Everglades. Best trails, best months to visit, where to stay, and essential tips for Florida.', category: 'Parks' },
+  { slug: 'acadia', title: 'Acadia National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Acadia National Park. Top hikes, best months to visit, where to stay, and essential tips for Maine.', category: 'Parks' },
+  { slug: 'denali', title: 'Denali National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Denali National Park. Top hikes, best months to visit, where to stay, and essential tips for Alaska.', category: 'Parks' },
+  { slug: 'haleakala', title: 'Haleakala Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Haleakala. Top hikes, best months to visit, where to stay, and essential tips for Hawaii.', category: 'Parks' },
+  // Ski gear guides
   { slug: 'best-ski-goggles-2026', title: 'Best Ski Goggles 2026: Top Picks for Every Budget', description: 'Expert-tested ski goggle reviews for 2026. Compare lens tech, fit types, and fog resistance across 8 top picks.', category: 'Gear' },
   { slug: 'best-ski-base-layers-2026', title: 'Best Base Layers for Skiing 2026: Top Picks for Every Budget', description: 'Expert guide to the best ski base layers for 2026. Compare merino wool vs synthetic, weight ratings, and moisture-wicking performance.', category: 'Gear' },
   { slug: 'best-ski-helmets-2026', title: 'Best Ski Helmets 2026: Top Picks for Every Budget', description: 'Expert-reviewed ski helmets for 2026. Compare MIPS protection, ventilation, fit systems, and goggle compatibility.', category: 'Gear' },
   { slug: 'best-ski-jackets-2026', title: 'Best Ski Jackets 2026: Top Picks for Every Budget', description: 'Expert-tested ski jacket reviews for 2026. Compare Gore-Tex waterproofing, insulation types, breathability, and features.', category: 'Gear' },
   { slug: 'ski-trip-packing-list-2026', title: 'Complete Ski Trip Packing List 2026: Everything You Need', description: 'The definitive ski trip packing list for 2026. Expert-organized guide covering essential gear, clothing layers, accessories, and travel tips.', category: 'Gear' },
+  // Hiking gear guides
+  { slug: 'best-hiking-boots-2026', title: 'Best Hiking Boots 2026: Top Picks for Every Trail', description: 'Expert-tested hiking boot reviews for 2026. Compare support, waterproofing, and comfort across 8 top picks for national park adventures.', category: 'Gear' },
+  { slug: 'best-hiking-backpacks-2026', title: 'Best Hiking Backpacks 2026: Daypacks to Multi-Day', description: 'Expert guide to the best hiking backpacks for 2026. Compare capacity, comfort, and features across 8 top daypacks and multi-day packs.', category: 'Gear' },
+  { slug: 'best-hiking-water-bottles-2026', title: 'Best Water Bottles & Hydration 2026 for Hiking', description: 'Stay hydrated on the trail with our expert picks for water bottles, hydration reservoirs, and filtration systems for 2026.', category: 'Gear' },
+  { slug: 'best-hiking-sun-protection-2026', title: 'Best Sun Protection for Hiking 2026: Hats, Sunscreen & UPF Clothing', description: 'Protect yourself on the trail with expert-tested sun protection gear for hiking.', category: 'Gear' },
+  { slug: 'national-park-packing-list-2026', title: 'Complete National Park Packing List 2026', description: 'The definitive packing list for national park trips. Expert-organized checklist with links to recommended gear.', category: 'Gear' },
   // Budget guides
   { slug: 'cheapest-ski-trips-colorado-2026', title: 'Cheapest Ski Trips in Colorado 2026: Budget-Friendly Mountain Getaways', description: 'Score affordable ski trips in Colorado without sacrificing quality. Lift ticket deals, budget lodging, cheap eats, and multi-resort pass strategies.', category: 'Budget' },
   { slug: 'ski-trip-budget-planner-2026', title: 'Ski Trip Budget Planner 2026: How to Budget for Your Next Ski Vacation', description: 'A complete cost breakdown for planning a ski trip in 2026. Learn how to budget for lift tickets, lodging, gear rental, food, and travel.', category: 'Budget' },
   { slug: 'best-value-ski-resorts-2026', title: 'Best Value Ski Resorts in North America 2026: More Mountain for Your Money', description: 'Find the best value ski resorts in the US and Canada for 2026. Compare cost-per-acre, affordable lodging, and budget-friendly amenities.', category: 'Budget' },
+  { slug: 'cheapest-national-park-trips-2026', title: 'Cheapest National Park Trips 2026: Budget-Friendly Adventures', description: 'Visit national parks without breaking the bank. Budget tips for camping, free entrance days, and affordable gateway towns.', category: 'Budget' },
+  { slug: 'national-park-budget-planner-2026', title: 'National Park Budget Planner 2026: How to Budget Your Trip', description: 'A complete cost breakdown for national park trips in 2026. Budget for entrance fees, lodging, food, gas, and gear.', category: 'Budget' },
+  { slug: 'america-the-beautiful-pass-guide-2026', title: 'America the Beautiful Pass 2026: Is It Worth It?', description: 'Everything you need to know about the America the Beautiful annual park pass. Cost analysis, where to buy, and which parks it covers.', category: 'Budget' },
   // Travel guides
   { slug: 'flying-with-ski-gear-2026', title: 'Flying with Ski Gear 2026: Airline Policies, Packing Tips & Shipping Alternatives', description: 'Everything you need to know about flying with ski equipment in 2026. Airline bag fees, TSA rules, packing tips, and shipping alternatives.', category: 'Travel' },
   { slug: 'best-ski-road-trips-2026', title: 'Best Ski Road Trips in the US 2026: 5 Epic Routes for Every Skier', description: 'Discover the 5 best ski road trip routes across the US in 2026. Multi-resort itineraries through Colorado, Utah, Tahoe, Vermont, and Montana/Wyoming.', category: 'Travel' },
   { slug: 'first-ski-trip-guide-2026', title: 'Planning Your First Ski Trip 2026: A Complete Beginner\'s Guide', description: 'Everything first-time skiers need to know for planning a ski trip in 2026. When to go, what to rent vs buy, choosing a resort, and booking lessons.', category: 'Travel' },
+  { slug: 'best-national-park-road-trips-2026', title: 'Best National Park Road Trips 2026: 5 Epic Routes', description: 'Discover the 5 best national park road trip routes across the US. Multi-park itineraries through Utah, California, the Pacific Northwest, and more.', category: 'Travel' },
+  { slug: 'first-national-park-trip-guide-2026', title: 'Planning Your First National Park Trip: A Beginner\'s Guide', description: 'Everything first-time national park visitors need to know. How to choose a park, make reservations, pack appropriately, and stay safe.', category: 'Travel' },
+  { slug: 'national-park-camping-guide-2026', title: 'National Park Camping Guide 2026: Reservations, Gear & Tips', description: 'Complete guide to camping in national parks. Recreation.gov reservation tips, essential gear, and campground recommendations.', category: 'Travel' },
 ]
 
 export function getSearchIndex(): SearchItem[] {
@@ -88,7 +123,17 @@ export function getSearchIndex(): SearchItem[] {
     })
   }
 
-  // All guides (ski + gear)
+  // All national parks
+  for (const park of nationalParks) {
+    items.push({
+      title: park.name,
+      description: park.tagline,
+      category: 'Park',
+      url: `/parks/${park.slug}`,
+    })
+  }
+
+  // All guides (ski + parks + gear + budget + travel)
   for (const guide of guideEntries) {
     const category = guide.category === 'Gear' || guide.category === 'Tips'
       ? 'Gear'
@@ -105,13 +150,23 @@ export function getSearchIndex(): SearchItem[] {
     })
   }
 
-  // All comparisons
+  // All ski comparisons
   for (const comp of comparisons) {
     items.push({
       title: comp.title,
       description: comp.description,
       category: 'Comparison',
       url: `/ski/compare/${comp.slug}`,
+    })
+  }
+
+  // All park comparisons
+  for (const comp of parkComparisons) {
+    items.push({
+      title: comp.title,
+      description: comp.description,
+      category: 'Comparison',
+      url: `/parks/compare/${comp.slug}`,
     })
   }
 

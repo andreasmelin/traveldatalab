@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import type { Destination, SkiDestination } from '@/lib/types'
+import type { Destination, SkiDestination, NationalParkDestination } from '@/lib/types'
 
 // Fix Leaflet default icon issue in Next.js/webpack
 delete (L.Icon.Default.prototype as unknown as Record<string, unknown>)._getIconUrl
@@ -16,6 +16,10 @@ L.Icon.Default.mergeOptions({
 
 function isSkiDestination(d: Destination): d is SkiDestination {
   return d.activityType === 'ski'
+}
+
+function isParkDestination(d: Destination): d is NationalParkDestination {
+  return d.activityType === 'parks'
 }
 
 export default function ResortMap({
@@ -42,6 +46,8 @@ export default function ResortMap({
         />
         {destinations.map((dest) => {
           const ski = isSkiDestination(dest) ? dest : null
+          const park = isParkDestination(dest) ? dest : null
+          const linkColor = park ? 'text-emerald-600 hover:text-emerald-700' : 'text-sky-600 hover:text-sky-700'
           return (
             <Marker key={dest.slug} position={[dest.lat, dest.lng]}>
               <Popup>
@@ -58,9 +64,17 @@ export default function ResortMap({
                       <span>{ski.verticalDrop.toLocaleString()}&apos; vert</span>
                     </div>
                   )}
+                  {park && (
+                    <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-gray-700 mb-2">
+                      <span>{park.acreage.toLocaleString()} acres</span>
+                      <span>{park.numberOfTrails} trails</span>
+                      <span>{park.annualVisitors}</span>
+                      <span>Est. {park.established}</span>
+                    </div>
+                  )}
                   <a
-                    href={`/${dest.activityType}/${dest.slug}`}
-                    className="text-sky-600 hover:text-sky-700 font-medium text-xs"
+                    href={`/${dest.activityType === 'parks' ? 'parks' : 'ski'}/${dest.slug}`}
+                    className={`${linkColor} font-medium text-xs`}
                   >
                     View details &rarr;
                   </a>

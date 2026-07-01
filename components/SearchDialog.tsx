@@ -20,7 +20,8 @@ const fuse = new Fuse(searchIndex, {
 
 const categoryColors: Record<SearchItem['category'], { bg: string; text: string }> = {
   Resort: { bg: 'bg-sky-100', text: 'text-sky-700' },
-  Guide: { bg: 'bg-emerald-100', text: 'text-emerald-700' },
+  Park: { bg: 'bg-emerald-100', text: 'text-emerald-700' },
+  Guide: { bg: 'bg-green-100', text: 'text-green-700' },
   Comparison: { bg: 'bg-amber-100', text: 'text-amber-700' },
   Gear: { bg: 'bg-purple-100', text: 'text-purple-700' },
   Budget: { bg: 'bg-violet-100', text: 'text-violet-700' },

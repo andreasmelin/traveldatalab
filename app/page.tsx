@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { Mountain, MapPin, Snowflake, Sun, ArrowRight, BarChart3, Hotel } from 'lucide-react'
+import { Mountain, MapPin, Snowflake, Sun, ArrowRight, BarChart3, Hotel, TreePine } from 'lucide-react'
 import { skiDestinations } from '@/lib/destinations'
+import { nationalParks } from '@/lib/national-parks'
 import { getAllGuides } from '@/lib/guides'
 import { getResortImagePath, getCategoryImagePath } from '@/lib/images'
 import DestinationCard from '@/components/DestinationCard'
@@ -57,15 +58,16 @@ export default function Home() {
                   <div className="text-xs text-slate-300">{skiDestinations.length} ski resorts</div>
                 </div>
               </Link>
-              <div
-                className="flex items-center gap-3 bg-white/5 border-2 border-white/10 rounded-xl px-6 py-4 opacity-40 cursor-not-allowed"
+              <Link
+                href="/parks"
+                className="flex items-center gap-3 bg-white/10 hover:bg-white/20 border-2 border-emerald-400 rounded-xl px-6 py-4 no-underline transition-colors"
               >
                 <Sun className="w-7 h-7 text-amber-400" />
                 <div className="text-left">
                   <div className="font-bold text-white">Summer</div>
-                  <div className="text-xs text-slate-400">Coming soon</div>
+                  <div className="text-xs text-slate-300">{nationalParks.length} national parks</div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -156,6 +158,72 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* National Parks */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">National Parks</h2>
+            <p className="text-gray-600">Explore America&apos;s most iconic outdoor destinations</p>
+          </div>
+          <Link href="/parks" className="hidden sm:flex items-center gap-1 text-sm font-medium text-emerald-600 hover:text-emerald-700 no-underline">
+            View all <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {nationalParks
+            .filter((p) =>
+              ['yellowstone', 'yosemite', 'grand-canyon', 'zion', 'glacier', 'great-smoky-mountains'].includes(p.slug)
+            )
+            .map((park) => (
+              <Link
+                key={park.slug}
+                href={`/parks/${park.slug}`}
+                className="group block bg-white border border-gray-100 hover:border-emerald-200 hover:shadow-md rounded-xl no-underline transition-all overflow-hidden"
+              >
+                <div className="bg-gradient-to-br from-emerald-800 to-emerald-950 px-5 py-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">{park.name}</h3>
+                      <div className="flex items-center gap-1 text-sm text-emerald-200">
+                        <MapPin className="w-3.5 h-3.5" />
+                        {park.state}
+                      </div>
+                    </div>
+                    <TreePine className="w-8 h-8 text-emerald-400 opacity-50" />
+                  </div>
+                </div>
+                <div className="p-5">
+                  <p className="text-sm text-gray-600 mb-3 line-clamp-2">{park.tagline}</p>
+                  <div className="grid grid-cols-3 gap-3 mb-3">
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-gray-900">{park.acreage.toLocaleString()}</div>
+                      <div className="text-xs text-gray-500">Acres</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-gray-900">{park.numberOfTrails}</div>
+                      <div className="text-xs text-gray-500">Trails</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-lg font-bold text-gray-900">{park.annualVisitors.split(' ')[0]}</div>
+                      <div className="text-xs text-gray-500">Visitors/yr</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-end">
+                    <span className="flex items-center gap-1 text-emerald-600 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                      Explore <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+        </div>
+        <div className="mt-6 text-center">
+          <Link href="/parks" className="text-sm font-medium text-emerald-600 no-underline">
+            View all {nationalParks.length} parks →
+          </Link>
         </div>
       </section>
 

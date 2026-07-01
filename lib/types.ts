@@ -12,7 +12,7 @@ export interface Hotel {
   lng: number
 }
 
-export type ActivityType = 'ski' | 'hiking' | 'beach' | 'summer' | 'autumn'
+export type ActivityType = 'ski' | 'parks' | 'hiking' | 'beach' | 'summer' | 'autumn'
 
 export interface Destination {
   activityType: ActivityType
@@ -48,6 +48,20 @@ export interface SkiDestination extends Destination {
   terrain: { beginner: number; intermediate: number; advanced: number }
 }
 
+export interface NationalParkDestination extends Destination {
+  activityType: 'parks'
+  established: number
+  acreage: number
+  annualVisitors: string
+  entranceFee: string
+  numberOfTrails: number
+  highestPoint: string
+  season: string
+  petFriendly: boolean
+  camping: boolean
+  wilderness: boolean
+}
+
 export interface WeatherMonth {
   month: string
   avgHighF: number
@@ -60,6 +74,20 @@ export interface WeatherMonth {
 export interface DestinationWeather {
   slug: string
   monthly: WeatherMonth[]
+}
+
+export interface ParkWeatherMonth {
+  month: string
+  avgHighF: number
+  avgLowF: number
+  avgPrecipitationInches: number
+  rainyDays: number
+  sunnyDays: number
+}
+
+export interface ParkWeather {
+  slug: string
+  monthly: ParkWeatherMonth[]
 }
 
 export interface GuideFrontmatter {

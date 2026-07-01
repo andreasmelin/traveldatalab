@@ -20,6 +20,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [skiDropdown, setSkiDropdown] = useState(false)
   const [guidesDropdown, setGuidesDropdown] = useState(false)
+  const [gearDropdown, setGearDropdown] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
 
   useEffect(() => {
@@ -76,6 +77,13 @@ export default function Header() {
                   <Link href="/ski/compare" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 no-underline">
                     Compare Resorts
                   </Link>
+                  <div className="border-t border-gray-100 my-1" />
+                  <Link href="/parks" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 no-underline font-medium">
+                    National Parks
+                  </Link>
+                  <Link href="/parks/compare" className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 no-underline">
+                    Compare Parks
+                  </Link>
                 </div>
               )}
             </div>
@@ -109,9 +117,29 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <Link href="/gear/ski" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-sky-600 rounded-md no-underline transition-colors">
-              Gear
-            </Link>
+            <div
+              className="relative"
+              onMouseEnter={() => setGearDropdown(true)}
+              onMouseLeave={() => setGearDropdown(false)}
+            >
+              <Link
+                href="/gear/ski"
+                className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 hover:text-sky-600 rounded-md no-underline transition-colors"
+              >
+                Gear
+                <ChevronDown className="w-4 h-4" />
+              </Link>
+              {gearDropdown && (
+                <div className="absolute top-full left-0 w-48 bg-white shadow-lg rounded-lg border border-gray-100 py-2 z-50">
+                  <Link href="/gear/ski" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 no-underline font-medium">
+                    Ski Gear
+                  </Link>
+                  <Link href="/gear/parks" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 no-underline font-medium">
+                    Hiking Gear
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link href="/about" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-sky-600 rounded-md no-underline transition-colors">
               About
             </Link>
@@ -161,6 +189,12 @@ export default function Header() {
                 {r.name}
               </Link>
             ))}
+            <Link href="/parks" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 no-underline">
+              National Parks
+            </Link>
+            <Link href="/parks/compare" onClick={() => setMobileOpen(false)} className="block px-6 py-1.5 text-sm text-gray-500 no-underline">
+              Compare Parks
+            </Link>
             <Link href="/guides" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 no-underline">
               Guides
             </Link>
@@ -174,7 +208,10 @@ export default function Header() {
               Ski Guides
             </Link>
             <Link href="/gear/ski" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 no-underline">
-              Gear
+              Ski Gear
+            </Link>
+            <Link href="/gear/parks" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 no-underline">
+              Hiking Gear
             </Link>
             <Link href="/about" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 no-underline">
               About
