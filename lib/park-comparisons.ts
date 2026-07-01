@@ -1190,6 +1190,1432 @@ export const parkComparisons: Comparison[] = [
       },
     ],
   },
+  {
+    slug: 'death-valley-vs-white-sands',
+    destination1: 'death-valley',
+    destination2: 'white-sands',
+    title: 'Death Valley vs White Sands: Which National Park Should You Visit?',
+    description:
+      'Two extreme desert parks with alien landscapes. Death Valley is the hottest, driest, and lowest place in North America, while White Sands features the world\'s largest gypsum dune field glowing white against the New Mexico sky.',
+    verdict:
+      'Choose Death Valley for vast geological diversity and extreme superlatives. Choose White Sands for a surreal, otherworldly dune experience that is easier to visit and more family-friendly.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Both parks offer landscapes that look like other planets. Death Valley has colorful badlands, salt flats, and sand dunes across a massive area. White Sands delivers a singular, breathtaking white dune landscape.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 2,
+        explanation:
+          'White Sands is the largest gypsum dune field on Earth, a bright white landscape found nowhere else at this scale. Death Valley has many unique features but its desert terrain has parallels elsewhere.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'White Sands is compact and easily explored in half a day from nearby Las Cruces or Alamogordo. Death Valley is enormous and remote, requiring long drives between widely scattered attractions.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 2,
+        explanation:
+          'White Sands is a natural playground where kids can sled down dunes and roll in soft white sand. Death Valley\'s extreme heat and vast distances make it challenging for families with young children.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'Death Valley offers a wider range of challenging hikes, from slot canyons to mountain peaks reaching over 11,000 feet. White Sands has mostly easy to moderate dune walks.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Death Valley excels with its varied landscapes from Zabriskie Point to Mesquite Flat Dunes. White Sands offers stunning minimalist compositions, especially at sunrise and sunset when the dunes glow pink and gold.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Death Valley supports more species including coyotes, desert bighorn sheep, and the rare pupfish. White Sands has adapted species like bleached lizards and mice but overall less diversity.',
+      },
+      {
+        name: 'Value',
+        winner: 2,
+        explanation:
+          'White Sands has a lower entrance fee, is quicker to explore, and nearby towns offer affordable lodging. Death Valley requires more time, fuel, and higher accommodation costs at remote locations.',
+      },
+    ],
+  },
+  {
+    slug: 'crater-lake-vs-glacier',
+    destination1: 'crater-lake',
+    destination2: 'glacier',
+    title: 'Crater Lake vs Glacier: Which National Park Should You Visit?',
+    description:
+      'Two parks defined by water and ice. Crater Lake in Oregon holds the deepest lake in America within a volcanic caldera, while Glacier in Montana features over 700 lakes beneath carved alpine peaks.',
+    verdict:
+      'Choose Crater Lake for the singular experience of America\'s deepest, bluest lake. Choose Glacier for extensive alpine hiking, diverse lakes, and a larger wilderness experience.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Crater Lake\'s impossibly blue water in a volcanic caldera is one of America\'s most striking sights. Glacier\'s combination of turquoise lakes, peaks, and valleys is equally awe-inspiring across a much larger area.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Crater Lake is the deepest lake in the United States and one of the clearest bodies of water on Earth, formed in the caldera of a collapsed volcano. Nothing else compares to its blue intensity.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Glacier offers far more trail variety with long alpine routes requiring significant elevation gain. Crater Lake has a few good hikes but the rim trails are mostly moderate.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 2,
+        explanation:
+          'Glacier supports grizzly bears, mountain goats, bighorn sheep, and wolverines in a more diverse ecosystem. Crater Lake has deer and birds but limited large mammal viewing.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Crater Lake sees fewer annual visitors than Glacier, and its compact size means the rim drive distributes people efficiently. Glacier\'s Going-to-the-Sun Road creates significant bottlenecks.',
+      },
+      {
+        name: 'Camping',
+        winner: 2,
+        explanation:
+          'Glacier has many more campground options spread across the park with lakeside and forest settings. Crater Lake has limited camping primarily at Mazama Village and Lost Creek.',
+      },
+      {
+        name: 'Water Features',
+        winner: 0,
+        explanation:
+          'Crater Lake wins for sheer depth and color intensity, but Glacier\'s 700-plus lakes offer far more variety. Both parks are defined by their extraordinary water.',
+      },
+    ],
+  },
+  {
+    slug: 'shenandoah-vs-great-smoky-mountains',
+    destination1: 'shenandoah',
+    destination2: 'great-smoky-mountains',
+    title:
+      'Shenandoah vs Great Smoky Mountains: Which National Park Should You Visit?',
+    description:
+      'Two Appalachian parks connected by the Blue Ridge Parkway. Shenandoah offers Virginia mountain vistas along Skyline Drive, while Great Smoky Mountains provides deeper wilderness and extraordinary biodiversity in Tennessee and North Carolina.',
+    verdict:
+      'Choose Shenandoah for accessible scenic driving, easy day trips from Washington D.C., and quieter trails. Choose Great Smoky Mountains for greater biodiversity, larger backcountry, and free admission.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 2,
+        explanation:
+          'Great Smoky Mountains has more dramatic elevation changes, denser forests, and more varied landscapes including old-growth groves and cascading streams. Shenandoah has lovely ridgetop views but less variety.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Shenandoah sees roughly one-sixth the visitors of Great Smoky Mountains, which is the most visited national park in America. Even during fall foliage, Shenandoah\'s trails feel comparatively peaceful.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 2,
+        explanation:
+          'Great Smoky Mountains is one of the most biodiverse places in North America, with more species of trees than all of northern Europe and extraordinary salamander diversity. Shenandoah has deer and bears but less variety.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 1,
+        explanation:
+          'Shenandoah is just 75 miles from Washington D.C., making it an easy day trip or weekend getaway for millions. Great Smoky Mountains requires more travel for East Coast urban residents.',
+      },
+      {
+        name: 'Value',
+        winner: 2,
+        explanation:
+          'Great Smoky Mountains charges no entrance fee, making it the best value of any major national park. Shenandoah charges per vehicle and Skyline Drive has a toll component.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Great Smoky Mountains has more extensive trail networks including 70 miles of the Appalachian Trail with greater elevation gain. Shenandoah\'s hikes tend to be shorter with moderate difficulty.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Both parks shine during fall foliage season and misty mornings. Shenandoah offers excellent ridgetop panoramas while Great Smoky Mountains provides waterfall and forest compositions.',
+      },
+      {
+        name: 'Camping',
+        winner: 2,
+        explanation:
+          'Great Smoky Mountains has more campground options and a vastly larger backcountry camping system. Shenandoah has pleasant campgrounds along Skyline Drive but fewer total sites.',
+      },
+    ],
+  },
+  {
+    slug: 'redwood-vs-sequoia-kings-canyon',
+    destination1: 'redwood',
+    destination2: 'sequoia-kings-canyon',
+    title:
+      'Redwood vs Sequoia & Kings Canyon: Which National Park Should You Visit?',
+    description:
+      'California\'s two giant tree parks offer very different experiences. Redwood protects the tallest trees on Earth along the foggy northern coast, while Sequoia and Kings Canyon shelter the most massive trees by volume in the Sierra Nevada.',
+    verdict:
+      'Choose Redwood for the tallest trees on Earth and moody coastal forests. Choose Sequoia and Kings Canyon for the largest trees by volume and a more varied mountain wilderness.',
+    categories: [
+      {
+        name: 'Uniqueness',
+        winner: 0,
+        explanation:
+          'Both parks protect trees found nowhere else at this scale. Coast redwoods are the tallest living things on Earth, while giant sequoias are the most massive. Both are irreplaceable natural wonders.',
+      },
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Redwood combines towering forest with Pacific coastline, fern-carpeted floors, and misty atmosphere. Sequoia and Kings Canyon pair massive trees with alpine peaks and one of the deepest canyons in North America.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Redwood\'s remote northern California location keeps visitor numbers lower. Sequoia and Kings Canyon are more accessible from Southern California population centers and see heavier weekend traffic.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Sequoia and Kings Canyon offer more strenuous high-altitude hikes with significant elevation gain into alpine terrain. Redwood\'s trails are mostly gentle walks through old-growth forest and along the coast.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Redwood supports Roosevelt elk herds, Pacific seabirds, and marine life along its coastline. Sequoia and Kings Canyon have bears and marmots but less visible large wildlife.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Sequoia and Kings Canyon are closer to major airports in Fresno and the Central Valley. Redwood requires a long drive to California\'s far north coast with limited nearby airports.',
+      },
+      {
+        name: 'Water Features',
+        winner: 1,
+        explanation:
+          'Redwood offers dramatic Pacific coastline with tide pools, beaches, and the Smith River, one of California\'s last undammed rivers. Sequoia and Kings Canyon have rivers and waterfalls but no ocean.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Redwood excels with cathedral-like forest shots and moody fog, while Sequoia and Kings Canyon offer massive trunk close-ups and alpine vistas. Both are dream destinations for nature photographers.',
+      },
+    ],
+  },
+  {
+    slug: 'capitol-reef-vs-canyonlands',
+    destination1: 'capitol-reef',
+    destination2: 'canyonlands',
+    title:
+      'Capitol Reef vs Canyonlands: Which National Park Should You Visit?',
+    description:
+      'Two of Utah\'s lesser-known canyon parks with very different characters. Capitol Reef follows the Waterpocket Fold with its colorful cliffs and orchards, while Canyonlands offers vast, raw canyon wilderness carved by the Colorado and Green Rivers.',
+    verdict:
+      'Choose Capitol Reef for colorful geology, historic orchards, and a quieter, more intimate canyon experience. Choose Canyonlands for overwhelming scale, rugged wilderness, and deep solitude.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Capitol Reef\'s colorful Waterpocket Fold and layered sandstone cliffs are stunning. Canyonlands\' vast canyon panoramas and mesa formations are equally impressive. Both deliver world-class desert landscapes.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Capitol Reef is one of the least visited parks in Utah\'s Mighty Five, seeing a fraction of the visitors that even Canyonlands receives. Its remote location keeps crowds minimal year-round.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Canyonlands has more demanding trails, especially in the Needles and Maze districts. Capitol Reef\'s hikes range from easy washes to moderate canyon routes but are generally less strenuous.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Capitol Reef\'s historic Fruita orchards where visitors can pick fruit in season, combined with the 100-mile Waterpocket Fold geological formation, give it a distinctive character unlike any other park.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 1,
+        explanation:
+          'Capitol Reef\'s orchard walks, easy slot canyons, and the Scenic Drive make it very approachable for families. Canyonlands\' remote districts and cliff edges require more caution with children.',
+      },
+      {
+        name: 'Solitude',
+        winner: 2,
+        explanation:
+          'Canyonlands\' Maze district is one of the most remote and least visited areas in any national park. For true wilderness isolation, Canyonlands is hard to beat anywhere in the lower 48.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Capitol Reef excels with its colorful cliff faces and historic barn compositions, while Canyonlands offers dramatic Mesa Arch sunrise shots and sweeping canyon panoramas.',
+      },
+    ],
+  },
+  {
+    slug: 'big-bend-vs-guadalupe-mountains',
+    destination1: 'big-bend',
+    destination2: 'guadalupe-mountains',
+    title:
+      'Big Bend vs Guadalupe Mountains: Which National Park Should You Visit?',
+    description:
+      'Two remote Texas parks in the Chihuahuan Desert. Big Bend encompasses desert, river canyons, and the Chisos Mountains along the Rio Grande, while Guadalupe Mountains features the highest point in Texas and the spectacular McKittrick Canyon.',
+    verdict:
+      'Choose Big Bend for sheer variety with desert, river, and mountain ecosystems. Choose Guadalupe Mountains for challenging peak hikes, fall foliage, and the most solitary experience.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 1,
+        explanation:
+          'Big Bend offers extraordinary landscape variety from desert flats to the Chisos Mountains to the Rio Grande canyons. Guadalupe Mountains is scenic but more geologically uniform.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Guadalupe Mountains features the strenuous climb to Guadalupe Peak at 8,751 feet, the highest point in Texas. The trails are steep and exposed with significant elevation gain.',
+      },
+      {
+        name: 'Crowds',
+        winner: 2,
+        explanation:
+          'Guadalupe Mountains is one of the least visited parks in the lower 48, seeing fewer than 250,000 visitors annually. Big Bend gets more visitors but is still uncrowded by national park standards.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Big Bend has exceptional bird diversity with over 450 species documented, more than any other national park. It also supports javelinas, mountain lions, and roadrunners across its varied habitats.',
+      },
+      {
+        name: 'Water Features',
+        winner: 1,
+        explanation:
+          'Big Bend\'s Rio Grande creates dramatic canyons like Santa Elena and Boquillas, offering kayaking and hot spring soaking. Guadalupe Mountains has no significant water features.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Big Bend is one of the only parks bordering another country, with Mexican culture, hot springs along the Rio Grande, and an unmatched blend of desert and mountain ecosystems.',
+      },
+      {
+        name: 'Photography',
+        winner: 1,
+        explanation:
+          'Big Bend offers more diverse compositions from river canyon reflections to mountain sunsets to vast desert panoramas. Guadalupe Mountains\' best shots center on McKittrick Canyon in fall.',
+      },
+      {
+        name: 'Value',
+        winner: 2,
+        explanation:
+          'Guadalupe Mountains has a lower entrance fee and can be explored in one to two days. Big Bend requires more time and fuel given its remote location and vast size.',
+      },
+    ],
+  },
+  {
+    slug: 'channel-islands-vs-virgin-islands',
+    destination1: 'channel-islands',
+    destination2: 'virgin-islands',
+    title:
+      'Channel Islands vs Virgin Islands: Which National Park Should You Visit?',
+    description:
+      'America\'s two island national parks on opposite coasts. Channel Islands off the California coast protects rugged, windswept islands with endemic species, while Virgin Islands offers tropical beaches and coral reefs in the Caribbean.',
+    verdict:
+      'Choose Channel Islands for rugged island wilderness, sea caves, and unique wildlife. Choose Virgin Islands for tropical beaches, snorkeling, and a more relaxed island vacation.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Channel Islands offers dramatic sea cliffs, wind-sculpted hills, and vast ocean views. Virgin Islands delivers turquoise waters, white sand beaches, and lush tropical hillsides. Both are stunning in completely different ways.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Channel Islands is home to the island fox found nowhere else on Earth, plus enormous sea lion colonies and migrating whales. The islands\' isolation created a unique evolutionary laboratory.',
+      },
+      {
+        name: 'Water Features',
+        winner: 2,
+        explanation:
+          'Virgin Islands has warm, clear Caribbean waters perfect for swimming and snorkeling, with vibrant coral reefs and sea turtles. Channel Islands has cold Pacific waters better suited to kayaking than swimming.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Virgin Islands is accessible by regular ferry from St. Thomas with established tourism infrastructure. Channel Islands requires boat trips from Ventura that can be rough, with no services on the islands.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 2,
+        explanation:
+          'Virgin Islands\' calm, warm beaches and easy snorkeling are ideal for families. Channel Islands requires boat rides in rough seas and offers no facilities, making it challenging for young children.',
+      },
+      {
+        name: 'Solitude',
+        winner: 1,
+        explanation:
+          'Channel Islands\' limited boat access and lack of development keep visitor numbers very low. On the outer islands you may be one of only a handful of people. Virgin Islands is more developed and busier.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Channel Islands has been called the Galapagos of North America due to its endemic species and pristine island ecosystems. Virgin Islands is beautiful but shares characteristics with other Caribbean destinations.',
+      },
+      {
+        name: 'Camping',
+        winner: 0,
+        explanation:
+          'Channel Islands offers primitive island camping under the stars with no light pollution. Virgin Islands has established campgrounds at Cinnamon Bay with more amenities. Both provide memorable camping.',
+      },
+    ],
+  },
+  {
+    slug: 'dry-tortugas-vs-biscayne',
+    destination1: 'dry-tortugas',
+    destination2: 'biscayne',
+    title:
+      'Dry Tortugas vs Biscayne: Which National Park Should You Visit?',
+    description:
+      'Two ocean-based parks in South Florida. Dry Tortugas is a remote island fortress 70 miles off Key West, while Biscayne protects coral reefs and mangrove coastline just south of Miami.',
+    verdict:
+      'Choose Dry Tortugas for a bucket-list island adventure with a historic fort and pristine snorkeling. Choose Biscayne for easy Miami access and excellent reef exploration without the long boat trip.',
+    categories: [
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Dry Tortugas\' combination of Fort Jefferson, one of the largest masonry structures in the Americas, surrounded by crystal-clear tropical waters is found nowhere else. It feels genuinely remote and special.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Biscayne is easily reached from Miami with a short drive to its visitor center. Dry Tortugas requires a 2.5-hour ferry ride or seaplane from Key West, limiting visitor access significantly.',
+      },
+      {
+        name: 'Scenery',
+        winner: 1,
+        explanation:
+          'Dry Tortugas\' turquoise waters surrounding the massive hexagonal Fort Jefferson create an unforgettable visual. Biscayne\'s beauty is mostly underwater and its mangrove coastline is subtler.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 0,
+        explanation:
+          'Both parks protect important marine ecosystems with sea turtles, tropical fish, and coral reefs. Dry Tortugas is a critical seabird nesting site, while Biscayne supports manatees and crocodiles.',
+      },
+      {
+        name: 'Water Features',
+        winner: 0,
+        explanation:
+          'Both parks are overwhelmingly aquatic. Dry Tortugas has pristine open-ocean snorkeling, while Biscayne offers excellent reef snorkeling and kayaking through mangrove channels.',
+      },
+      {
+        name: 'Value',
+        winner: 2,
+        explanation:
+          'Biscayne has no entrance fee and is free to explore by kayak or on ranger-led programs. Dry Tortugas\' ferry costs over $200 per person, making it one of the most expensive park visits.',
+      },
+      {
+        name: 'Photography',
+        winner: 1,
+        explanation:
+          'Fort Jefferson surrounded by turquoise water provides one of the most photogenic scenes in any national park. Sunset shots from the fort walls are iconic. Biscayne\'s best photography is underwater.',
+      },
+    ],
+  },
+  {
+    slug: 'isle-royale-vs-voyageurs',
+    destination1: 'isle-royale',
+    destination2: 'voyageurs',
+    title:
+      'Isle Royale vs Voyageurs: Which National Park Should You Visit?',
+    description:
+      'Two remote northern parks centered on water and wilderness. Isle Royale is a roadless island in Lake Superior known for its wolf-moose study, while Voyageurs spans a chain of lakes along the Minnesota-Canada border.',
+    verdict:
+      'Choose Isle Royale for a true wilderness island experience with no roads and legendary solitude. Choose Voyageurs for accessible water-based recreation and stunning lake country accessible by motorboat.',
+    categories: [
+      {
+        name: 'Solitude',
+        winner: 1,
+        explanation:
+          'Isle Royale is the least visited national park in the lower 48 and has no roads, no cars, and no cell service. It offers a level of isolation that is genuinely rare in the national park system.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Voyageurs is reachable by car with multiple entry points and visitor centers. Isle Royale requires a ferry or seaplane from Michigan\'s Upper Peninsula or Minnesota, with limited seasonal access.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Isle Royale is famous for the world\'s longest-running predator-prey study between wolves and moose. The island also hosts foxes, loons, and otters in an undisturbed ecosystem.',
+      },
+      {
+        name: 'Water Features',
+        winner: 0,
+        explanation:
+          'Both parks are defined by water. Isle Royale sits in the largest freshwater lake by surface area on Earth. Voyageurs encompasses interconnected lakes perfect for boating and canoeing.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'Isle Royale has a 165-mile trail network including the challenging Greenstone Ridge Trail spanning the island. Voyageurs has limited mainland trails since most of the park is water.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 2,
+        explanation:
+          'Voyageurs is better for families with houseboat rentals, accessible visitor centers, and motorboat-friendly lakes. Isle Royale requires backpacking or primitive camping with no easy bail-out options.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Isle Royale offers moody lake and forest compositions with aurora potential. Voyageurs provides stunning lake reflections, island-dotted panoramas, and exceptional northern lights viewing.',
+      },
+    ],
+  },
+  {
+    slug: 'mammoth-cave-vs-carlsbad-caverns',
+    destination1: 'mammoth-cave',
+    destination2: 'carlsbad-caverns',
+    title:
+      'Mammoth Cave vs Carlsbad Caverns: Which National Park Should You Visit?',
+    description:
+      'America\'s two great cave parks offer very different underground experiences. Mammoth Cave in Kentucky is the longest known cave system on Earth, while Carlsbad Caverns in New Mexico features a massive decorated chamber and famous bat flights.',
+    verdict:
+      'Choose Mammoth Cave for the sheer scale of the world\'s longest cave system. Choose Carlsbad Caverns for spectacular cave formations, the Big Room, and the unforgettable bat flight experience.',
+    categories: [
+      {
+        name: 'Uniqueness',
+        winner: 0,
+        explanation:
+          'Mammoth Cave holds the record as the longest cave system on Earth with over 420 miles mapped. Carlsbad\'s Big Room is one of the largest cave chambers in North America. Both are world-class.',
+      },
+      {
+        name: 'Scenery',
+        winner: 2,
+        explanation:
+          'Carlsbad Caverns\' Big Room is far more visually spectacular, with massive stalactites, stalagmites, and flowstone formations. Mammoth Cave\'s passages are impressive in scale but less decorated.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 2,
+        explanation:
+          'Carlsbad Caverns\' bat flight, when hundreds of thousands of Brazilian free-tailed bats spiral out of the cave at sunset, is one of the great wildlife spectacles in any national park.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'Mammoth Cave offers more varied cave tour options from easy walks to strenuous crawling tours through tight passages. Above ground, the park has 80 miles of backcountry trails.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 1,
+        explanation:
+          'Mammoth Cave is within a day\'s drive of most of the eastern United States, located in central Kentucky. Carlsbad Caverns is in remote southeast New Mexico, far from major airports.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 0,
+        explanation:
+          'Both parks offer ranger-led cave tours suitable for children. Mammoth Cave has more tour variety for different ages, while Carlsbad\'s bat flight is thrilling for kids of all ages.',
+      },
+      {
+        name: 'Value',
+        winner: 1,
+        explanation:
+          'Mammoth Cave charges no park entrance fee, only cave tour fees. The surrounding Kentucky area offers affordable lodging. Carlsbad charges entrance fees on top of tour fees.',
+      },
+    ],
+  },
+  {
+    slug: 'wind-cave-vs-mammoth-cave',
+    destination1: 'wind-cave',
+    destination2: 'mammoth-cave',
+    title:
+      'Wind Cave vs Mammoth Cave: Which National Park Should You Visit?',
+    description:
+      'Two of the world\'s longest cave systems with different character above and below ground. Wind Cave in South Dakota pairs rare boxwork formations with bison-roaming prairies, while Mammoth Cave in Kentucky offers the longest known cave system beneath forested hills.',
+    verdict:
+      'Choose Wind Cave for rare boxwork formations and surface wildlife on mixed-grass prairie. Choose Mammoth Cave for the sheer enormity of the world\'s longest cave and more extensive underground tours.',
+    categories: [
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Wind Cave contains 95 percent of the world\'s known boxwork formations, delicate honeycomb-like calcite structures found almost nowhere else. This makes its underground landscape genuinely rare.',
+      },
+      {
+        name: 'Scenery',
+        winner: 1,
+        explanation:
+          'Wind Cave\'s surface features rolling mixed-grass prairie with bison, elk, and pronghorn roaming open hills. Mammoth Cave\'s surface is pleasant forest but less visually striking.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Wind Cave\'s surface is home to bison herds, prairie dogs, elk, and pronghorn on the open prairie. Mammoth Cave\'s forested surface supports deer and birds but lacks the megafauna spectacle.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Mammoth Cave offers more varied cave tours including strenuous crawling routes and has 80 miles of above-ground backcountry trails. Wind Cave has shorter cave tours and fewer surface trails.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Mammoth Cave is centrally located in the eastern United States near Nashville and Louisville. Wind Cave is in western South Dakota, far from major cities and airports.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 0,
+        explanation:
+          'Both parks offer family-appropriate cave tours with ranger guides. Wind Cave adds prairie wildlife viewing that kids enjoy, while Mammoth Cave has more tour options suited to different ages.',
+      },
+      {
+        name: 'Camping',
+        winner: 1,
+        explanation:
+          'Wind Cave\'s Elk Mountain Campground sits on the open prairie with views of grazing bison. Mammoth Cave\'s campgrounds are in forested settings, pleasant but less distinctive.',
+      },
+    ],
+  },
+  {
+    slug: 'hawaii-volcanoes-vs-haleakala',
+    destination1: 'hawaii-volcanoes',
+    destination2: 'haleakala',
+    title:
+      'Hawaii Volcanoes vs Haleakala: Which National Park Should You Visit?',
+    description:
+      'Two Hawaiian volcanic parks on different islands. Hawaii Volcanoes on the Big Island features active lava flows and one of the world\'s most active volcanoes, while Haleakala on Maui offers a massive dormant crater and a legendary sunrise experience.',
+    verdict:
+      'Choose Hawaii Volcanoes for active volcanism, lava landscapes, and geological drama. Choose Haleakala for the iconic above-the-clouds sunrise and combining a park visit with Maui\'s beaches and resorts.',
+    categories: [
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Hawaii Volcanoes is one of the only places on Earth where you can witness active volcanic creation of new land. Kilauea is among the most active volcanoes in the world, creating a constantly changing landscape.',
+      },
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Hawaii Volcanoes offers dramatic lava fields, steam vents, and crater views. Haleakala\'s massive crater above the clouds at 10,023 feet is equally surreal. Both are otherworldly in different ways.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'Hawaii Volcanoes has more trail variety, from easy crater rim walks to challenging backcountry routes across lava fields. Haleakala\'s crater hikes involve significant elevation change but fewer total options.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Hawaii Volcanoes supports the endangered nene goose, Hawaiian hawks, and unique species adapted to volcanic landscapes. Haleakala has the silversword plant and nene but less overall diversity.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Hawaii Volcanoes offers dramatic lava glow and volcanic landscape shots. Haleakala\'s sunrise above the cloud layer is one of the most photographed moments in any national park. Both are extraordinary.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Haleakala is a short drive from Maui\'s resort areas and airport, making it easy to combine with a beach vacation. Hawaii Volcanoes requires a Big Island trip, which is less developed for tourism.',
+      },
+      {
+        name: 'Value',
+        winner: 0,
+        explanation:
+          'Both parks are in Hawaii, requiring expensive flights. However, Haleakala is easier to visit as a day trip from a Maui hotel, while Hawaii Volcanoes benefits from a dedicated overnight visit.',
+      },
+    ],
+  },
+  {
+    slug: 'glacier-bay-vs-kenai-fjords',
+    destination1: 'glacier-bay',
+    destination2: 'kenai-fjords',
+    title:
+      'Glacier Bay vs Kenai Fjords: Which National Park Should You Visit?',
+    description:
+      'Two Alaskan tidewater glacier parks with similar appeal. Glacier Bay is a vast wilderness of retreating glaciers and whale-filled waters, while Kenai Fjords offers more accessible glacier and marine wildlife viewing near Seward.',
+    verdict:
+      'Choose Glacier Bay for a more remote, expansive glacial wilderness and cruise ship access. Choose Kenai Fjords for easier access from Anchorage, affordable day trips, and excellent marine wildlife.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Both parks feature breathtaking tidewater glaciers calving into the sea against mountain backdrops. Glacier Bay is larger and more remote, while Kenai Fjords\' fjord scenery is equally dramatic.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 0,
+        explanation:
+          'Both parks are exceptional for marine wildlife including humpback whales, sea otters, puffins, and harbor seals on ice floes. Neither has a clear advantage for wildlife encounters.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Kenai Fjords is a 2.5-hour drive from Anchorage via Seward with affordable day-trip boat tours. Glacier Bay is accessible only by boat or small plane to the tiny community of Gustavus.',
+      },
+      {
+        name: 'Value',
+        winner: 2,
+        explanation:
+          'Kenai Fjords day trips from Seward are significantly cheaper than reaching Glacier Bay. Lodging in Seward is more affordable and abundant than the limited options near Glacier Bay.',
+      },
+      {
+        name: 'Solitude',
+        winner: 1,
+        explanation:
+          'Glacier Bay\'s 3.3 million acres of wilderness with limited daily vessel entries provides genuine remoteness. Kenai Fjords day boats carry more tourists to the same glacier viewpoints.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Glacier Bay is a UNESCO World Heritage Site and Biosphere Reserve documenting 250 years of glacial retreat. Its scale of active glacial change is unmatched in the accessible world.',
+      },
+      {
+        name: 'Water Features',
+        winner: 0,
+        explanation:
+          'Both parks center on tidewater glaciers calving into ocean fjords. Glacier Bay has more glaciers overall, while Kenai Fjords\' Exit Glacier offers a rare walk-up glacier experience.',
+      },
+    ],
+  },
+  {
+    slug: 'katmai-vs-denali',
+    destination1: 'katmai',
+    destination2: 'denali',
+    title: 'Katmai vs Denali: Which National Park Should You Visit?',
+    description:
+      'Two Alaskan wilderness parks with dramatically different draws. Katmai is famous for brown bears catching salmon at Brooks Falls, while Denali centers on North America\'s tallest peak and vast subarctic tundra.',
+    verdict:
+      'Choose Katmai for the ultimate bear-viewing experience at Brooks Falls. Choose Denali for the chance to see the tallest peak in North America and experience diverse tundra wildlife.',
+    categories: [
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Katmai offers the most reliable and dramatic brown bear viewing on Earth, with bears catching salmon at Brooks Falls from a viewing platform mere yards away. This spectacle is unmatched anywhere.',
+      },
+      {
+        name: 'Scenery',
+        winner: 2,
+        explanation:
+          'When visible, Denali\'s 20,310-foot peak is the most commanding mountain sight in North America. The Alaska Range rising from the tundra creates a landscape of incomparable scale.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Denali is accessible by road and the Alaska Railroad from Anchorage or Fairbanks. Katmai requires a floatplane from King Salmon, which itself requires a flight from Anchorage.',
+      },
+      {
+        name: 'Value',
+        winner: 2,
+        explanation:
+          'Denali is far more affordable to visit via road or rail access. Katmai requires expensive bush flights and Brooks Lodge accommodations are extremely limited and costly.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Watching giant brown bears catch leaping salmon at Brooks Falls is a wildlife experience that exists nowhere else at this accessibility. Katmai\'s Valley of Ten Thousand Smokes adds volcanic interest.',
+      },
+      {
+        name: 'Solitude',
+        winner: 0,
+        explanation:
+          'Both parks offer vast wilderness solitude. Katmai\'s bear viewing areas are controlled and can feel crowded at platforms, while Denali\'s bus system concentrates visitors along one road.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Denali offers challenging off-trail tundra hiking across a six-million-acre wilderness. Katmai\'s hiking is more limited, with most visitors focused on bear viewing at established locations.',
+      },
+      {
+        name: 'Photography',
+        winner: 1,
+        explanation:
+          'Katmai\'s bears catching salmon provide some of the most dramatic wildlife photography opportunities anywhere. Denali\'s mountain shots are exceptional but depend on clear weather.',
+      },
+    ],
+  },
+  {
+    slug: 'north-cascades-vs-olympic',
+    destination1: 'north-cascades',
+    destination2: 'olympic',
+    title:
+      'North Cascades vs Olympic: Which National Park Should You Visit?',
+    description:
+      'Two Pacific Northwest parks in Washington State with very different personalities. North Cascades is a rugged mountain wilderness nicknamed the American Alps, while Olympic spans rainforests, alpine peaks, and wild Pacific coastline.',
+    verdict:
+      'Choose North Cascades for dramatic alpine scenery, challenging mountain hikes, and deep solitude. Choose Olympic for ecosystem diversity with rainforest, coast, and mountains all in one park.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'North Cascades offers jagged peaks, turquoise alpine lakes, and over 300 glaciers. Olympic delivers mossy rainforests, wildflower meadows, and dramatic sea stacks. Both are stunning in completely different ways.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 2,
+        explanation:
+          'Olympic is one of the only places on Earth combining temperate rainforest, alpine peaks, and wild Pacific coastline in a single park. North Cascades\' alpine beauty has parallels in other mountain ranges.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'North Cascades is one of the least visited parks in the lower 48, with only about 30,000 annual visitors. Olympic sees over three million. The solitude in North Cascades is remarkable.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'North Cascades trails involve serious elevation gain into alpine terrain with glacial crossings and exposed ridges. Olympic has strenuous options too, but more moderate trails overall.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 2,
+        explanation:
+          'Olympic supports a wider range of wildlife from Roosevelt elk and sea otters to tidal pool creatures across its diverse ecosystems. North Cascades has mountain goats and bears but less variety.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Olympic has multiple developed entry points, visitor centers, and lodges. North Cascades is reached by a single highway with minimal services and requires more self-sufficiency.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 2,
+        explanation:
+          'Olympic\'s rainforest walks, beach tide pools, and Hot Springs are engaging for all ages. North Cascades\' steep terrain and limited facilities make it challenging for families with young children.',
+      },
+      {
+        name: 'Solitude',
+        winner: 1,
+        explanation:
+          'North Cascades\' backcountry offers some of the deepest solitude in the contiguous United States. With over 300 glaciers and few visitors, entire valleys remain practically untouched.',
+      },
+    ],
+  },
+  {
+    slug: 'crater-lake-vs-mount-rainier',
+    destination1: 'crater-lake',
+    destination2: 'mount-rainier',
+    title:
+      'Crater Lake vs Mount Rainier: Which National Park Should You Visit?',
+    description:
+      'Two volcanic Cascade Range parks with dramatically different expressions. Crater Lake fills a collapsed volcanic caldera with impossibly blue water, while Mount Rainier towers as a massive glacier-clad stratovolcano above wildflower meadows.',
+    verdict:
+      'Choose Crater Lake for America\'s deepest, bluest lake and a more relaxed visit. Choose Mount Rainier for volcanic grandeur, wildflower meadows, and more extensive hiking opportunities.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Crater Lake\'s vivid blue water in a volcanic caldera is one of the most stunning sights in America. Mount Rainier\'s massive glacier-covered peak above wildflower meadows is equally breathtaking.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Crater Lake is the deepest lake in the United States and among the clearest on Earth. Its intense blue color is unlike any other body of water. Mount Rainier shares characteristics with other Cascade volcanoes.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Mount Rainier offers more varied and challenging hiking, including the demanding 93-mile Wonderland Trail. Crater Lake\'s rim trail is scenic but more moderate in difficulty.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Crater Lake sees significantly fewer visitors than Mount Rainier. Its more remote location in southern Oregon keeps crowds manageable even during summer weekends.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Crater Lake\'s deep blue water with Wizard Island creates iconic compositions. Mount Rainier\'s reflection in alpine lakes surrounded by wildflowers is equally photogenic. Both are world-class.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Mount Rainier is about two hours from Seattle with well-maintained access roads. Crater Lake is more remote in southern Oregon, farther from major airports and population centers.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 2,
+        explanation:
+          'Mount Rainier supports mountain goats, marmots, pikas, and diverse bird life in varied habitats. Crater Lake\'s relatively isolated caldera environment supports fewer species.',
+      },
+    ],
+  },
+  {
+    slug: 'badlands-vs-theodore-roosevelt',
+    destination1: 'badlands',
+    destination2: 'theodore-roosevelt',
+    title:
+      'Badlands vs Theodore Roosevelt: Which National Park Should You Visit?',
+    description:
+      'Two dramatic erosion landscapes in the Dakotas. Badlands in South Dakota features jagged, colorful rock formations rising from prairie, while Theodore Roosevelt in North Dakota showcases painted canyons and bison-roaming badlands along the Little Missouri River.',
+    verdict:
+      'Choose Badlands for more dramatic and accessible rock formations with excellent fossil history. Choose Theodore Roosevelt for bison herds, painted canyons, and a less crowded experience with historical significance.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 1,
+        explanation:
+          'Badlands\' sharply eroded spires and pinnacles rising abruptly from the prairie floor create a more visually dramatic landscape. Theodore Roosevelt\'s terrain is equally colorful but more rolling and less jagged.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 2,
+        explanation:
+          'Theodore Roosevelt is exceptional for bison viewing, with large herds roaming both the North and South Units. Wild horses also roam the park. Badlands has bison too but Theodore Roosevelt offers more reliable sightings.',
+      },
+      {
+        name: 'Crowds',
+        winner: 2,
+        explanation:
+          'Theodore Roosevelt sees roughly half the visitors of Badlands. Its North Dakota location keeps it well off the typical tourist circuit, making it one of the most uncrowded parks in the system.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 1,
+        explanation:
+          'Badlands is directly off Interstate 90 in South Dakota, making it easy to combine with nearby Mount Rushmore. Theodore Roosevelt requires a detour into western North Dakota away from major routes.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Badlands contains one of the world\'s richest fossil beds from the Oligocene epoch, with ongoing paleontological research. Theodore Roosevelt is historically significant but less geologically distinctive.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 0,
+        explanation:
+          'Both parks offer similar moderate hiking through eroded terrain. Badlands has slightly more dramatic scrambling opportunities, while Theodore Roosevelt has longer trail loops through its units.',
+      },
+      {
+        name: 'Photography',
+        winner: 1,
+        explanation:
+          'Badlands\' dramatic spires and pinnacles create more striking compositions, especially at sunrise and sunset when the formations glow in warm light. Theodore Roosevelt offers excellent bison and canyon shots.',
+      },
+    ],
+  },
+  {
+    slug: 'great-sand-dunes-vs-white-sands',
+    destination1: 'great-sand-dunes',
+    destination2: 'white-sands',
+    title:
+      'Great Sand Dunes vs White Sands: Which National Park Should You Visit?',
+    description:
+      'America\'s two great dune parks offer strikingly different experiences. Great Sand Dunes in Colorado features the tallest dunes in North America against the Sangre de Cristo Mountains, while White Sands in New Mexico spreads brilliant white gypsum dunes across the Tularosa Basin.',
+    verdict:
+      'Choose Great Sand Dunes for the tallest dunes in North America with a stunning mountain backdrop. Choose White Sands for surreal white dune landscapes and a more family-friendly experience.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 1,
+        explanation:
+          'Great Sand Dunes\' combination of 750-foot dunes backed by 14,000-foot snow-capped peaks creates an astonishing juxtaposition found nowhere else. White Sands is mesmerizing but the landscape is more uniform.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 0,
+        explanation:
+          'Great Sand Dunes has the tallest dunes in North America in an unexpected alpine setting. White Sands has the largest gypsum dune field on Earth. Both are genuinely unique geological phenomena.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 2,
+        explanation:
+          'White Sands\' soft white dunes are a natural playground perfect for sledding and playing. Great Sand Dunes\' tall, steep dunes require more effort to climb and the dark sand gets extremely hot.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'Great Sand Dunes offers the demanding climb to Star Dune at 750 feet and high-altitude hikes into the Sangre de Cristo Mountains above 13,000 feet. White Sands\' dune walks are easier.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Great Sand Dunes\' contrast of dunes and mountains creates dramatic compositions. White Sands\' minimalist white landscape glowing at sunset offers equally stunning images. Both are photographer favorites.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'White Sands is easily accessed from Las Cruces or Alamogordo and can be explored in half a day. Great Sand Dunes is more remote in southern Colorado\'s San Luis Valley.',
+      },
+      {
+        name: 'Water Features',
+        winner: 1,
+        explanation:
+          'Great Sand Dunes has Medano Creek, a seasonal stream at the dune base where visitors wade and play in warm, shallow water. White Sands is entirely dry with no water features.',
+      },
+    ],
+  },
+  {
+    slug: 'lassen-volcanic-vs-mount-rainier',
+    destination1: 'lassen-volcanic',
+    destination2: 'mount-rainier',
+    title:
+      'Lassen Volcanic vs Mount Rainier: Which National Park Should You Visit?',
+    description:
+      'Two Cascade Range volcanic parks with different scales and personalities. Lassen Volcanic in California is a compact park with all four types of volcanoes and active hydrothermal features, while Mount Rainier in Washington centers on a single massive glacier-clad peak.',
+    verdict:
+      'Choose Lassen Volcanic for volcanic variety, hydrothermal features, and uncrowded trails. Choose Mount Rainier for a singular dramatic peak, wildflower meadows, and more established trail systems.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 2,
+        explanation:
+          'Mount Rainier\'s massive 14,411-foot glacier-covered peak towering above wildflower meadows is one of the most dramatic mountain scenes in America. Lassen is scenic but less visually commanding.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Lassen Volcanic is the only place in the world where all four types of volcanoes exist in close proximity: shield, plug dome, cinder cone, and composite. Its active hydrothermal areas add to the variety.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Lassen Volcanic sees a fraction of Mount Rainier\'s visitors. You can hike popular trails in relative solitude even during peak summer months, a rare luxury in the national park system.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Mount Rainier offers more challenging and varied hiking, including the 93-mile Wonderland Trail and routes with significant glacial terrain. Lassen\'s trails are generally shorter and less demanding.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Mount Rainier is two hours from Seattle, the largest city in the Pacific Northwest. Lassen is in remote northeastern California, hours from any major metropolitan area.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 0,
+        explanation:
+          'Both parks support similar Pacific mountain ecosystems with black bears, deer, marmots, and varied bird life. Neither has a significant advantage for wildlife viewing.',
+      },
+      {
+        name: 'Photography',
+        winner: 2,
+        explanation:
+          'Mount Rainier\'s reflection in alpine tarns surrounded by wildflowers is one of the most iconic landscape photographs in America. Lassen has good volcanic shots but less dramatic compositions.',
+      },
+    ],
+  },
+  {
+    slug: 'indiana-dunes-vs-cuyahoga-valley',
+    destination1: 'indiana-dunes',
+    destination2: 'cuyahoga-valley',
+    title:
+      'Indiana Dunes vs Cuyahoga Valley: Which National Park Should You Visit?',
+    description:
+      'Two accessible Midwest parks near major cities. Indiana Dunes protects Lake Michigan shoreline and diverse ecosystems south of Chicago, while Cuyahoga Valley preserves a scenic river valley between Cleveland and Akron.',
+    verdict:
+      'Choose Indiana Dunes for sandy beaches, dune landscapes, and surprising biodiversity near Chicago. Choose Cuyahoga Valley for scenic river trails, waterfalls, and a more traditional nature escape.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Indiana Dunes offers Lake Michigan beaches and towering sand dunes with Chicago skyline views. Cuyahoga Valley features a forested river valley with Brandywine Falls. Both are pleasant but neither matches western park drama.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Indiana Dunes has remarkable biodiversity for its size, with over 1,100 plant species making it one of the most botanically diverse areas in the Great Lakes region. This concentration is genuinely unusual.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 0,
+        explanation:
+          'Both parks are extremely accessible from major cities. Indiana Dunes is reachable by South Shore Line train from Chicago. Cuyahoga Valley sits between Cleveland and Akron with easy highway access.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 2,
+        explanation:
+          'Cuyahoga Valley has more extensive trail networks including the Towpath Trail along the historic canal and the Buckeye Trail. Indiana Dunes\' trails are shorter, though the dune climbs offer good exercise.',
+      },
+      {
+        name: 'Water Features',
+        winner: 1,
+        explanation:
+          'Indiana Dunes\' 15 miles of Lake Michigan shoreline with swimming beaches gives it a clear advantage. Cuyahoga Valley has the Cuyahoga River and Brandywine Falls but no comparable swimming opportunities.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 1,
+        explanation:
+          'Indiana Dunes\' sandy beaches are perfect for families, with swimming, sandcastle building, and easy dune walks. Cuyahoga Valley is also family-friendly with its scenic railroad and bike trails.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Indiana Dunes sits along a major bird migration route and its diverse ecosystems support over 350 bird species. Cuyahoga Valley has wildlife but less diversity in its primarily forested habitat.',
+      },
+    ],
+  },
+  {
+    slug: 'new-river-gorge-vs-shenandoah',
+    destination1: 'new-river-gorge',
+    destination2: 'shenandoah',
+    title:
+      'New River Gorge vs Shenandoah: Which National Park Should You Visit?',
+    description:
+      'Two Appalachian parks with different character. New River Gorge in West Virginia centers on a deep river canyon famous for whitewater and rock climbing, while Shenandoah in Virginia follows a mountain ridge with Skyline Drive and the Appalachian Trail.',
+    verdict:
+      'Choose New River Gorge for adventure sports, whitewater rafting, and dramatic canyon scenery. Choose Shenandoah for scenic driving, accessible ridge-top hiking, and a more relaxed mountain experience.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'New River Gorge\'s deep canyon with the iconic New River Gorge Bridge is dramatic and photogenic. Shenandoah\'s ridgetop vistas across the Blue Ridge are classic and peaceful. Both offer Appalachian beauty.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'New River Gorge is America\'s newest national park and one of the few focused on a river canyon. The New River is one of the oldest rivers in the world, and the park is a world-class whitewater and climbing destination.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'New River Gorge\'s trails descend steeply into the canyon with significant elevation gain on the return. The Long Point Trail and Endless Wall Trail involve exposed sections. Shenandoah\'s trails are more moderate.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Shenandoah is just 75 miles from Washington D.C. with the well-maintained Skyline Drive running the park\'s length. New River Gorge requires a longer drive to southern West Virginia.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 2,
+        explanation:
+          'Shenandoah\'s easy roadside overlooks, picnic areas, and gentle nature walks are welcoming for all ages. New River Gorge\'s steep canyon trails and whitewater are better suited to older children and adults.',
+      },
+      {
+        name: 'Photography',
+        winner: 1,
+        explanation:
+          'The New River Gorge Bridge is one of the most photographed structures in the eastern United States. The canyon\'s depth and the river below create dramatic compositions, especially during fall foliage.',
+      },
+      {
+        name: 'Value',
+        winner: 1,
+        explanation:
+          'New River Gorge charges no entrance fee and West Virginia lodging is very affordable. Shenandoah charges entrance fees for Skyline Drive and nearby Shenandoah Valley lodging can be pricier.',
+      },
+    ],
+  },
+  {
+    slug: 'congaree-vs-everglades',
+    destination1: 'congaree',
+    destination2: 'everglades',
+    title:
+      'Congaree vs Everglades: Which National Park Should You Visit?',
+    description:
+      'Two southeastern parks protecting vital wetland ecosystems. Congaree in South Carolina preserves the largest intact old-growth bottomland hardwood forest in the country, while the Everglades in Florida is a vast subtropical wetland teeming with alligators and wading birds.',
+    verdict:
+      'Choose Congaree for towering old-growth trees, peaceful boardwalk hikes, and synchronous fireflies. Choose Everglades for alligator encounters, vast wetland landscapes, and diverse subtropical wildlife.',
+    categories: [
+      {
+        name: 'Wildlife',
+        winner: 2,
+        explanation:
+          'The Everglades is a wildlife spectacle with alligators, manatees, roseate spoonbills, and hundreds of bird species. Congaree has deer, owls, and otters but far less visible megafauna.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 0,
+        explanation:
+          'Congaree protects the tallest temperate deciduous forest in the world with champion trees reaching 170 feet. The Everglades is the only subtropical wilderness in the country. Both are irreplaceable ecosystems.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Congaree is one of the least visited national parks, with fewer than 200,000 annual visitors. Even the Everglades, which feels remote, receives over a million visitors per year.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 1,
+        explanation:
+          'Congaree is 20 minutes from Columbia, South Carolina, making it one of the most accessible parks from a state capital. The Everglades is south of Miami but its main areas require long drives.',
+      },
+      {
+        name: 'Scenery',
+        winner: 0,
+        explanation:
+          'Congaree\'s towering old-growth canopy creates a cathedral-like atmosphere. The Everglades\' vast, flat sawgrass prairie requires patience to appreciate. Both are beautiful in understated ways.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 0,
+        explanation:
+          'Both parks feature mostly flat terrain. Congaree has elevated boardwalks and trail loops through the floodplain. The Everglades offers boardwalks, paddling trails, and flat levee walks.',
+      },
+      {
+        name: 'Photography',
+        winner: 2,
+        explanation:
+          'The Everglades provides outstanding wildlife photography opportunities, especially wading birds at Anhinga Trail and alligators at close range. Congaree offers moody forest canopy shots but fewer wildlife subjects.',
+      },
+    ],
+  },
+  {
+    slug: 'pinnacles-vs-joshua-tree',
+    destination1: 'pinnacles',
+    destination2: 'joshua-tree',
+    title:
+      'Pinnacles vs Joshua Tree: Which National Park Should You Visit?',
+    description:
+      'Two California parks with dramatic rock formations. Pinnacles features volcanic spires and talus caves near the San Andreas Fault, while Joshua Tree combines two desert ecosystems with surreal boulder landscapes.',
+    verdict:
+      'Choose Pinnacles for volcanic spires, talus caves, and California condor sightings. Choose Joshua Tree for vast desert landscapes, outstanding camping, and world-class stargazing.',
+    categories: [
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Pinnacles\' talus caves formed by fallen boulders are rare features that can be explored with a flashlight. The park also provides critical habitat for the endangered California condor, one of the rarest birds in the world.',
+      },
+      {
+        name: 'Scenery',
+        winner: 2,
+        explanation:
+          'Joshua Tree\'s vast landscape of twisted trees, massive boulder piles, and two distinct deserts creates an otherworldly scene across a huge area. Pinnacles is scenic but much smaller and less varied.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Pinnacles sees far fewer visitors than Joshua Tree, which has exploded in popularity. Even on peak weekends, Pinnacles\' trails feel comparatively uncrowded.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'Pinnacles offers more physically demanding trails with steep climbs to High Peaks and scrambles through narrow cave passages. Joshua Tree\'s trails are mostly moderate desert walks.',
+      },
+      {
+        name: 'Camping',
+        winner: 2,
+        explanation:
+          'Joshua Tree is one of the finest camping parks in the system, with multiple campgrounds among boulder formations and reliably clear skies. Pinnacles has one small campground.',
+      },
+      {
+        name: 'Photography',
+        winner: 2,
+        explanation:
+          'Joshua Tree offers endless compositions with its twisted trees, boulder formations, and some of the best night sky photography in California. Its vast scale provides more variety than Pinnacles.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 1,
+        explanation:
+          'Pinnacles is one of the best places to see the endangered California condor in the wild, with a wingspan of nearly 10 feet. This alone makes it special. Joshua Tree\'s wildlife is less remarkable.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Joshua Tree is easily reached from the Los Angeles metro area via Interstate 10. Pinnacles is in a more rural part of central California, though it is manageable as a day trip from the Bay Area.',
+      },
+    ],
+  },
+  {
+    slug: 'death-valley-vs-joshua-tree',
+    destination1: 'death-valley',
+    destination2: 'joshua-tree',
+    title:
+      'Death Valley vs Joshua Tree: Which National Park Should You Visit?',
+    description:
+      'Two iconic California desert parks. Death Valley holds extreme superlatives as the hottest, driest, and lowest place in North America, while Joshua Tree blends two desert ecosystems with surreal boulder landscapes near Los Angeles.',
+    verdict:
+      'Choose Death Valley for extreme landscapes, geological variety, and remote desert adventure. Choose Joshua Tree for accessible desert camping, rock climbing, and a quick escape from Los Angeles.',
+    categories: [
+      {
+        name: 'Scenery',
+        winner: 1,
+        explanation:
+          'Death Valley\'s landscape variety is extraordinary, from the below-sea-level salt flats of Badwater Basin to the colorful badlands of Artists Palette to sand dunes and mountain peaks above 11,000 feet.',
+      },
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Death Valley holds records as the hottest, driest, and lowest point in North America. Its sailing stones, the rare pupfish, and extreme geology make it genuinely one of a kind.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Joshua Tree is under two hours from Los Angeles, making it an easy weekend trip. Death Valley is much more remote, requiring longer drives and careful planning for fuel and supplies.',
+      },
+      {
+        name: 'Camping',
+        winner: 2,
+        explanation:
+          'Joshua Tree\'s campgrounds nestled among boulder formations with reliably warm, clear nights make it one of the best camping experiences in the park system. Death Valley camping can be brutally hot.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'Death Valley offers more varied and challenging hikes from narrow slot canyons like Golden Canyon to high-altitude treks in the Panamint Range. Joshua Tree\'s trails are mostly moderate.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Death Valley offers diverse landscapes from Zabriskie Point to Mesquite Flat Dunes. Joshua Tree excels with night sky and rock formation shots. Both are premier photography destinations.',
+      },
+      {
+        name: 'Value',
+        winner: 2,
+        explanation:
+          'Joshua Tree is cheaper to visit due to proximity to cities, affordable nearby lodging, and a compact park that can be explored in one to two days. Death Valley requires more time, fuel, and pricier remote accommodations.',
+      },
+      {
+        name: 'Wildlife',
+        winner: 0,
+        explanation:
+          'Both parks support desert-adapted species including coyotes, jackrabbits, and lizards. Death Valley has the unique pupfish, while Joshua Tree has more visible mammals. Neither is a wildlife-watching destination.',
+      },
+    ],
+  },
+  {
+    slug: 'great-basin-vs-capitol-reef',
+    destination1: 'great-basin',
+    destination2: 'capitol-reef',
+    title:
+      'Great Basin vs Capitol Reef: Which National Park Should You Visit?',
+    description:
+      'Two of the least-visited parks in the West, both offering remarkable solitude. Great Basin in Nevada combines ancient bristlecone pines and Lehman Caves, while Capitol Reef in Utah features the colorful Waterpocket Fold with pioneer orchards.',
+    verdict:
+      'Choose Great Basin for the world\'s oldest trees, dark sky stargazing, and Lehman Caves. Choose Capitol Reef for colorful canyon geology, historic orchards, and more scenic driving opportunities.',
+    categories: [
+      {
+        name: 'Uniqueness',
+        winner: 1,
+        explanation:
+          'Great Basin is home to bristlecone pines over 4,000 years old, the oldest known non-clonal organisms on Earth. Lehman Caves\' rare shield formations add another distinctive feature found in few other parks.',
+      },
+      {
+        name: 'Scenery',
+        winner: 2,
+        explanation:
+          'Capitol Reef\'s Waterpocket Fold with its layers of colorful sandstone, red cliffs, and dramatic desert formations is more visually striking. Great Basin\'s beauty is subtler and more alpine.',
+      },
+      {
+        name: 'Crowds',
+        winner: 1,
+        explanation:
+          'Great Basin is one of the five least visited national parks in the lower 48, seeing only about 150,000 visitors annually. Capitol Reef is also uncrowded but sees roughly six times more visitors.',
+      },
+      {
+        name: 'Photography',
+        winner: 0,
+        explanation:
+          'Great Basin offers the best night sky photography of almost any national park, with an International Dark Sky Park designation. Capitol Reef excels with colorful cliff compositions and Milky Way shots over desert formations.',
+      },
+      {
+        name: 'Hiking Difficulty',
+        winner: 1,
+        explanation:
+          'Great Basin offers alpine hikes to Wheeler Peak at 13,063 feet with significant elevation gain above treeline. Capitol Reef\'s hikes through slot canyons and along the Waterpocket Fold are generally less strenuous.',
+      },
+      {
+        name: 'Family-Friendly',
+        winner: 2,
+        explanation:
+          'Capitol Reef\'s orchard walks, easy slot canyons, and the smooth Scenic Drive make it approachable for families. Great Basin\'s high-altitude trails and remote location are less suited to young children.',
+      },
+      {
+        name: 'Accessibility',
+        winner: 2,
+        explanation:
+          'Capitol Reef is along Utah\'s scenic byways and can be combined with other Utah parks. Great Basin is in extremely remote eastern Nevada, far from any major highway or city.',
+      },
+    ],
+  },
 ]
 
 export function getParkComparisonBySlug(slug: string): Comparison | undefined {

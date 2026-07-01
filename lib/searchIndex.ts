@@ -82,6 +82,49 @@ const guideEntries: { slug: string; title: string; description: string; category
   { slug: 'acadia', title: 'Acadia National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Acadia National Park. Top hikes, best months to visit, where to stay, and essential tips for Maine.', category: 'Parks' },
   { slug: 'denali', title: 'Denali National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Denali National Park. Top hikes, best months to visit, where to stay, and essential tips for Alaska.', category: 'Parks' },
   { slug: 'haleakala', title: 'Haleakala Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Haleakala. Top hikes, best months to visit, where to stay, and essential tips for Hawaii.', category: 'Parks' },
+  // New park destination guides (42 parks)
+  { slug: 'badlands', title: 'Badlands Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Badlands National Park. Top hikes, best months to visit, where to stay, and essential tips for South Dakota\'s dramatic eroded landscape.', category: 'Parks' },
+  { slug: 'big-bend', title: 'Big Bend Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Big Bend National Park. Top hikes, best months to visit, where to stay, and essential tips for Texas\'s remote desert wilderness.', category: 'Parks' },
+  { slug: 'black-canyon-of-the-gunnison', title: 'Black Canyon of the Gunnison Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Black Canyon of the Gunnison National Park. Top hikes, best months to visit, where to stay, and essential tips for Colorado\'s deepest canyon.', category: 'Parks' },
+  { slug: 'capitol-reef', title: 'Capitol Reef Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Capitol Reef National Park. Top hikes, best months to visit, where to stay, and essential tips for Utah\'s hidden red rock wonderland.', category: 'Parks' },
+  { slug: 'carlsbad-caverns', title: 'Carlsbad Caverns Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Carlsbad Caverns National Park. Top cave tours, surface hikes, best months to visit, where to stay, and essential tips for New Mexico\'s underground wonder.', category: 'Parks' },
+  { slug: 'great-sand-dunes', title: 'Great Sand Dunes Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Great Sand Dunes National Park. Top hikes, best months to visit, where to stay, and essential tips for Colorado\'s towering dune field.', category: 'Parks' },
+  { slug: 'guadalupe-mountains', title: 'Guadalupe Mountains Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Guadalupe Mountains National Park. Top hikes, best months to visit, where to stay, and essential tips for Texas\'s highest peak.', category: 'Parks' },
+  { slug: 'mesa-verde', title: 'Mesa Verde Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Mesa Verde National Park. Top hikes, cliff dwelling tours, best months to visit, where to stay, and essential tips for Colorado\'s ancient civilization.', category: 'Parks' },
+  { slug: 'petrified-forest', title: 'Petrified Forest Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Petrified Forest National Park. Top hikes, best months to visit, where to stay, and essential tips for Arizona\'s ancient fossilized woodland.', category: 'Parks' },
+  { slug: 'theodore-roosevelt', title: 'Theodore Roosevelt Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Theodore Roosevelt National Park. Top hikes, best months to visit, where to stay, and essential tips for North Dakota\'s rugged badlands.', category: 'Parks' },
+  { slug: 'white-sands', title: 'White Sands Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to White Sands National Park. Top hikes, best months to visit, where to stay, and essential tips for New Mexico\'s gypsum dune field.', category: 'Parks' },
+  { slug: 'wind-cave', title: 'Wind Cave Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Wind Cave National Park. Top hikes, cave tours, best months to visit, where to stay, and essential tips for South Dakota\'s underground labyrinth.', category: 'Parks' },
+  { slug: 'channel-islands', title: 'Channel Islands Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Channel Islands National Park. Top hikes, best months to visit, where to stay, and essential tips for California\'s Galapagos.', category: 'Parks' },
+  { slug: 'crater-lake', title: 'Crater Lake Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Crater Lake National Park. Top hikes, best months to visit, where to stay, and essential tips for Oregon\'s deepest blue lake.', category: 'Parks' },
+  { slug: 'death-valley', title: 'Death Valley Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Death Valley National Park. Top hikes, best months to visit, where to stay, and essential tips for California and Nevada\'s extreme desert landscape.', category: 'Parks' },
+  { slug: 'lassen-volcanic', title: 'Lassen Volcanic National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Lassen Volcanic National Park. Top hikes, best months to visit, where to stay, and essential tips for exploring California\'s volcanic wonderland.', category: 'Parks' },
+  { slug: 'north-cascades', title: 'North Cascades National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to North Cascades National Park. Top hikes, best months to visit, where to stay, and essential tips for Washington\'s rugged alpine wilderness.', category: 'Parks' },
+  { slug: 'pinnacles', title: 'Pinnacles National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Pinnacles National Park. Top hikes, best months to visit, where to stay, and essential tips for exploring California\'s talus caves and condor habitat.', category: 'Parks' },
+  { slug: 'redwood', title: 'Redwood National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Redwood National and State Parks. Top hikes, best months to visit, where to stay, and essential tips for California\'s tallest trees.', category: 'Parks' },
+  { slug: 'biscayne', title: 'Biscayne National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Biscayne National Park. Top snorkeling spots, best months to visit, where to stay, and essential tips for exploring South Florida\'s underwater paradise.', category: 'Parks' },
+  { slug: 'congaree', title: 'Congaree National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Congaree National Park. Top trails, best months to visit, where to stay, and essential tips for exploring South Carolina\'s ancient floodplain forest.', category: 'Parks' },
+  { slug: 'cuyahoga-valley', title: 'Cuyahoga Valley National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Cuyahoga Valley National Park. Top trails, best months to visit, where to stay, and essential tips for exploring Ohio\'s river valley park between Cleveland and Akron.', category: 'Parks' },
+  { slug: 'dry-tortugas', title: 'Dry Tortugas National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Dry Tortugas National Park. Top snorkeling and kayaking spots, best months to visit, where to stay, and essential tips for Florida\'s remote island fortress.', category: 'Parks' },
+  { slug: 'hot-springs', title: 'Hot Springs National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Hot Springs National Park. Top trails, historic bathhouses, best months to visit, where to stay, and essential tips for Arkansas\'s thermal springs.', category: 'Parks' },
+  { slug: 'indiana-dunes', title: 'Indiana Dunes National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Indiana Dunes National Park. Top trails, best months to visit, where to stay, and essential tips for exploring Lake Michigan\'s southern shore.', category: 'Parks' },
+  { slug: 'mammoth-cave', title: 'Mammoth Cave National Park Guide: Best Cave Tours, When to Visit & Where to Stay', description: 'Plan your trip to Mammoth Cave National Park. Top cave tours, best months to visit, where to stay, and essential tips for exploring the world\'s longest known cave system in Kentucky.', category: 'Parks' },
+  { slug: 'new-river-gorge', title: 'New River Gorge National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to New River Gorge National Park. Top trails, best months to visit, where to stay, and essential tips for exploring West Virginia\'s newest national park.', category: 'Parks' },
+  { slug: 'shenandoah', title: 'Shenandoah National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Shenandoah National Park. Top hikes, best months to visit, where to stay, and essential tips for exploring Virginia\'s Blue Ridge Mountains.', category: 'Parks' },
+  { slug: 'gateway-arch', title: 'Gateway Arch National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Gateway Arch National Park. Top activities, best months to visit, where to stay, and essential tips for exploring America\'s tallest monument in St. Louis.', category: 'Parks' },
+  { slug: 'great-basin', title: 'Great Basin National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Great Basin National Park. Top hikes, cave tours, best months to visit, where to stay, and essential tips for exploring Nevada\'s remote mountain park.', category: 'Parks' },
+  { slug: 'isle-royale', title: 'Isle Royale National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Isle Royale National Park. Top hikes, best months to visit, where to stay, and essential tips for Michigan\'s remote island wilderness.', category: 'Parks' },
+  { slug: 'voyageurs', title: 'Voyageurs National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Voyageurs National Park. Top paddling routes, best months to visit, where to stay, and essential tips for Minnesota\'s water wilderness.', category: 'Parks' },
+  { slug: 'hawaii-volcanoes', title: 'Hawaii Volcanoes National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Hawaii Volcanoes National Park. Top hikes, best months to visit, where to stay, and essential tips for the Big Island\'s volcanic landscape.', category: 'Parks' },
+  { slug: 'gates-of-the-arctic', title: 'Gates of the Arctic National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Gates of the Arctic National Park. Top routes, best months to visit, where to stay, and essential tips for Alaska\'s most remote wilderness.', category: 'Parks' },
+  { slug: 'glacier-bay', title: 'Glacier Bay National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Glacier Bay National Park. Top activities, best months to visit, where to stay, and essential tips for Alaska\'s tidewater glacier wilderness.', category: 'Parks' },
+  { slug: 'katmai', title: 'Katmai National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Katmai National Park. Bear viewing at Brooks Falls, best months to visit, where to stay, and essential tips for Alaska\'s premier wildlife park.', category: 'Parks' },
+  { slug: 'kenai-fjords', title: 'Kenai Fjords National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Kenai Fjords National Park. Top boat tours, hikes, best months to visit, where to stay, and essential tips for Alaska\'s coastal glacier park.', category: 'Parks' },
+  { slug: 'kobuk-valley', title: 'Kobuk Valley National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Kobuk Valley National Park. Top routes, best months to visit, where to stay, and essential tips for Alaska\'s Arctic sand dunes wilderness.', category: 'Parks' },
+  { slug: 'lake-clark', title: 'Lake Clark National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Lake Clark National Park. Bear viewing, best months to visit, where to stay, and essential tips for Alaska\'s volcanic wilderness.', category: 'Parks' },
+  { slug: 'wrangell-st-elias', title: 'Wrangell-St. Elias National Park Guide: Best Hikes, When to Visit & Where to Stay', description: 'Plan your trip to Wrangell-St. Elias National Park. Top hikes, best months to visit, where to stay, and essential tips for America\'s largest national park.', category: 'Parks' },
+  { slug: 'virgin-islands', title: 'Virgin Islands National Park Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to Virgin Islands National Park. Top beaches, snorkeling spots, best months to visit, where to stay, and essential tips for St. John.', category: 'Parks' },
+  { slug: 'american-samoa', title: 'National Park of American Samoa Guide: Best Activities, When to Visit & Where to Stay', description: 'Plan your trip to the National Park of American Samoa. Top hikes, snorkeling spots, best months to visit, where to stay, and essential tips for this remote Pacific park.', category: 'Parks' },
   // Ski gear guides
   { slug: 'best-ski-goggles-2026', title: 'Best Ski Goggles 2026: Top Picks for Every Budget', description: 'Expert-tested ski goggle reviews for 2026. Compare lens tech, fit types, and fog resistance across 8 top picks.', category: 'Gear' },
   { slug: 'best-ski-base-layers-2026', title: 'Best Base Layers for Skiing 2026: Top Picks for Every Budget', description: 'Expert guide to the best ski base layers for 2026. Compare merino wool vs synthetic, weight ratings, and moisture-wicking performance.', category: 'Gear' },
@@ -167,6 +210,83 @@ export function getSearchIndex(): SearchItem[] {
       description: comp.description,
       category: 'Comparison',
       url: `/parks/compare/${comp.slug}`,
+    })
+  }
+
+  // New national parks (42 parks not yet in nationalParks array)
+  const newParks: { slug: string; name: string; tagline: string }[] = [
+    { slug: 'badlands', name: 'Badlands National Park', tagline: 'Dramatic eroded buttes and pinnacles rising from the South Dakota prairie, with one of the world\'s richest fossil beds.' },
+    { slug: 'big-bend', name: 'Big Bend National Park', tagline: 'A remote Texas wilderness where desert, river canyons, and the Chisos Mountains converge along the Rio Grande.' },
+    { slug: 'black-canyon-of-the-gunnison', name: 'Black Canyon of the Gunnison National Park', tagline: 'Colorado\'s deepest and most dramatic canyon, carved over two million years by the Gunnison River.' },
+    { slug: 'capitol-reef', name: 'Capitol Reef National Park', tagline: 'Utah\'s hidden gem along the Waterpocket Fold, featuring colorful sandstone cliffs, slot canyons, and historic orchards.' },
+    { slug: 'carlsbad-caverns', name: 'Carlsbad Caverns National Park', tagline: 'A vast underground world of decorated caves beneath the Guadalupe Mountains, famous for its bat flight spectacle.' },
+    { slug: 'great-sand-dunes', name: 'Great Sand Dunes National Park', tagline: 'The tallest sand dunes in North America rise against the backdrop of Colorado\'s Sangre de Cristo Mountains.' },
+    { slug: 'guadalupe-mountains', name: 'Guadalupe Mountains National Park', tagline: 'Home to Texas\'s highest peak and the spectacular McKittrick Canyon, an ancient Permian reef in the Chihuahuan Desert.' },
+    { slug: 'mesa-verde', name: 'Mesa Verde National Park', tagline: 'Ancestral Puebloan cliff dwellings preserved for over 700 years in the canyons of southwestern Colorado.' },
+    { slug: 'petrified-forest', name: 'Petrified Forest National Park', tagline: 'Ancient fossilized trees scattered across Arizona\'s painted desert, with vibrant badlands and petroglyphs.' },
+    { slug: 'theodore-roosevelt', name: 'Theodore Roosevelt National Park', tagline: 'Colorful painted canyons and bison-roaming badlands along the Little Missouri River in North Dakota.' },
+    { slug: 'white-sands', name: 'White Sands National Park', tagline: 'The world\'s largest gypsum dune field, a surreal white landscape glowing in the New Mexico desert.' },
+    { slug: 'wind-cave', name: 'Wind Cave National Park', tagline: 'One of the world\'s longest caves with rare boxwork formations, beneath bison-roaming mixed-grass prairie in South Dakota.' },
+    { slug: 'channel-islands', name: 'Channel Islands National Park', tagline: 'Five wild islands off the California coast, home to endemic species and pristine marine ecosystems.' },
+    { slug: 'crater-lake', name: 'Crater Lake National Park', tagline: 'The deepest lake in the United States fills a volcanic caldera in Oregon, renowned for its impossibly blue water.' },
+    { slug: 'death-valley', name: 'Death Valley National Park', tagline: 'The hottest, driest, and lowest place in North America, with extraordinary geological diversity across a vast desert landscape.' },
+    { slug: 'lassen-volcanic', name: 'Lassen Volcanic National Park', tagline: 'The only place on Earth where all four types of volcanoes coexist, with active hydrothermal features in northern California.' },
+    { slug: 'north-cascades', name: 'North Cascades National Park', tagline: 'The American Alps of Washington State, with jagged peaks, over 300 glaciers, and turquoise alpine lakes.' },
+    { slug: 'pinnacles', name: 'Pinnacles National Park', tagline: 'Volcanic spires and talus caves near the San Andreas Fault, providing critical habitat for endangered California condors.' },
+    { slug: 'redwood', name: 'Redwood National and State Parks', tagline: 'Home to the tallest trees on Earth, with ancient coast redwood forests and dramatic Pacific coastline in northern California.' },
+    { slug: 'biscayne', name: 'Biscayne National Park', tagline: 'A watery wonderland south of Miami, protecting coral reefs, mangrove coastline, and the northernmost Florida Keys.' },
+    { slug: 'congaree', name: 'Congaree National Park', tagline: 'The largest intact expanse of old-growth bottomland hardwood forest in the southeastern United States.' },
+    { slug: 'cuyahoga-valley', name: 'Cuyahoga Valley National Park', tagline: 'A scenic river valley park between Cleveland and Akron, with waterfalls, towpath trails, and scenic railroad.' },
+    { slug: 'dry-tortugas', name: 'Dry Tortugas National Park', tagline: 'A remote cluster of islands 70 miles west of Key West, centered on the massive Fort Jefferson surrounded by pristine waters.' },
+    { slug: 'hot-springs', name: 'Hot Springs National Park', tagline: 'America\'s oldest federal reserve, protecting thermal springs and historic Bathhouse Row in downtown Hot Springs, Arkansas.' },
+    { slug: 'indiana-dunes', name: 'Indiana Dunes National Park', tagline: 'Towering sand dunes and remarkable biodiversity along the southern shore of Lake Michigan near Chicago.' },
+    { slug: 'mammoth-cave', name: 'Mammoth Cave National Park', tagline: 'The longest known cave system on Earth with over 420 miles of explored passages beneath the Kentucky hills.' },
+    { slug: 'new-river-gorge', name: 'New River Gorge National Park', tagline: 'America\'s newest national park, featuring a dramatic river canyon famous for whitewater rafting and rock climbing in West Virginia.' },
+    { slug: 'shenandoah', name: 'Shenandoah National Park', tagline: 'Mountain vistas along the Blue Ridge, with Skyline Drive and the Appalachian Trail winding through Virginia\'s forested peaks.' },
+    { slug: 'gateway-arch', name: 'Gateway Arch National Park', tagline: 'The tallest man-made monument in the United States rises 630 feet above the St. Louis riverfront.' },
+    { slug: 'great-basin', name: 'Great Basin National Park', tagline: 'Ancient bristlecone pines, Lehman Caves, and Wheeler Peak in the remote Great Basin Desert of eastern Nevada.' },
+    { slug: 'isle-royale', name: 'Isle Royale National Park', tagline: 'A roadless island wilderness in Lake Superior, famous for its wolf-moose predator-prey study and deep solitude.' },
+    { slug: 'voyageurs', name: 'Voyageurs National Park', tagline: 'A water-based wilderness of interconnected lakes along the Minnesota-Canada border, best explored by boat or canoe.' },
+    { slug: 'hawaii-volcanoes', name: 'Hawaii Volcanoes National Park', tagline: 'Home to two of the world\'s most active volcanoes on the Big Island, where lava shapes the landscape in real time.' },
+    { slug: 'gates-of-the-arctic', name: 'Gates of the Arctic National Park', tagline: 'Alaska\'s most remote park, with no roads, no trails, and no facilities in a vast Arctic wilderness above the Arctic Circle.' },
+    { slug: 'glacier-bay', name: 'Glacier Bay National Park', tagline: 'A vast wilderness of tidewater glaciers, whale-filled waters, and retreating ice fields in Southeast Alaska.' },
+    { slug: 'katmai', name: 'Katmai National Park', tagline: 'Alaska\'s premier bear-viewing destination, where brown bears catch salmon at Brooks Falls against a volcanic backdrop.' },
+    { slug: 'kenai-fjords', name: 'Kenai Fjords National Park', tagline: 'Tidewater glaciers, marine wildlife, and the massive Harding Icefield along Alaska\'s Kenai Peninsula coast.' },
+    { slug: 'kobuk-valley', name: 'Kobuk Valley National Park', tagline: 'Arctic sand dunes and caribou migration corridors in one of Alaska\'s least visited and most remote parks.' },
+    { slug: 'lake-clark', name: 'Lake Clark National Park', tagline: 'Turquoise lakes, steaming volcanoes, and coastal bear viewing in Alaska\'s diverse wilderness.' },
+    { slug: 'wrangell-st-elias', name: 'Wrangell-St. Elias National Park', tagline: 'The largest national park in America, where four mountain ranges converge in a wilderness larger than Switzerland.' },
+    { slug: 'virgin-islands', name: 'Virgin Islands National Park', tagline: 'Tropical beaches, coral reefs, and lush hillsides covering two-thirds of the island of St. John in the Caribbean.' },
+    { slug: 'american-samoa', name: 'National Park of American Samoa', tagline: 'The most remote park in the system, protecting tropical rainforests, coral reefs, and Samoan culture in the South Pacific.' },
+  ]
+
+  for (const park of newParks) {
+    // Park detail page
+    items.push({
+      title: park.name,
+      description: park.tagline,
+      category: 'Park',
+      url: `/parks/${park.slug}`,
+    })
+    // Hotels sub-page
+    items.push({
+      title: `${park.name} Hotels: Where to Stay`,
+      description: `Find the best hotels and lodging near ${park.name}. Compare prices, amenities, and locations for your trip.`,
+      category: 'Park',
+      url: `/parks/${park.slug}/hotels`,
+    })
+    // Weather sub-page
+    items.push({
+      title: `${park.name} Weather: Monthly Climate Guide`,
+      description: `Monthly weather data for ${park.name}. Average temperatures, precipitation, and what to expect each season.`,
+      category: 'Park',
+      url: `/parks/${park.slug}/weather`,
+    })
+    // Best time to visit sub-page
+    items.push({
+      title: `Best Time to Visit ${park.name}`,
+      description: `Find the best months to visit ${park.name}. Seasonal guide covering weather, crowds, wildlife, and activities.`,
+      category: 'Park',
+      url: `/parks/${park.slug}/best-time-to-visit`,
     })
   }
 
