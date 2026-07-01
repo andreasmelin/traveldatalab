@@ -17,6 +17,7 @@ import {
   ExternalLink,
 } from 'lucide-react'
 import { getParkBySlug, getAllParkSlugs } from '@/lib/national-parks'
+import ParkDetailMapWrapper from '@/components/ParkDetailMapWrapper'
 
 export async function generateStaticParams() {
   return getAllParkSlugs().map((slug) => ({ destination: slug }))
@@ -222,6 +223,17 @@ export default async function ParkDetailPage({
             ))}
           </ul>
         </section>
+
+        {/* Park Map */}
+        {park.trailheads && park.trailheads.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-1">Park Map</h2>
+            <p className="text-sm text-gray-500 mb-4">
+              Explore trailheads, hotels, and points of interest
+            </p>
+            <ParkDetailMapWrapper park={park} />
+          </section>
+        )}
 
         {/* Description */}
         <section className="mb-10">

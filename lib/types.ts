@@ -48,6 +48,15 @@ export interface SkiDestination extends Destination {
   terrain: { beginner: number; intermediate: number; advanced: number }
 }
 
+export interface Trailhead {
+  name: string
+  lat: number
+  lng: number
+  difficulty: 'Easy' | 'Moderate' | 'Strenuous'
+  distance: string
+  elevationGain: string
+}
+
 export interface NationalParkDestination extends Destination {
   activityType: 'parks'
   established: number
@@ -60,6 +69,8 @@ export interface NationalParkDestination extends Destination {
   petFriendly: boolean
   camping: boolean
   wilderness: boolean
+  trailheads?: Trailhead[]
+  unitCode?: string
 }
 
 export interface WeatherMonth {
